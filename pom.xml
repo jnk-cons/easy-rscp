@@ -84,6 +84,12 @@
                 <groupId>io.github.microutils</groupId>
                 <artifactId>kotlin-logging-jvm</artifactId>
                 <version>${kotlin-logging.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>kotlin-stdlib-common</artifactId>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
             <dependency>
                 <groupId>org.jetbrains.kotlin</groupId>
@@ -106,6 +112,12 @@
                 <artifactId>mockk-jvm</artifactId>
                 <version>${mockk.version}</version>
                 <scope>test</scope>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>kotlin-stdlib-common</artifactId>
+                        <groupId>org.jetbrains.kotlin</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
         </dependencies>
     </dependencyManagement>

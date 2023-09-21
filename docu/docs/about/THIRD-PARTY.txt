@@ -1,5 +1,5 @@
 
-Lists of 31 third-party dependencies.
+Lists of 30 third-party dependencies.
      (The Apache Software License, Version 2.0) kotlin-logging (io.github.microutils:kotlin-logging-jvm:3.0.5 - https://github.com/oshai/kotlin-logging)
      (Apache License, Version 2.0) MockK Agent API (io.mockk:mockk-agent-api-jvm:1.13.7 - https://mockk.io)
      (Apache License, Version 2.0) MockK (io.mockk:mockk-agent-jvm:1.13.7 - https://mockk.io)
@@ -15,8 +15,7 @@ Lists of 31 third-party dependencies.
      (The Apache Software License, Version 2.0) IntelliJ IDEA Annotations (org.jetbrains:annotations:13.0 - http://www.jetbrains.org)
      (The Apache License, Version 2.0) Kotlin Reflect (org.jetbrains.kotlin:kotlin-reflect:1.8.20 - https://kotlinlang.org/)
      (The Apache License, Version 2.0) Kotlin Stdlib (org.jetbrains.kotlin:kotlin-stdlib:1.9.10 - https://kotlinlang.org/)
-     (The Apache License, Version 2.0) Kotlin Stdlib Common (org.jetbrains.kotlin:kotlin-stdlib-common:1.8.0 - https://kotlinlang.org/)
-     (The Apache License, Version 2.0) Kotlin Stdlib Common (org.jetbrains.kotlin:kotlin-stdlib-common:1.8.20 - https://kotlinlang.org/)
+     (The Apache License, Version 2.0) Kotlin Stdlib Common (org.jetbrains.kotlin:kotlin-stdlib-common:1.9.10 - https://kotlinlang.org/)
      (The Apache License, Version 2.0) Kotlin Stdlib Jdk7 (org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.9.10 - https://kotlinlang.org/)
      (The Apache License, Version 2.0) Kotlin Stdlib Jdk8 (org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.10 - https://kotlinlang.org/)
      (The Apache Software License, Version 2.0) kotlinx-coroutines-core (org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4 - https://github.com/Kotlin/kotlinx.coroutines)

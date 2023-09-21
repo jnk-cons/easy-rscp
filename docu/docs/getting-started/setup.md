@@ -57,18 +57,18 @@ The library is divided into three sections
 === "Maven"
     ```xml
     <dependency>
-        <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+        <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
         <artifactId>jnk-easy-rscp-service</artifactId>
         <version>2.0.0</version>
     </dependency>
     ```
 === "Gradle (groovy)"
     ```groovy
-    implementation 'de.jnkconsulting.e3dc.easyrscp:jnk-easy-rscp-service:2.0.0'
+    implementation 'de.jnk-consulting.e3dc.easyrscp:jnk-easy-rscp-service:2.0.0'
     ```
 === "Gradle (kotlin)"
     ```kotlin
-    implementation("de.jnkconsulting.e3dc.easyrscp:jnk-easy-rscp-service:2.0.0")
+    implementation("de.jnk-consulting.e3dc.easyrscp:jnk-easy-rscp-service:2.0.0")
     ```
 
 

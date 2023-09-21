@@ -205,7 +205,7 @@ gantt
 ```
 
 ???+ note "Blocks as values"
-If the data type is `container`, the value area contains a complete further data block(s)!
+    If the data type is `container`, the value area contains a complete further data block(s)!
 
 ### Example
 
