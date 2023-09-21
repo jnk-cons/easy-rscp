@@ -20,6 +20,8 @@ enum class WBTag(
 ) : Tag {
 
     /**
+     * hex = "0x0E040000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains all request TAGs, the container MUST contain an index
@@ -30,6 +32,8 @@ enum class WBTag(
     REQ_DATA(hex = "0x0E040000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E040001", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Index of the requested device (0?x) 0xFF -> GroupController
@@ -40,6 +44,8 @@ enum class WBTag(
     INDEX(hex = "0x0E040001", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E840000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Response with all data of the REQ_DATA request
@@ -50,6 +56,8 @@ enum class WBTag(
     DATA(hex = "0x0E840000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -60,6 +68,8 @@ enum class WBTag(
     REQ_ENERGY_ALL(hex = "0x0E000001", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000002", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -70,6 +80,8 @@ enum class WBTag(
     REQ_ENERGY_SOLAR(hex = "0x0E000002", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -80,6 +92,8 @@ enum class WBTag(
     REQ_SOC(hex = "0x0E000003", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container! Not meaningful as long as the e-cars do not yet support it
@@ -90,6 +104,8 @@ enum class WBTag(
     REQ_STATUS(hex = "0x0E000004", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -100,6 +116,8 @@ enum class WBTag(
     REQ_ERROR_CODE(hex = "0x0E000005", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000006", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -110,6 +128,8 @@ enum class WBTag(
     REQ_MODE(hex = "0x0E000006", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000007", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -120,6 +140,8 @@ enum class WBTag(
     REQ_APP_SOFTWARE(hex = "0x0E000007", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000008", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -130,6 +152,8 @@ enum class WBTag(
     REQ_BOOTLOADER_SOFTWARE(hex = "0x0E000008", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000009", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -140,6 +164,8 @@ enum class WBTag(
     REQ_HW_VERSION(hex = "0x0E000009", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000A", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -150,6 +176,8 @@ enum class WBTag(
     REQ_FLASH_VERSION(hex = "0x0E00000A", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000B", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -160,6 +188,8 @@ enum class WBTag(
     REQ_DEVICE_ID(hex = "0x0E00000B", type = DataType.NONE),
 
     /**
+     * hex = "0x0E060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -169,6 +199,8 @@ enum class WBTag(
     REQ_DEVICE_STATE(hex = "0x0E060000", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000C", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -179,6 +211,8 @@ enum class WBTag(
     REQ_PM_POWER_L1(hex = "0x0E00000C", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000D", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -189,6 +223,8 @@ enum class WBTag(
     REQ_PM_POWER_L2(hex = "0x0E00000D", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000E", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -199,6 +235,8 @@ enum class WBTag(
     REQ_PM_POWER_L3(hex = "0x0E00000E", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00000F", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -209,6 +247,8 @@ enum class WBTag(
     REQ_PM_ACTIVE_PHASES(hex = "0x0E00000F", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000011", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -219,6 +259,8 @@ enum class WBTag(
     REQ_PM_MODE(hex = "0x0E000011", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000012", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -229,6 +271,8 @@ enum class WBTag(
     REQ_PM_ENERGY_L1(hex = "0x0E000012", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000013", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -239,6 +283,8 @@ enum class WBTag(
     REQ_PM_ENERGY_L2(hex = "0x0E000013", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000014", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -249,6 +295,8 @@ enum class WBTag(
     REQ_PM_ENERGY_L3(hex = "0x0E000014", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000015", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -259,6 +307,8 @@ enum class WBTag(
     REQ_PM_DEVICE_ID(hex = "0x0E000015", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000016", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -269,6 +319,8 @@ enum class WBTag(
     REQ_PM_ERROR_CODE(hex = "0x0E000016", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000029", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -278,6 +330,8 @@ enum class WBTag(
     REQ_PM_DEVICE_STATE(hex = "0x0E000029", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000017", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -288,6 +342,8 @@ enum class WBTag(
     REQ_PM_FIRMWARE_VERSION(hex = "0x0E000017", type = DataType.NONE),
 
     /**
+     * hex = "0x0E00001F", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -298,6 +354,8 @@ enum class WBTag(
     REQ_DIAG_INFOS(hex = "0x0E00001F", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000020", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -308,6 +366,8 @@ enum class WBTag(
     REQ_DIAG_WARNINGS(hex = "0x0E000020", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000021", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -318,6 +378,8 @@ enum class WBTag(
     REQ_DIAG_ERRORS(hex = "0x0E000021", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000022", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -328,6 +390,8 @@ enum class WBTag(
     REQ_DIAG_TEMP_1(hex = "0x0E000022", type = DataType.NONE),
 
     /**
+     * hex = "0x0E000023", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_WB_DATA container!
@@ -338,6 +402,8 @@ enum class WBTag(
     REQ_DIAG_TEMP_2(hex = "0x0E000023", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800001", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L1 (Really????)
@@ -349,6 +415,8 @@ enum class WBTag(
     ENERGY_ALL(hex = "0x0E800001", type = DataType.UINT32),
 
     /**
+     * hex = "0x0E800002", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L2 (Really????)
@@ -358,6 +426,8 @@ enum class WBTag(
     ENERGY_SOLAR(hex = "0x0E800002", type = DataType.UINT32),
 
     /**
+     * hex = "0x0E800003", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L3 (Really????)
@@ -367,6 +437,8 @@ enum class WBTag(
     SOC(hex = "0x0E800003", type = DataType.UINT16),
 
     /**
+     * hex = "0x0E800004", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: just the three lowest bits of activePhases are used to define what phase is switched on.
@@ -389,6 +461,8 @@ enum class WBTag(
     STATUS(hex = "0x0E800004", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800005", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: used to identify the error bit, if error code is available mode = ERROR_ACTIVE_MODE. ACTIVE_MODE else.
@@ -413,6 +487,8 @@ enum class WBTag(
     ERROR_CODE(hex = "0x0E800005", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800006", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L1 (Really???)
@@ -423,6 +499,8 @@ enum class WBTag(
     MODE(hex = "0x0E800006", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800007", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L2 (Really???)
@@ -433,6 +511,8 @@ enum class WBTag(
     APP_SOFTWARE(hex = "0x0E800007", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800008", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L3 (Really???)
@@ -443,6 +523,8 @@ enum class WBTag(
     BOOTLOADER_SOFTWARE(hex = "0x0E800008", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800009", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: ID of that device (Really???)
@@ -453,6 +535,8 @@ enum class WBTag(
     HW_VERSION(hex = "0x0E800009", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E80000A", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Last reported error code (see mode if error has relevance) (Oh E3DC, What have you done?)
@@ -463,6 +547,8 @@ enum class WBTag(
     FLASH_VERSION(hex = "0x0E80000A", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E80000B", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -472,6 +558,8 @@ enum class WBTag(
     DEVICE_ID(hex = "0x0E80000B", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: DEVICE_CONNECTED & DEVICE_WORKING & DEVICE_IN_SERVICE
@@ -483,6 +571,8 @@ enum class WBTag(
     DEVICE_STATE(hex = "0x0E860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -492,6 +582,8 @@ enum class WBTag(
     DEVICE_CONNECTED(hex = "0x0E860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x0E860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -501,6 +593,8 @@ enum class WBTag(
     DEVICE_WORKING(hex = "0x0E860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x0E860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -510,6 +604,8 @@ enum class WBTag(
     DEVICE_IN_SERVICE(hex = "0x0E860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x0EFFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -519,6 +615,8 @@ enum class WBTag(
     GENERAL_ERROR(hex = "0x0EFFFFFF", type = DataType.ERROR),
 
     /**
+     * hex = "0x0E80000C", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -528,6 +626,8 @@ enum class WBTag(
     PM_POWER_L1(hex = "0x0E80000C", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E80000D", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -537,6 +637,8 @@ enum class WBTag(
     PM_POWER_L2(hex = "0x0E80000D", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E80000E", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -546,6 +648,8 @@ enum class WBTag(
     PM_POWER_L3(hex = "0x0E80000E", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E80000F", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -555,6 +659,8 @@ enum class WBTag(
     PM_ACTIVE_PHASES(hex = "0x0E80000F", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800011", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -564,6 +670,8 @@ enum class WBTag(
     PM_MODE(hex = "0x0E800011", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800012", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -573,6 +681,8 @@ enum class WBTag(
     PM_ENERGY_L1(hex = "0x0E800012", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E800013", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -582,6 +692,8 @@ enum class WBTag(
     PM_ENERGY_L2(hex = "0x0E800013", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E800014", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -591,6 +703,8 @@ enum class WBTag(
     PM_ENERGY_L3(hex = "0x0E800014", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x0E800015", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -600,6 +714,8 @@ enum class WBTag(
     PM_DEVICE_ID(hex = "0x0E800015", type = DataType.UINT32),
 
     /**
+     * hex = "0x0E800016", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -609,6 +725,8 @@ enum class WBTag(
     PM_ERROR_CODE(hex = "0x0E800016", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E800029", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -618,6 +736,8 @@ enum class WBTag(
     PM_DEVICE_STATE(hex = "0x0E800029", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800030", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -627,6 +747,8 @@ enum class WBTag(
     PM_DEVICE_STATE_CONNECTED(hex = "0x0E800030", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800031", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -636,6 +758,8 @@ enum class WBTag(
     PM_DEVICE_STATE_WORKING(hex = "0x0E800031", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800032", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -645,6 +769,8 @@ enum class WBTag(
     PM_DEVICE_STATE_IN_SERVICE(hex = "0x0E800032", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800017", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -654,6 +780,8 @@ enum class WBTag(
     PM_FIRMWARE_VERSION(hex = "0x0E800017", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E80001F", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -663,6 +791,8 @@ enum class WBTag(
     DIAG_INFOS(hex = "0x0E80001F", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800020", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -672,6 +802,8 @@ enum class WBTag(
     DIAG_WARNINGS(hex = "0x0E800020", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800021", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -681,6 +813,8 @@ enum class WBTag(
     DIAG_ERRORS(hex = "0x0E800021", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800022", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -690,6 +824,8 @@ enum class WBTag(
     DIAG_TEMP_1(hex = "0x0E800022", type = DataType.NONE),
 
     /**
+     * hex = "0x0E800023", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -699,6 +835,8 @@ enum class WBTag(
     DIAG_TEMP_2(hex = "0x0E800023", type = DataType.NONE),
 
     /**
+     * hex = "0x0E041000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains TAG_WB_INDEX, the value decides which wallbox is queried
@@ -709,6 +847,8 @@ enum class WBTag(
     REQ_AVAILABLE_SOLAR_POWER(hex = "0x0E041000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E041001", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -718,6 +858,8 @@ enum class WBTag(
     POWER(hex = "0x0E041001", type = DataType.UINT16),
 
     /**
+     * hex = "0x0E041002", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -727,6 +869,8 @@ enum class WBTag(
     STATUS_BIT(hex = "0x0E041002", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E841000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -736,6 +880,8 @@ enum class WBTag(
     AVAILABLE_SOLAR_POWER(hex = "0x0E841000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E000030", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -745,6 +891,8 @@ enum class WBTag(
     REQ_SET_MODE(hex = "0x0E000030", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E040031", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -754,6 +902,8 @@ enum class WBTag(
     MODE_PARAM_MODE(hex = "0x0E040031", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E040032", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -763,6 +913,8 @@ enum class WBTag(
     MODE_PARAM_MAX_CURRENT(hex = "0x0E040032", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E000031", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: err value, 0 for successfully set mode
@@ -773,6 +925,8 @@ enum class WBTag(
     SET_MODE(hex = "0x0E000031", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E041010", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Expects EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6 /
@@ -795,6 +949,8 @@ enum class WBTag(
     REQ_SET_EXTERN(hex = "0x0E041010", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841010", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: no content
@@ -805,6 +961,8 @@ enum class WBTag(
     SET_EXTERN(hex = "0x0E841010", type = DataType.NONE),
 
     /**
+     * hex = "0x0E042010", type = DataType.BYTEARRAY
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -814,6 +972,8 @@ enum class WBTag(
     EXTERN_DATA(hex = "0x0E042010", type = DataType.BYTEARRAY),
 
     /**
+     * hex = "0x0E042011", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -823,6 +983,8 @@ enum class WBTag(
     EXTERN_DATA_LEN(hex = "0x0E042011", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0E041011", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -832,6 +994,8 @@ enum class WBTag(
     REQ_EXTERN_DATA_SUN(hex = "0x0E041011", type = DataType.NONE),
 
     /**
+     * hex = "0x0E041012", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -841,6 +1005,8 @@ enum class WBTag(
     REQ_EXTERN_DATA_NET(hex = "0x0E041012", type = DataType.NONE),
 
     /**
+     * hex = "0x0E041013", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -850,6 +1016,8 @@ enum class WBTag(
     REQ_EXTERN_DATA_ALL(hex = "0x0E041013", type = DataType.NONE),
 
     /**
+     * hex = "0x0E041014", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -859,6 +1027,8 @@ enum class WBTag(
     REQ_EXTERN_DATA_ALG(hex = "0x0E041014", type = DataType.NONE),
 
     /**
+     * hex = "0x0E841011", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 7) and EXTERN_DATA_LEN =7
@@ -875,6 +1045,8 @@ enum class WBTag(
     EXTERN_DATA_SUN(hex = "0x0E841011", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841012", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 7) and EXTERN_DATA_LEN =7
@@ -891,6 +1063,8 @@ enum class WBTag(
     EXTERN_DATA_NET(hex = "0x0E841012", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841013", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 7) and EXTERN_DATA_LEN =7
@@ -907,6 +1081,8 @@ enum class WBTag(
     EXTERN_DATA_ALL(hex = "0x0E841013", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841014", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 7) and EXTERN_DATA_LEN =7
@@ -929,6 +1105,8 @@ enum class WBTag(
     EXTERN_DATA_ALG(hex = "0x0E841014", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E041015", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en: Set capacity in Wh
@@ -939,6 +1117,8 @@ enum class WBTag(
     REQ_SET_BAT_CAPACITY(hex = "0x0E041015", type = DataType.UINT32),
 
     /**
+     * hex = "0x0E041018", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Expects EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6
@@ -961,6 +1141,8 @@ enum class WBTag(
     REQ_SET_PARAM_1(hex = "0x0E041018", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E041019", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Expects EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6
@@ -979,6 +1161,8 @@ enum class WBTag(
     REQ_SET_PARAM_2(hex = "0x0E041019", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841015", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -988,6 +1172,8 @@ enum class WBTag(
     SET_BAT_CAPACITY(hex = "0x0E841015", type = DataType.UINT32),
 
     /**
+     * hex = "0x0E841018", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6
@@ -1010,6 +1196,8 @@ enum class WBTag(
     SET_PARAM_1(hex = "0x0E841018", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E841019", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6
@@ -1028,6 +1216,8 @@ enum class WBTag(
     SET_PARAM_2(hex = "0x0E841019", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E04101A", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -1037,6 +1227,8 @@ enum class WBTag(
     REQ_PARAM_2(hex = "0x0E04101A", type = DataType.NONE),
 
     /**
+     * hex = "0x0E84101A", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6
@@ -1055,6 +1247,8 @@ enum class WBTag(
     RSP_PARAM_2(hex = "0x0E84101A", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0E04101B", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -1064,6 +1258,8 @@ enum class WBTag(
     REQ_PARAM_1(hex = "0x0E04101B", type = DataType.NONE),
 
     /**
+     * hex = "0x0E84101B", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: contains EXTERN_DATA (length 6) and EXTERN_DATA_LEN =6

@@ -281,6 +281,18 @@ data class Data(
     fun valueAsResultCode() =
         if (typeObject() == DataType.ERROR) ResultCode.UNKNOWN else ResultCode.byRscpCode(valueAsInt()?:ResultCode.UNKNOWN.rscpCode)
 
+    /**
+     * Checks if the response type is of type error.
+     *
+     * If a request fails, for whatever reason, you get the normal tag back as a response, but the type is [DataType.ERROR].
+     *
+     * @return true if it is an error response, otherwise false
+     *
+     * @since 2.0
+     *
+     */
+    fun isErrorResponse() = typeObject() == DataType.ERROR
+
 
     private fun valueAsBuffer(size: Int) =
         emptyByteBuffer(size)

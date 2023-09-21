@@ -8,82 +8,85 @@ package de.jnkconsulting.e3dc.easyrscp.api.frame
  * @since 2.0
  */
 enum class Namespace(val code: Byte) {
-    RSCP(0x00.toByte()),
+    /**
+     * Protocoll relatedl; code = 0x00
+     */
+    RSCP(code = 0x00.toByte()),
 
     /**
-     * Energy Management System
+     * Energy Management System; code = 0x01
      */
-    EMS(0x01.toByte()),
+    EMS(code = 0x01.toByte()),
 
     /**
-     * Photovoltaic inverter
+     * Photovoltaic inverter; code = 0x02
      */
-    PVI(0x02.toByte()),
+    PVI(code = 0x02.toByte()),
 
     /**
-     * Battery
+     * Battery; code = 0x03
      */
-    BAT(0x03.toByte()),
+    BAT(code = 0x03.toByte()),
 
     /**
-     * Battery DCDC ??
+     * Battery DCDC ??; code = 0x04
      */
-    DCDC(0x04.toByte()),
+    DCDC(code = 0x04.toByte()),
 
     /**
-     * Power Management
+     * Power Management; code = 0x05
      */
-    PM(0x05.toByte()),
+    PM(code = 0x05.toByte()),
 
     /**
-     * Database
+     * Database; code = 0x06
      */
-    DB(0x06.toByte()),
+    DB(code = 0x06.toByte()),
 
     /**
-     * ??
+     * ??; code = 0x07
      */
-    FMS(0x07.toByte()),
+    FMS(code = 0x07.toByte()),
 
     /**
-     * Server related (User management, status etc.)
+     * Server related (User management, status etc.); code = 0x08
      */
-    SRV(0x08.toByte()),
+    SRV(code = 0x08.toByte()),
 
     /**
-     * Home automation
+     * Home automation; code = 0x09
      */
-    HA(0x09.toByte()),
+    HA(code = 0x09.toByte()),
 
     /**
-     * System information
+     * System information; code = 0x0A
      */
-    INFO(0x0A.toByte()),
+    INFO(code = 0x0A.toByte()),
 
     /**
-     * Emergency power
+     * Emergency power; code = 0x0B
      */
-    EP(0x0B.toByte()),
+    EP(code = 0x0B.toByte()),
 
     /**
-     * System controls
+     * System controls; code = 0x0C
      */
-    SYS(0x0C.toByte()),
+    SYS(code = 0x0C.toByte()),
 
     /**
-     * Update Management
+     * Update Management; code = 0x0D
      */
-    UM(0x0D.toByte()),
+    UM(code = 0x0D.toByte()),
 
     /**
-     * Wallbox
+     * Wallbox; code = 0x0E
      */
-    WB(0x0E.toByte()),
+    WB(code = 0x0E.toByte()),
 
     /**
-     * This is not an E3DC namespace, but serves as auxiliary objects for namespaces that are not known
+     * This is not an E3DC namespace, but serves as auxiliary objects for namespaces that are not known; code = 0xFF
      */
-    UNKNOWN(0xFF.toByte());
+    UNKNOWN(code = 0xFF.toByte());
 
 
     companion object {

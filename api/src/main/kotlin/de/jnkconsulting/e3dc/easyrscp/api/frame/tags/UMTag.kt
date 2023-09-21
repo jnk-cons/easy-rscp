@@ -20,6 +20,8 @@ enum class UMTag(
 ) : Tag {
 
     /**
+     * hex = "0x0D000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -29,6 +31,8 @@ enum class UMTag(
     REQ_UPDATE_STATUS(hex = "0x0D000001", type = DataType.NONE),
 
     /**
+     * hex = "0x0D800001", type = DataType.INT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -48,6 +52,8 @@ enum class UMTag(
     UPDATE_STATUS(hex = "0x0D800001", type = DataType.INT32),
 
     /**
+     * hex = "0x0D000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -57,6 +63,8 @@ enum class UMTag(
     REQ_CHECK_FOR_UPDATES(hex = "0x0D000003", type = DataType.NONE),
 
     /**
+     * hex = "0x0D800003", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -72,6 +80,8 @@ enum class UMTag(
     CHECK_FOR_UPDATES(hex = "0x0D800003", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0DFFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

@@ -20,6 +20,8 @@ enum class EPTag(
 ) : Tag {
 
     /**
+     * hex = "0x0B000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -29,6 +31,8 @@ enum class EPTag(
     REQ_IS_READY_FOR_SWITCH(hex = "0x0B000003", type = DataType.NONE),
 
     /**
+     * hex = "0x0B000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -38,6 +42,8 @@ enum class EPTag(
     REQ_IS_GRID_CONNECTED(hex = "0x0B000004", type = DataType.NONE),
 
     /**
+     * hex = "0x0B000005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -47,6 +53,8 @@ enum class EPTag(
     REQ_IS_ISLAND_GRID(hex = "0x0B000005", type = DataType.NONE),
 
     /**
+     * hex = "0x0B000006", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -56,6 +64,8 @@ enum class EPTag(
     REQ_IS_INVALID_STATE(hex = "0x0B000006", type = DataType.NONE),
 
     /**
+     * hex = "0x0B000007", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -65,6 +75,8 @@ enum class EPTag(
     REQ_IS_POSSIBLE(hex = "0x0B000007", type = DataType.NONE),
 
     /**
+     * hex = "0x0B800003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -74,6 +86,8 @@ enum class EPTag(
     IS_READY_FOR_SWITCH(hex = "0x0B800003", type = DataType.BOOL),
 
     /**
+     * hex = "0x0B800004", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -83,6 +97,8 @@ enum class EPTag(
     IS_GRID_CONNECTED(hex = "0x0B800004", type = DataType.BOOL),
 
     /**
+     * hex = "0x0B800005", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -92,6 +108,8 @@ enum class EPTag(
     IS_ISLAND_GRID(hex = "0x0B800005", type = DataType.BOOL),
 
     /**
+     * hex = "0x0B800006", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -101,6 +119,8 @@ enum class EPTag(
     IS_INVALID_STATE(hex = "0x0B800006", type = DataType.BOOL),
 
     /**
+     * hex = "0x0B800007", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -110,6 +130,8 @@ enum class EPTag(
     IS_POSSIBLE(hex = "0x0B800007", type = DataType.BOOL),
 
     /**
+     * hex = "0x0BFFFFFF", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:

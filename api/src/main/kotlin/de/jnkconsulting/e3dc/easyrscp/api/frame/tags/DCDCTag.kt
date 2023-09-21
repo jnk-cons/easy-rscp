@@ -20,6 +20,8 @@ enum class DCDCTag(
 ) : Tag {
 
     /**
+     * hex = "0x04040000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains all request TAGs, the container MUST contain an index
@@ -30,6 +32,8 @@ enum class DCDCTag(
     REQ_DATA(hex = "0x04040000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x04040001", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Index of the requested device (0?n for the FBC Nr or 0xFF for group), Occurs in the request and in the answer to the DATA tag
@@ -40,6 +44,8 @@ enum class DCDCTag(
     INDEX(hex = "0x04040001", type = DataType.UINT16),
 
     /**
+     * hex = "0x04840000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Response with all data of the REQ_DATA request
@@ -50,6 +56,8 @@ enum class DCDCTag(
     DATA(hex = "0x04840000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x04000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: As parameter the index of the DCDC is required. Index 0 is for GroupController.
@@ -60,6 +68,8 @@ enum class DCDCTag(
     REQ_I_BAT(hex = "0x04000001", type = DataType.NONE),
 
     /**
+     * hex = "0x04000002", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -69,6 +79,8 @@ enum class DCDCTag(
     REQ_U_BAT(hex = "0x04000002", type = DataType.NONE),
 
     /**
+     * hex = "0x04000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -78,6 +90,8 @@ enum class DCDCTag(
     REQ_P_BAT(hex = "0x04000003", type = DataType.NONE),
 
     /**
+     * hex = "0x04000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -87,6 +101,8 @@ enum class DCDCTag(
     REQ_I_DCL(hex = "0x04000004", type = DataType.NONE),
 
     /**
+     * hex = "0x04000005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -96,6 +112,8 @@ enum class DCDCTag(
     REQ_U_DCL(hex = "0x04000005", type = DataType.NONE),
 
     /**
+     * hex = "0x04000006", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -105,6 +123,8 @@ enum class DCDCTag(
     REQ_P_DCL(hex = "0x04000006", type = DataType.NONE),
 
     /**
+     * hex = "0x04000008", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -114,6 +134,8 @@ enum class DCDCTag(
     REQ_FIRMWARE_VERSION(hex = "0x04000008", type = DataType.NONE),
 
     /**
+     * hex = "0x04000009", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -123,6 +145,8 @@ enum class DCDCTag(
     REQ_FPGA_FIRMWARE(hex = "0x04000009", type = DataType.NONE),
 
     /**
+     * hex = "0x0400000A", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -132,6 +156,8 @@ enum class DCDCTag(
     REQ_SERIAL_NUMBER(hex = "0x0400000A", type = DataType.NONE),
 
     /**
+     * hex = "0x0400000B", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -141,6 +167,8 @@ enum class DCDCTag(
     REQ_BOARD_VERSION(hex = "0x0400000B", type = DataType.NONE),
 
     /**
+     * hex = "0x0400000C", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -150,6 +178,8 @@ enum class DCDCTag(
     REQ_FLASH_FILE_LIST(hex = "0x0400000C", type = DataType.NONE),
 
     /**
+     * hex = "0x0400000E", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -159,6 +189,8 @@ enum class DCDCTag(
     REQ_IS_FLASHING(hex = "0x0400000E", type = DataType.NONE),
 
     /**
+     * hex = "0x0400000F", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -168,6 +200,8 @@ enum class DCDCTag(
     REQ_FLASH(hex = "0x0400000F", type = DataType.STRING),
 
     /**
+     * hex = "0x04000010", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -177,6 +211,8 @@ enum class DCDCTag(
     REQ_STATUS(hex = "0x04000010", type = DataType.NONE),
 
     /**
+     * hex = "0x04000013", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -186,6 +222,8 @@ enum class DCDCTag(
     REQ_STATUS_AS_STRING(hex = "0x04000013", type = DataType.NONE),
 
     /**
+     * hex = "0x04800001", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -195,6 +233,8 @@ enum class DCDCTag(
     I_BAT(hex = "0x04800001", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800002", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -204,6 +244,8 @@ enum class DCDCTag(
     U_BAT(hex = "0x04800002", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800003", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -213,6 +255,8 @@ enum class DCDCTag(
     P_BAT(hex = "0x04800003", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800004", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -222,6 +266,8 @@ enum class DCDCTag(
     I_DCL(hex = "0x04800004", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800005", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -231,6 +277,8 @@ enum class DCDCTag(
     U_DCL(hex = "0x04800005", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800006", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -240,6 +288,8 @@ enum class DCDCTag(
     P_DCL(hex = "0x04800006", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x04800008", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -249,6 +299,8 @@ enum class DCDCTag(
     FIRMWARE_VERSION(hex = "0x04800008", type = DataType.STRING),
 
     /**
+     * hex = "0x04800009", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -258,6 +310,8 @@ enum class DCDCTag(
     FPGA_FIRMWARE(hex = "0x04800009", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0480000A", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -267,6 +321,8 @@ enum class DCDCTag(
     SERIAL_NUMBER(hex = "0x0480000A", type = DataType.STRING),
 
     /**
+     * hex = "0x0480000B", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -276,6 +332,8 @@ enum class DCDCTag(
     BOARD_VERSION(hex = "0x0480000B", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0480000C", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -285,6 +343,8 @@ enum class DCDCTag(
     FLASH_FILE_LIST(hex = "0x0480000C", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x0480000D", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -294,6 +354,8 @@ enum class DCDCTag(
     FLASH_FILE(hex = "0x0480000D", type = DataType.STRING),
 
     /**
+     * hex = "0x0480000E", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -303,6 +365,8 @@ enum class DCDCTag(
     IS_FLASHING(hex = "0x0480000E", type = DataType.BOOL),
 
     /**
+     * hex = "0x0480000F", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -312,6 +376,8 @@ enum class DCDCTag(
     FLASH(hex = "0x0480000F", type = DataType.BOOL),
 
     /**
+     * hex = "0x04800010", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -321,6 +387,7 @@ enum class DCDCTag(
     STATUS(hex = "0x04800010", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x04800011", type = DataType.UCHAR8
      * Original E3DC Documentation:
      *
      * en:
@@ -330,6 +397,8 @@ enum class DCDCTag(
     STATE(hex = "0x04800011", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x04800012", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -339,6 +408,8 @@ enum class DCDCTag(
     SUBSTATE(hex = "0x04800012", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x04800013", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -348,6 +419,8 @@ enum class DCDCTag(
     STATUS_AS_STRING(hex = "0x04800013", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x04800014", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -357,6 +430,8 @@ enum class DCDCTag(
     STATE_AS_STRING(hex = "0x04800014", type = DataType.STRING),
 
     /**
+     * hex = "0x04800015", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -366,6 +441,8 @@ enum class DCDCTag(
     SUBSTATE_AS_STRING(hex = "0x04800015", type = DataType.STRING),
 
     /**
+     * hex = "0x04060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -375,6 +452,8 @@ enum class DCDCTag(
     REQ_DEVICE_STATE(hex = "0x04060000", type = DataType.NONE),
 
     /**
+     * hex = "0x04860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: DEVICE_CONNECTED & DEVICE_WORKING & DEVICE_IN_SERVICE
@@ -385,6 +464,8 @@ enum class DCDCTag(
     DEVICE_STATE(hex = "0x04860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x04860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -394,6 +475,8 @@ enum class DCDCTag(
     DEVICE_CONNECTED(hex = "0x04860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x04860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -403,6 +486,8 @@ enum class DCDCTag(
     DEVICE_WORKING(hex = "0x04860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x04860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -412,6 +497,8 @@ enum class DCDCTag(
     DEVICE_IN_SERVICE(hex = "0x04860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x04FFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

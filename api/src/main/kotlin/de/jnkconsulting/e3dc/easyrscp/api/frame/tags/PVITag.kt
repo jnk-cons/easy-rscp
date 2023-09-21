@@ -20,6 +20,8 @@ enum class PVITag(
 ) : Tag {
 
     /**
+     * hex = "0x02840000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: TAG_PVI_INDEX & TAG_PVI_... Response with all data of the REQ_DATA request
@@ -30,6 +32,8 @@ enum class PVITag(
     DATA(hex = "0x02840000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02040000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: TAG_PVI_INDEX & TAG_PVI_REQ...  Contains all request TAGs, the container MUST contain an index
@@ -40,6 +44,8 @@ enum class PVITag(
     REQ_DATA(hex = "0x02040000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02040001", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Index of the requested device (0?x), Must occur in the request and response to the DATA tag.
@@ -50,6 +56,8 @@ enum class PVITag(
     INDEX(hex = "0x02040001", type = DataType.UINT16),
 
     /**
+     * hex = "0x02040005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: dataType returns the respective data type!
@@ -60,6 +68,8 @@ enum class PVITag(
     VALUE(hex = "0x02040005", type = DataType.NONE),
 
     /**
+     * hex = "0x02FFFFFF", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -69,6 +79,8 @@ enum class PVITag(
     GENERAL_ERROR(hex = "0x02FFFFFF", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02800001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -78,6 +90,8 @@ enum class PVITag(
     ON_GRID(hex = "0x02800001", type = DataType.BOOL),
 
     /**
+     * hex = "0x02000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -87,6 +101,8 @@ enum class PVITag(
     REQ_ON_GRID(hex = "0x02000001", type = DataType.NONE),
 
     /**
+     * hex = "0x02800002", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -96,6 +112,8 @@ enum class PVITag(
     STATE(hex = "0x02800002", type = DataType.STRING),
 
     /**
+     * hex = "0x02000002", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -105,6 +123,8 @@ enum class PVITag(
     REQ_STATE(hex = "0x02000002", type = DataType.NONE),
 
     /**
+     * hex = "0x02800003", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -114,6 +134,8 @@ enum class PVITag(
     LAST_ERROR(hex = "0x02800003", type = DataType.STRING),
 
     /**
+     * hex = "0x02000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -123,6 +145,8 @@ enum class PVITag(
     REQ_LAST_ERROR(hex = "0x02000003", type = DataType.NONE),
 
     /**
+     * hex = "0x02800007", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -132,6 +156,8 @@ enum class PVITag(
     FLASH_FILE(hex = "0x02800007", type = DataType.STRING),
 
     /**
+     * hex = "0x02060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -141,6 +167,8 @@ enum class PVITag(
     REQ_DEVICE_STATE(hex = "0x02060000", type = DataType.NONE),
 
     /**
+     * hex = "0x02860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -151,6 +179,8 @@ enum class PVITag(
     DEVICE_STATE(hex = "0x02860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -160,6 +190,8 @@ enum class PVITag(
     DEVICE_CONNECTED(hex = "0x02860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x02860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -169,6 +201,8 @@ enum class PVITag(
     DEVICE_WORKING(hex = "0x02860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x02860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -178,6 +212,8 @@ enum class PVITag(
     DEVICE_IN_SERVICE(hex = "0x02860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x02000009", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -187,6 +223,8 @@ enum class PVITag(
     REQ_TYPE(hex = "0x02000009", type = DataType.NONE),
 
     /**
+     * hex = "0x02800009", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -201,6 +239,8 @@ enum class PVITag(
     TYPE(hex = "0x02800009", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02800060", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -211,6 +251,8 @@ enum class PVITag(
     COS_PHI(hex = "0x02800060", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02000060", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -220,6 +262,8 @@ enum class PVITag(
     REQ_COS_PHI(hex = "0x02000060", type = DataType.NONE),
 
     /**
+     * hex = "0x02000061", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -230,6 +274,8 @@ enum class PVITag(
     REQ_SET_COS_PHI(hex = "0x02000061", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02000062", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -239,6 +285,8 @@ enum class PVITag(
     COS_PHI_VALUE(hex = "0x02000062", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000063", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -248,6 +296,8 @@ enum class PVITag(
     COS_PHI_IS_AKTIV(hex = "0x02000063", type = DataType.BOOL),
 
     /**
+     * hex = "0x02000064", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -257,6 +307,8 @@ enum class PVITag(
     COS_PHI_EXCITED(hex = "0x02000064", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02800070", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -267,6 +319,8 @@ enum class PVITag(
     VOLTAGE_MONITORING(hex = "0x02800070", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02000070", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -276,6 +330,8 @@ enum class PVITag(
     REQ_VOLTAGE_MONITORING(hex = "0x02000070", type = DataType.NONE),
 
     /**
+     * hex = "0x02000072", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -285,6 +341,8 @@ enum class PVITag(
     VOLTAGE_MONITORING_THRESHOLD_TOP(hex = "0x02000072", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000073", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -294,6 +352,8 @@ enum class PVITag(
     VOLTAGE_MONITORING_THRESHOLD_BOTTOM(hex = "0x02000073", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000074", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -303,6 +363,8 @@ enum class PVITag(
     VOLTAGE_MONITORING_SLOPE_UP(hex = "0x02000074", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000075", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -312,6 +374,8 @@ enum class PVITag(
     VOLTAGE_MONITORING_SLOPE_DOWN(hex = "0x02000075", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02800080", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -322,6 +386,8 @@ enum class PVITag(
     FREQUENCY_UNDER_OVER(hex = "0x02800080", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02000080", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -331,6 +397,8 @@ enum class PVITag(
     REQ_FREQUENCY_UNDER_OVER(hex = "0x02000080", type = DataType.NONE),
 
     /**
+     * hex = "0x02000082", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -340,6 +408,8 @@ enum class PVITag(
     FREQUENCY_UNDER(hex = "0x02000082", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000083", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -349,6 +419,8 @@ enum class PVITag(
     FREQUENCY_OVER(hex = "0x02000083", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02800085", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -364,6 +436,8 @@ enum class PVITag(
     SYSTEM_MODE(hex = "0x02800085", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02000085", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -373,6 +447,8 @@ enum class PVITag(
     REQ_SYSTEM_MODE(hex = "0x02000085", type = DataType.NONE),
 
     /**
+     * hex = "0x02800087", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -388,6 +464,8 @@ enum class PVITag(
     POWER_MODE(hex = "0x02800087", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02000087", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -397,6 +475,8 @@ enum class PVITag(
     REQ_POWER_MODE(hex = "0x02000087", type = DataType.NONE),
 
     /**
+     * hex = "0x02800100", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -407,6 +487,8 @@ enum class PVITag(
     TEMPERATURE(hex = "0x02800100", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x02000100", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -416,6 +498,8 @@ enum class PVITag(
     REQ_TEMPERATURE(hex = "0x02000100", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02800101", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -425,6 +509,8 @@ enum class PVITag(
     TEMPERATURE_COUNT(hex = "0x02800101", type = DataType.NONE),
 
     /**
+     * hex = "0x02000101", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -434,6 +520,8 @@ enum class PVITag(
     REQ_TEMPERATURE_COUNT(hex = "0x02000101", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02800102", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -443,6 +531,8 @@ enum class PVITag(
     MAX_TEMPERATURE(hex = "0x02800102", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000102", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -452,6 +542,8 @@ enum class PVITag(
     REQ_MAX_TEMPERATURE(hex = "0x02000102", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x02800103", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -461,6 +553,8 @@ enum class PVITag(
     MIN_TEMPERATURE(hex = "0x02800103", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x02000103", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -470,6 +564,8 @@ enum class PVITag(
     REQ_MIN_TEMPERATURE(hex = "0x02000103", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x028ABC01", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -479,6 +575,8 @@ enum class PVITag(
     SERIAL_NUMBER(hex = "0x028ABC01", type = DataType.STRING),
 
     /**
+     * hex = "0x020ABC01", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -488,6 +586,8 @@ enum class PVITag(
     REQ_SERIAL_NUMBER(hex = "0x020ABC01", type = DataType.NONE),
 
     /**
+     * hex = "0x028ABC02", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -498,6 +598,8 @@ enum class PVITag(
     VERSION(hex = "0x028ABC02", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x020ABC02", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -507,6 +609,8 @@ enum class PVITag(
     REQ_VERSION(hex = "0x020ABC02", type = DataType.NONE),
 
     /**
+     * hex = "0x020ABC03", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -516,6 +620,8 @@ enum class PVITag(
     VERSION_MAIN(hex = "0x020ABC03", type = DataType.STRING),
 
     /**
+     * hex = "0x020ABC04", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -525,6 +631,8 @@ enum class PVITag(
     VERSION_PIC(hex = "0x020ABC04", type = DataType.STRING),
 
     /**
+     * hex = "0x028AC000", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -534,6 +642,8 @@ enum class PVITag(
     AC_MAX_PHASE_COUNT(hex = "0x028AC000", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x028AC001", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -544,6 +654,8 @@ enum class PVITag(
     AC_POWER(hex = "0x028AC001", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC002", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -554,6 +666,8 @@ enum class PVITag(
     AC_VOLTAGE(hex = "0x028AC002", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC003", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -564,6 +678,8 @@ enum class PVITag(
     AC_CURRENT(hex = "0x028AC003", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC004", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -574,6 +690,8 @@ enum class PVITag(
     AC_APPARENTPOWER(hex = "0x028AC004", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC005", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -584,6 +702,8 @@ enum class PVITag(
     AC_REACTIVEPOWER(hex = "0x028AC005", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC006", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -594,6 +714,8 @@ enum class PVITag(
     AC_ENERGY_ALL(hex = "0x028AC006", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC007", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -604,6 +726,8 @@ enum class PVITag(
     AC_MAX_APPARENTPOWER(hex = "0x028AC007", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC008", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -614,6 +738,8 @@ enum class PVITag(
     AC_ENERGY_DAY(hex = "0x028AC008", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028AC009", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -624,6 +750,8 @@ enum class PVITag(
     AC_ENERGY_GRID_CONSUMPTION(hex = "0x028AC009", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x020AC000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -634,6 +762,8 @@ enum class PVITag(
     REQ_AC_MAX_PHASE_COUNT(hex = "0x020AC000", type = DataType.NONE),
 
     /**
+     * hex = "0x020AC001", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -644,6 +774,8 @@ enum class PVITag(
     REQ_AC_POWER(hex = "0x020AC001", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC002", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -654,6 +786,8 @@ enum class PVITag(
     REQ_AC_VOLTAGE(hex = "0x020AC002", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC003", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -664,6 +798,8 @@ enum class PVITag(
     REQ_AC_CURRENT(hex = "0x020AC003", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC004", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -674,6 +810,8 @@ enum class PVITag(
     REQ_AC_APPARENTPOWER(hex = "0x020AC004", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC005", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -684,6 +822,8 @@ enum class PVITag(
     REQ_AC_REACTIVEPOWER(hex = "0x020AC005", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC006", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -694,6 +834,8 @@ enum class PVITag(
     REQ_AC_ENERGY_ALL(hex = "0x020AC006", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC007", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -704,6 +846,8 @@ enum class PVITag(
     REQ_AC_MAX_APPARENTPOWER(hex = "0x020AC007", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC008", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -714,6 +858,8 @@ enum class PVITag(
     REQ_AC_ENERGY_DAY(hex = "0x020AC008", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020AC009", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Value of the request includes the requested phase
@@ -724,6 +870,8 @@ enum class PVITag(
     REQ_AC_ENERGY_GRID_CONSUMPTION(hex = "0x020AC009", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x028DC000", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -733,6 +881,8 @@ enum class PVITag(
     DC_MAX_STRING_COUNT(hex = "0x028DC000", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x028DC001", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -743,6 +893,8 @@ enum class PVITag(
     DC_POWER(hex = "0x028DC001", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC002", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -753,6 +905,8 @@ enum class PVITag(
     DC_VOLTAGE(hex = "0x028DC002", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC003", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -763,6 +917,8 @@ enum class PVITag(
     DC_CURRENT(hex = "0x028DC003", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC004", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -773,6 +929,8 @@ enum class PVITag(
     DC_MAX_POWER(hex = "0x028DC004", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC005", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -783,6 +941,8 @@ enum class PVITag(
     DC_MAX_VOLTAGE(hex = "0x028DC005", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC006", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -793,6 +953,8 @@ enum class PVITag(
     DC_MIN_VOLTAGE(hex = "0x028DC006", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC007", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -803,6 +965,8 @@ enum class PVITag(
     DC_MAX_CURRENT(hex = "0x028DC007", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC008", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -813,6 +977,8 @@ enum class PVITag(
     DC_MIN_CURRENT(hex = "0x028DC008", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x028DC009", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -823,6 +989,8 @@ enum class PVITag(
     DC_STRING_ENERGY_ALL(hex = "0x028DC009", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x020DC000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -832,6 +1000,8 @@ enum class PVITag(
     REQ_DC_MAX_STRING_COUNT(hex = "0x020DC000", type = DataType.NONE),
 
     /**
+     * hex = "0x020DC001", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -841,6 +1011,8 @@ enum class PVITag(
     REQ_DC_POWER(hex = "0x020DC001", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC002", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -850,6 +1022,8 @@ enum class PVITag(
     REQ_DC_VOLTAGE(hex = "0x020DC002", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC003", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -859,6 +1033,8 @@ enum class PVITag(
     REQ_DC_CURRENT(hex = "0x020DC003", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC004", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -868,6 +1044,8 @@ enum class PVITag(
     REQ_DC_MAX_POWER(hex = "0x020DC004", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC005", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -877,6 +1055,8 @@ enum class PVITag(
     REQ_DC_MAX_VOLTAGE(hex = "0x020DC005", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC006", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -886,6 +1066,8 @@ enum class PVITag(
     REQ_DC_MIN_VOLTAGE(hex = "0x020DC006", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC007", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -895,6 +1077,8 @@ enum class PVITag(
     REQ_DC_MAX_CURRENT(hex = "0x020DC007", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC008", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -904,6 +1088,8 @@ enum class PVITag(
     REQ_DC_MIN_CURRENT(hex = "0x020DC008", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x020DC009", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:

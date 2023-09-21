@@ -16,7 +16,7 @@ class RSCPFrameBuilderTest {
     inner class ChecksumEnabledTests {
         @Test
         fun `test build with single data`() {
-            val expected = "e3dc00112b6adf640000000000000000080001008603010100ff4e8e9169"
+            val expected = "e3dc00112b6adf6400000000000000000800010086030101000155519433"
             val singleData = DataBuilder()
                 .tag(BatTag.DEVICE_CONNECTED)
                 .bool(true)
@@ -37,7 +37,7 @@ class RSCPFrameBuilderTest {
 
         @Test
         fun `test build with multiple data`() {
-            val expected = "e3dc00112b6adf640000000000000000300001008603010100ff0100040304020064000c0080030d180045787472656d6520706f77657266756c2062617474657279e31b9f8a"
+            val expected = "e3dc00112b6adf640000000000000000300001008603010100010100040304020064000c0080030d180045787472656d6520706f77657266756c2062617474657279e08ab95f"
             val data1 = DataBuilder()
                 .tag(BatTag.DEVICE_CONNECTED)
                 .bool(true)
@@ -75,7 +75,7 @@ class RSCPFrameBuilderTest {
     inner class ChecksumDisabledTests {
         @Test
         fun `test build with single data`() {
-            val expected = "e3dc00102b6adf640000000000000000080001008603010100ff"
+            val expected = "e3dc00102b6adf64000000000000000008000100860301010001"
             val singleData = DataBuilder()
                 .tag(BatTag.DEVICE_CONNECTED)
                 .bool(true)
@@ -96,7 +96,7 @@ class RSCPFrameBuilderTest {
 
         @Test
         fun `test build with multiple data`() {
-            val expected = "e3dc00102b6adf640000000000000000300001008603010100ff0100040304020064000c0080030d180045787472656d6520706f77657266756c2062617474657279"
+            val expected = "e3dc00102b6adf640000000000000000300001008603010100010100040304020064000c0080030d180045787472656d6520706f77657266756c2062617474657279"
             val data1 = DataBuilder()
                 .tag(BatTag.DEVICE_CONNECTED)
                 .bool(true)

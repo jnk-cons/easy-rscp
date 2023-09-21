@@ -15,6 +15,6 @@ class DefaultSocketFactory: SocketFactory {
     override fun createSocket(connectionData: E3DCConnectionData) =
         Socket(connectionData.address, connectionData.port).apply {
             tcpNoDelay = true
-            soTimeout = connectionData.timeoutMillis
+            soTimeout = connectionData.timeoutMillis.toInt()
         }
 }

@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.service.creator.db
 
 
+import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.DBTag
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
 import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
@@ -16,7 +17,7 @@ import java.time.ZoneId
  */
 class ReadDailySummaryCreator: FrameCreator<LocalDate> {
 
-    override fun invoke(day: LocalDate) =
+    override fun invoke(day: LocalDate): Frame =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(DBTag.REQ_HISTORY_DATA_DAY).container(
@@ -24,7 +25,7 @@ class ReadDailySummaryCreator: FrameCreator<LocalDate> {
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_INTERVAL).timestamp(Duration.ofHours(24)).build(),
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_SPAN).timestamp(Duration.ofHours(24)).build()
                 )
-                    .build()
+                .build()
             )
             .build()
 }

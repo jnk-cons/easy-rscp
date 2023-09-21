@@ -12,7 +12,7 @@ import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
  */
 class RequestLiveDataCreator: FrameCreator<Nothing?> {
 
-    override fun invoke(limits: Nothing?) =
+    override fun invoke(param: Nothing?) =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(EMSTag.REQ_POWER_PV).none().build(),

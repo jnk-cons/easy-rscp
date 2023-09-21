@@ -20,6 +20,8 @@ enum class PMTag(
 ) : Tag {
 
     /**
+     * hex = "0x05040000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains all request TAGs, the container MUST contain an index
@@ -30,6 +32,8 @@ enum class PMTag(
     REQ_DATA(hex = "0x05040000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x05040001", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Index of the requested device (0?x), must be included in request and is included in response
@@ -40,6 +44,8 @@ enum class PMTag(
     INDEX(hex = "0x05040001", type = DataType.UINT16),
 
     /**
+     * hex = "0x05840000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Response with all data of the REQ_DATA request
@@ -50,6 +56,8 @@ enum class PMTag(
     DATA(hex = "0x05840000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x05000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -60,6 +68,9 @@ enum class PMTag(
     REQ_POWER_L1(hex = "0x05000001", type = DataType.NONE),
 
     /**
+     * hex = "0x05000002", type = DataType.NONE
+     *
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -70,6 +81,8 @@ enum class PMTag(
     REQ_POWER_L2(hex = "0x05000002", type = DataType.NONE),
 
     /**
+     * hex = "0x05000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -79,6 +92,8 @@ enum class PMTag(
     REQ_POWER_L3(hex = "0x05000003", type = DataType.NONE),
 
     /**
+     * hex = "0x05000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -88,6 +103,8 @@ enum class PMTag(
     REQ_ACTIVE_PHASES(hex = "0x05000004", type = DataType.NONE),
 
     /**
+     * hex = "0x05000005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -97,6 +114,8 @@ enum class PMTag(
     REQ_MODE(hex = "0x05000005", type = DataType.NONE),
 
     /**
+     * hex = "0x05000006", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -106,6 +125,8 @@ enum class PMTag(
     REQ_ENERGY_L1(hex = "0x05000006", type = DataType.NONE),
 
     /**
+     * hex = "0x05000007", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -115,6 +136,8 @@ enum class PMTag(
     REQ_ENERGY_L2(hex = "0x05000007", type = DataType.NONE),
 
     /**
+     * hex = "0x05000008", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -124,6 +147,8 @@ enum class PMTag(
     REQ_ENERGY_L3(hex = "0x05000008", type = DataType.NONE),
 
     /**
+     * hex = "0x05000009", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -133,6 +158,8 @@ enum class PMTag(
     REQ_DEVICE_ID(hex = "0x05000009", type = DataType.NONE),
 
     /**
+     * hex = "0x0500000A", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -142,6 +169,8 @@ enum class PMTag(
     REQ_ERROR_CODE(hex = "0x0500000A", type = DataType.NONE),
 
     /**
+     * hex = "0x0500000B", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -151,6 +180,8 @@ enum class PMTag(
     REQ_SET_PHASE_ELIMINATION(hex = "0x0500000B", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x05000018", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -160,6 +191,8 @@ enum class PMTag(
     REQ_GET_PHASE_ELIMINATION(hex = "0x05000018", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0500000C", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -169,6 +202,8 @@ enum class PMTag(
     REQ_FIRMWARE_VERSION(hex = "0x0500000C", type = DataType.NONE),
 
     /**
+     * hex = "0x05000011", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -178,6 +213,8 @@ enum class PMTag(
     REQ_VOLTAGE_L1(hex = "0x05000011", type = DataType.NONE),
 
     /**
+     * hex = "0x05000012", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -187,6 +224,8 @@ enum class PMTag(
     REQ_VOLTAGE_L2(hex = "0x05000012", type = DataType.NONE),
 
     /**
+     * hex = "0x05000013", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -196,6 +235,8 @@ enum class PMTag(
     REQ_VOLTAGE_L3(hex = "0x05000013", type = DataType.NONE),
 
     /**
+     * hex = "0x05000014", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_PM_DATA container!
@@ -205,6 +246,8 @@ enum class PMTag(
     REQ_TYPE(hex = "0x05000014", type = DataType.NONE),
 
     /**
+     * hex = "0x05800001", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L1
@@ -215,6 +258,8 @@ enum class PMTag(
     POWER_L1(hex = "0x05800001", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800002", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L2
@@ -225,6 +270,8 @@ enum class PMTag(
     POWER_L2(hex = "0x05800002", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800003", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Current power on L3
@@ -235,6 +282,8 @@ enum class PMTag(
     POWER_L3(hex = "0x05800003", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800004", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: just the three lowest bits of activePhases are used to define what phase is switched on.
@@ -257,6 +306,8 @@ enum class PMTag(
     ACTIVE_PHASES(hex = "0x05800004", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x05800005", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: used to identify the error bit, if error code is available mode = ERROR_ACTIVE_MODE. ACTIVE_MODE else.
@@ -281,6 +332,8 @@ enum class PMTag(
     MODE(hex = "0x05800005", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x05800006", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L1
@@ -291,6 +344,8 @@ enum class PMTag(
     ENERGY_L1(hex = "0x05800006", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800007", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L2
@@ -301,6 +356,8 @@ enum class PMTag(
     ENERGY_L2(hex = "0x05800007", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800008", type = DataType.DOUBLE64
+     *
      * Original E3DC Documentation:
      *
      * en: Energy counter L3
@@ -311,6 +368,8 @@ enum class PMTag(
     ENERGY_L3(hex = "0x05800008", type = DataType.DOUBLE64),
 
     /**
+     * hex = "0x05800009", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en: ID of that device
@@ -321,6 +380,8 @@ enum class PMTag(
     DEVICE_ID(hex = "0x05800009", type = DataType.UINT32),
 
     /**
+     * hex = "0x0580000A", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Last reported error code (see mode if error has relevance)
@@ -331,6 +392,8 @@ enum class PMTag(
     ERROR_CODE(hex = "0x0580000A", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x0580000B", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -340,6 +403,8 @@ enum class PMTag(
     SET_PHASE_ELIMINATION(hex = "0x0580000B", type = DataType.BOOL),
 
     /**
+     * hex = "0x05800018", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -349,6 +414,8 @@ enum class PMTag(
     GET_PHASE_ELIMINATION(hex = "0x05800018", type = DataType.BOOL),
 
     /**
+     * hex = "0x0580000C", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -358,6 +425,8 @@ enum class PMTag(
     FIRMWARE_VERSION(hex = "0x0580000C", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x05800011", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Current voltage on L1 0 if not supported, use ACTIVE_PHASES to detect a broken phase
@@ -368,6 +437,8 @@ enum class PMTag(
     VOLTAGE_L1(hex = "0x05800011", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x05800012", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Current voltage on L2
@@ -378,6 +449,8 @@ enum class PMTag(
     VOLTAGE_L2(hex = "0x05800012", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x05800013", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Current voltage on L3
@@ -388,6 +461,8 @@ enum class PMTag(
     VOLTAGE_L3(hex = "0x05800013", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x05800014", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Power meter type:
@@ -417,6 +492,8 @@ enum class PMTag(
     TYPE(hex = "0x05800014", type = DataType.UINT16),
 
     /**
+     * hex = "0x05800051", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -427,6 +504,8 @@ enum class PMTag(
     CS_START_TIME(hex = "0x05800051", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800052", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -436,6 +515,8 @@ enum class PMTag(
     CS_LAST_TIME(hex = "0x05800052", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800053", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -445,6 +526,8 @@ enum class PMTag(
     CS_SUCC_FRAMES_ALL(hex = "0x05800053", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800054", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -454,6 +537,8 @@ enum class PMTag(
     CS_SUCC_FRAMES_100(hex = "0x05800054", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800055", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -463,6 +548,8 @@ enum class PMTag(
     CS_EXP_FRAMES_ALL(hex = "0x05800055", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800056", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -472,6 +559,8 @@ enum class PMTag(
     CS_EXP_FRAMES_100(hex = "0x05800056", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800057", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -481,6 +570,8 @@ enum class PMTag(
     CS_ERR_FRAMES_ALL(hex = "0x05800057", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800058", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -490,6 +581,8 @@ enum class PMTag(
     CS_ERR_FRAMES_100(hex = "0x05800058", type = DataType.UINT64),
 
     /**
+     * hex = "0x05800059", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -499,6 +592,8 @@ enum class PMTag(
     CS_UNK_FRAMES(hex = "0x05800059", type = DataType.UINT64),
 
     /**
+     * hex = "0x0580005A", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: can only be used within a REQ_PM_COMM_STATE container!
@@ -508,6 +603,8 @@ enum class PMTag(
     CS_ERR_FRAME(hex = "0x0580005A", type = DataType.UINT64),
 
     /**
+     * hex = "0x05060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -517,6 +614,8 @@ enum class PMTag(
     REQ_DEVICE_STATE(hex = "0x05060000", type = DataType.NONE),
 
     /**
+     * hex = "0x05860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: DEVICE_CONNECTED & DEVICE_WORKING & DEVICE_IN_SERVICE
@@ -528,6 +627,8 @@ enum class PMTag(
     DEVICE_STATE(hex = "0x05860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x05860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -537,6 +638,8 @@ enum class PMTag(
     DEVICE_CONNECTED(hex = "0x05860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x05860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -546,6 +649,8 @@ enum class PMTag(
     DEVICE_WORKING(hex = "0x05860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x05860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -555,6 +660,8 @@ enum class PMTag(
     DEVICE_IN_SERVICE(hex = "0x05860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x05FFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

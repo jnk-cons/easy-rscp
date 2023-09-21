@@ -16,7 +16,7 @@ class StringFrameConverter: FrameConverter<String> {
 
     override fun invoke(frame: Frame) =
         StringBuilder()
-            .append("TimestampS:\t${frame.timestamp}\n")
+            .append("Timestamp:\t${frame.timestamp}\n")
             .append("WithChecksum:\t${frame.isChecksumEnabled()}\n")
             .also { out ->
                 frame.data.forEach { out.append(convertData(it, 1, frame.parser)) }

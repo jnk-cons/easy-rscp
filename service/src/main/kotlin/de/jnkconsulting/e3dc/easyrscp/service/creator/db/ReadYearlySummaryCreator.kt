@@ -22,7 +22,7 @@ class ReadYearlySummaryCreator: FrameCreator<Year> {
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_INTERVAL).timestamp(Duration.ofDays(year.length().toLong())).build(),
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_SPAN).timestamp(Duration.ofDays(year.length().toLong())).build()
                 )
-                    .build()
+                .build()
             )
             .build()
 }

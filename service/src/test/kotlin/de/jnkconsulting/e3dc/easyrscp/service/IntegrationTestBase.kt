@@ -23,7 +23,7 @@ open class IntegrationTestBase {
         val connector = DefaultHomePowerPlantConnectionFactory(
             connectionData = E3DCConnectionData(
                 address = host,
-                user = user,
+                portalUser = user,
                 rscpPassword = rscpPassword,
                 portalPassword = portalPassword,
             ),

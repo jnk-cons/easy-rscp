@@ -15,7 +15,7 @@ class RSCPDataBuilderTest {
     inner class BooleanTests {
         @Test
         fun `test build with true`() {
-            val expected = "01008603010100ff"
+            val expected = "0100860301010001"
             val result = DataBuilder()
                 .tag(BatTag.DEVICE_CONNECTED)
                 .bool(true)

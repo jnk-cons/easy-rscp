@@ -120,7 +120,7 @@ class DataBuilder {
      */
     fun bool(value: Boolean) =
         ByteArray(1)
-            .also { it[0] = (if (value) 0xFF else 0x00).toByte() }
+            .also { it[0] = (if (value) 1 else 0).toByte() }
             .let { raw(it, DataType.BOOL.code) }
 
     /**

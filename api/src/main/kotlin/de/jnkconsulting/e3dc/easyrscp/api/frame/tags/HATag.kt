@@ -19,6 +19,8 @@ enum class HATag(
     override val type: DataType
 ) : Tag {
     /**
+     * hex = "0x09000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -28,6 +30,8 @@ enum class HATag(
     REQ_DATAPOINT_LIST(hex = "0x09000001", type = DataType.NONE),
 
     /**
+     * hex = "0x09000010", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -37,6 +41,8 @@ enum class HATag(
     REQ_ACTUATOR_STATES(hex = "0x09000010", type = DataType.NONE),
 
     /**
+     * hex = "0x09000020", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains DATAPOINT_INDEX, DATAPOINT_TYPE, DATAPOINT_NAME, DATAPOINT_NAME, DATAPOINT_DESCRIPTIONS, DATAPOINT_DESCRIPTION_VALUE, DATAPOINT_DESCRIPTION_VALUE
@@ -47,6 +53,8 @@ enum class HATag(
     REQ_ADD_ACTUATOR(hex = "0x09000020", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09000030", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -56,6 +64,8 @@ enum class HATag(
     REQ_REMOVE_ACTUATOR(hex = "0x09000030", type = DataType.UINT16),
 
     /**
+     * hex = "0x09000040", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains DATAPOINT_INDEX, DATAPOINT_DESCRIPTIONS
@@ -66,6 +76,8 @@ enum class HATag(
     REQ_COMMAND_ACTUATOR(hex = "0x09000040", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09000041", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -75,6 +87,8 @@ enum class HATag(
     REQ_COMMAND(hex = "0x09000041", type = DataType.STRING),
 
     /**
+     * hex = "0x09000050", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains DATAPOINT_INDEX, DATAPOINT_DESCRIPTIONS
@@ -85,6 +99,8 @@ enum class HATag(
     REQ_DESCRIPTIONS_CHANGE(hex = "0x09000050", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09000060", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -94,6 +110,8 @@ enum class HATag(
     REQ_CONFIGURATION_CHANGE_COUNTER(hex = "0x09000060", type = DataType.NONE),
 
     /**
+     * hex = "0x09800060", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -103,6 +121,8 @@ enum class HATag(
     CONFIGURATION_CHANGE_COUNTER(hex = "0x09800060", type = DataType.UINT32),
 
     /**
+     * hex = "0x09800001", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -112,6 +132,8 @@ enum class HATag(
     DATAPOINT_LIST(hex = "0x09800001", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09800002", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains DATAPOINT_INDEX, DATAPOINT_TYPE, DATAPOINT_NAME, DATAPOINT_DESCRIPTIONS
@@ -122,6 +144,8 @@ enum class HATag(
     DATAPOINT(hex = "0x09800002", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09800003", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -131,6 +155,8 @@ enum class HATag(
     DATAPOINT_INDEX(hex = "0x09800003", type = DataType.UINT16),
 
     /**
+     * hex = "0x09800004", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -140,6 +166,8 @@ enum class HATag(
     DATAPOINT_TYPE(hex = "0x09800004", type = DataType.UINT32),
 
     /**
+     * hex = "0x09800005", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -149,6 +177,8 @@ enum class HATag(
     DATAPOINT_NAME(hex = "0x09800005", type = DataType.STRING),
 
     /**
+     * hex = "0x09800011", type = DataType.CHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: '1' - ON / '2' - OFF / '?' - Unknown / 'G' - Group
@@ -159,6 +189,8 @@ enum class HATag(
     DATAPOINT_STATE(hex = "0x09800011", type = DataType.CHAR8),
 
     /**
+     * hex = "0x09800013", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en: Timestamp of the last state message
@@ -169,6 +201,8 @@ enum class HATag(
     DATAPOINT_STATE_TIMESTAMP(hex = "0x09800013", type = DataType.UINT64),
 
     /**
+     * hex = "0x09800014", type = DataType.CHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Different meanings depending on DATAPOINTTYPE (e.g.:dimmer percentages )
@@ -179,6 +213,8 @@ enum class HATag(
     DATAPOINT_STATE_VALUE(hex = "0x09800014", type = DataType.CHAR8),
 
     /**
+     * hex = "0x09800015", type = DataType.CHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -204,6 +240,8 @@ enum class HATag(
     DATAPOINT_SUPPLY_QUALITY(hex = "0x09800015", type = DataType.CHAR8),
 
     /**
+     * hex = "0x09800016", type = DataType.CHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -219,6 +257,8 @@ enum class HATag(
     DATAPOINT_SIGNAL_QUALITY(hex = "0x09800016", type = DataType.CHAR8),
 
     /**
+     * hex = "0x09800012", type = DataType.CHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: 'A' - Automatic / 'M' - Manual
@@ -229,6 +269,8 @@ enum class HATag(
     DATAPOINT_MODE(hex = "0x09800012", type = DataType.CHAR8),
 
     /**
+     * hex = "0x09800006", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains multiple TAG_HA_DATAPOINT_DESCRIPTION
@@ -239,6 +281,8 @@ enum class HATag(
     DATAPOINT_DESCRIPTIONS(hex = "0x09800006", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09800007", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -248,6 +292,8 @@ enum class HATag(
     DATAPOINT_DESCRIPTION(hex = "0x09800007", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09800008", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -257,6 +303,8 @@ enum class HATag(
     DATAPOINT_DESCRIPTION_NAME(hex = "0x09800008", type = DataType.STRING),
 
     /**
+     * hex = "0x09800009", type = DataType.INT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -266,6 +314,8 @@ enum class HATag(
     DATAPOINT_DESCRIPTION_VALUE(hex = "0x09800009", type = DataType.INT32),
 
     /**
+     * hex = "0x09800010", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains a list of DATAPOINT containers
@@ -276,6 +326,8 @@ enum class HATag(
     ACTUATOR_STATES(hex = "0x09800010", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09800020", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -285,6 +337,8 @@ enum class HATag(
     ADD_ACTUATOR(hex = "0x09800020", type = DataType.BOOL),
 
     /**
+     * hex = "0x09800030", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -294,6 +348,8 @@ enum class HATag(
     REMOVE_ACTUATOR(hex = "0x09800030", type = DataType.BOOL),
 
     /**
+     * hex = "0x09800040", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -303,6 +359,8 @@ enum class HATag(
     COMMAND_ACTUATOR(hex = "0x09800040", type = DataType.BOOL),
 
     /**
+     * hex = "0x09800050", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -312,6 +370,8 @@ enum class HATag(
     DESCRIPTIONS_CHANGE(hex = "0x09800050", type = DataType.BOOL),
 
     /**
+     * hex = "0x09060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -321,6 +381,8 @@ enum class HATag(
     REQ_DEVICE_STATE(hex = "0x09060000", type = DataType.NONE),
 
     /**
+     * hex = "0x09860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: DEVICE_CONNECTED & DEVICE_WORKING & DEVICE_IN_SERVICE
@@ -332,6 +394,8 @@ enum class HATag(
     DEVICE_STATE(hex = "0x09860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x09860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -341,6 +405,8 @@ enum class HATag(
     DEVICE_CONNECTED(hex = "0x09860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x09860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -350,6 +416,8 @@ enum class HATag(
     DEVICE_WORKING(hex = "0x09860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x09860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -359,6 +427,8 @@ enum class HATag(
     DEVICE_IN_SERVICE(hex = "0x09860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x09FFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

@@ -8,29 +8,91 @@ package de.jnkconsulting.e3dc.easyrscp.api.frame
  * @since 2.0
  */
 enum class DataType(val code: Byte) {
-    NONE(0x00.toByte()),
-    BOOL(0x01.toByte()),
-    CHAR8(0x02.toByte()),
-    UCHAR8(0x03.toByte()),
-    INT16(0x04.toByte()),
-    UINT16(0x05.toByte()),
-    INT32(0x06.toByte()),
-    UINT32(0x07.toByte()),
-    INT64(0x08.toByte()),
-    UINT64(0x09.toByte()),
-    FLOAT32(0x0A.toByte()),
-    DOUBLE64(0x0B.toByte()),
-    BITFIELD(0x0C.toByte()),
-    STRING(0x0D.toByte()),
-    CONTAINER(0x0E.toByte()),
-    TIMESTAMP(0x0F.toByte()),
-    BYTEARRAY(0x10.toByte()),
-    ERROR(0xFF.toByte()),
+    /**
+     * Empty data block. Usually used for request frames; code = 0x00
+     */
+    NONE(code = 0x00.toByte()),
+    /**
+     * Boolean typ. 1 for true, 0 for false; code = 0x01
+     */
+    BOOL(code = 0x01.toByte()),
 
     /**
-     * Not an official E3DC DataType. Used to represent Unknown types
+     * Contains a 1byte number; code = 0x02
      */
-    UNKNOWN(0xFE.toByte());
+    CHAR8(code = 0x02.toByte()),
+    /**
+     * Contains a 1byte number (unsigned); code = 0x03
+     */
+    UCHAR8(code = 0x03.toByte()),
+    /**
+     * Contains a 2byte number; code = 0x04
+     */
+    INT16(code = 0x04.toByte()),
+    /**
+     * Contains a 2byte number; code = 0x05
+     */
+    UINT16(code = 0x05.toByte()),
+    /**
+     * Contains a 4byte number; code = 0x06
+     */
+    INT32(code = 0x06.toByte()),
+    /**
+     * Contains a 4byte number (unsigned); code = 0x07
+     */
+    UINT32(code = 0x07.toByte()),
+    /**
+     * Contains a 8byte number; code = 0x08
+     */
+    INT64(code = 0x08.toByte()),
+    /**
+     * Contains a 8byte number (unsigned); code = 0x09
+     */
+    UINT64(code = 0x09.toByte()),
+    /**
+     * Contains a 4byte floating point number; code = 0x0A
+     */
+    FLOAT32(code = 0x0A.toByte()),
+
+    /**
+     * Contains a 8byte floating point number; code = 0x0B
+     */
+    DOUBLE64(code = 0x0B.toByte()),
+
+    /**
+     * Unknown, 1byte long. It seems never to be used. According to the name it gives a bit pattern; code = 0x0C
+     */
+    BITFIELD(code = 0x0C.toByte()),
+
+    /**
+     * UTF-8 (I think ...) encoded text; code = 0x0D
+     */
+    STRING(code = 0x0D.toByte()),
+
+    /**
+     * A block that contains other blocks; code = 0x0E
+     */
+    CONTAINER(code = 0x0E.toByte()),
+
+    /**
+     * A timestamp since 01.01.1970 00:00h UTC in seconds and nanoseconds; code = 0x0F
+     */
+    TIMESTAMP(code = 0x0F.toByte()),
+
+    /**
+     * Binary data; code = 0x10
+     */
+    BYTEARRAY(code = 0x10.toByte()),
+
+    /**
+     * Transmits error codes; code = 0xFF
+     */
+    ERROR(code = 0xFF.toByte()),
+
+    /**
+     * Not an official E3DC DataType. Used to represent Unknown types; code = 0xFE
+     */
+    UNKNOWN(code = 0xFE.toByte());
 
     /**
      * Checks if the type is a valid [Byte] type.

@@ -21,6 +21,8 @@ enum class RSCPTag(
 ) : Tag {
 
     /**
+     * hex = "0x00000001", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: This TAG encapsulates an authorization request to the S10. It therefore contains the data tags AUTHENTICATION_USER and AUTHENTICATION_PASSWORD
@@ -30,6 +32,8 @@ enum class RSCPTag(
     REQ_AUTHENTICATION(hex = "0x00000001", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x00000002", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -39,6 +43,8 @@ enum class RSCPTag(
     AUTHENTICATION_USER(hex = "0x00000002", type = DataType.STRING),
 
     /**
+     * hex = "0x00000003", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -48,6 +54,8 @@ enum class RSCPTag(
     AUTHENTICATION_PASSWORD(hex = "0x00000003", type = DataType.STRING),
 
     /**
+     * hex = "0x00800001", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: The response to a REQ_AUTHENTICATION containing the level obtained.
@@ -67,6 +75,8 @@ enum class RSCPTag(
     AUTHENTICATION(hex = "0x00800001", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x00000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -76,6 +86,8 @@ enum class RSCPTag(
     REQ_USER_LEVEL(hex = "0x00000004", type = DataType.NONE),
 
     /**
+     * hex = "0x00800004", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -85,6 +97,8 @@ enum class RSCPTag(
     USER_LEVEL(hex = "0x00800004", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x00000005", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en: Set a Network Encryption passphrase
@@ -94,6 +108,8 @@ enum class RSCPTag(
     REQ_SET_ENCRYPTION_PASSPHRASE(hex = "0x00000005", type = DataType.STRING),
 
     /**
+     * hex = "0x00800005", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -103,6 +119,8 @@ enum class RSCPTag(
     SET_ENCRYPTION_PASSPHRASE(hex = "0x00800005", type = DataType.BOOL),
 
     /**
+     * hex = "0x00FFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

@@ -4,10 +4,14 @@
                              http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+    <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
     <artifactId>jnk-easy-rscp</artifactId>
     <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
+
+    <description>
+        easy-rscp is an unofficial library to access home power plants from E3DC. This is the parent POM of each module
+    </description>
 
     <modules>
         <module>api</module>
@@ -27,6 +31,8 @@
         <resources-plugin.version>3.3.1</resources-plugin.version>
         <sources-plugin.version>3.3.0</sources-plugin.version>
         <surefire-plugin.version>3.1.2</surefire-plugin.version>
+        <dokka-plugin.version>1.9.0</dokka-plugin.version>
+        <license-plugin.version>2.2.0</license-plugin.version>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -35,17 +41,17 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+                <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
                 <artifactId>jnk-easy-rscp-api</artifactId>
-                <version>2.0.0-SNAPSHOT</version>
+                <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+                <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
                 <artifactId>jnk-easy-rscp-lowlevel</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+                <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
                 <artifactId>jnk-easy-rscp-samples</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -118,43 +124,67 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>${surefire-plugin.version}</version>
                 </plugin>
+                <plugin>
+                    <groupId>org.jetbrains.dokka</groupId>
+                    <artifactId>dokka-maven-plugin</artifactId>
+                    <version>${dokka-plugin.version}</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>license-maven-plugin</artifactId>
+                    <version>${license-plugin.version}</version>
+                </plugin>
             </plugins>
         </pluginManagement>
-    </build>
+        <plugins>
+            <plugin>
+                <groupId>org.jetbrains.dokka</groupId>
+                <artifactId>dokka-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>pre-site</phase>
+                        <goals>
+                            <goal>dokka</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sourceDirectories>
+                        <dir>${project.basedir}/api/src/main/kotlin</dir>
+                        <dir>${project.basedir}/lowlevel-rscp/src/main/kotlin</dir>
+                        <dir>${project.basedir}/service/src/main/kotlin</dir>
+                    </sourceDirectories>
+                    <includes>
+                        <include>${project.basedir}/docu/packages.md</include>
+                    </includes>
+                    <reportUndocumented>true</reportUndocumented>
+                    <documentedVisibilities>
+                        <visibility>PUBLIC</visibility>
+                        <visibility>PROTECTED</visibility>
+                    </documentedVisibilities>
+                    <samples>
+                        <dir>${project.basedir}/samples/src/main/kotlin</dir>
+                    </samples>
+                    <moduleName>easy-rscp</moduleName>
+                    <outputDir>${project.basedir}/docu/docs/kdoc</outputDir>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>license-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>aggregate-third-party-licenses</id>
+                        <goals>
+                            <goal>aggregate-add-third-party</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
 
-    <distributionManagement>
-        <snapshotRepository>
-            <id>jnk</id>
-            <url>http://192.168.178.227:8081/repository/maven-jnk-snapshots/</url>
-        </snapshotRepository>
-        <repository>
-            <id>jnk</id>
-            <url>http://192.168.178.227:8081/repository/maven-jnk-releases/</url>
-        </repository>
-    </distributionManagement>
-    <repositories>
-        <repository>
-            <id>jnk</id>
-            <url>http://192.168.178.227:8081/repository/maven-jnk/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
-    </repositories>
-    <pluginRepositories>
-        <pluginRepository>
-            <id>jnk</id>
-            <url>http://192.168.178.227:8081/repository/maven-jnk/</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

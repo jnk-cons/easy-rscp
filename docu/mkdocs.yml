@@ -1,0 +1,89 @@
+site_name: easy-rscp
+site_author: Jochen Zink
+site_url: http://127.0.0.1:8080
+copyright: Copyright &copy; 2023 by, Jochen Zink
+repo_url: https://github.com/jnk-cons/easy-rscp
+nav:
+  - Home: index.md
+  - Getting started:
+      - Setup: getting-started/setup.md
+      - Hello RSCP: getting-started/hello-world.md
+  - Service API:
+      - General concept: service/general-concepts.md
+      - Extension points: service/extension-points.md
+  - Low level API:
+      - General concept: lowlevel/general-concepts.md
+      - Connection setup: lowlevel/connection.md
+      - Encryption: lowlevel/crypt.md
+      - Frames and Data: lowlevel/frame.md
+  - RSCP:
+      - Basic stuff: rscp/basic-rscp.md
+      - Encryption: rscp/encryption.md
+      - Authentication: rscp/authentication.md
+      - Frames in Detail: rscp/frame-details.md
+  - API: kdoc/index.html
+  - About:
+    - License: about/license.md
+    - Release Notes: about/release-notes.md
+theme:
+  name: material
+  locale: en
+  features:
+    - search.suggest
+    - navigation.footer
+    - navigation.path
+    - content.code.copy
+    - content.code.select
+    - content.code.annotate
+plugins:
+  - search
+  - glightbox:
+      touchNavigation: true
+      loop: false
+      effect: zoom
+      slide_effect: slide
+      width: 100%
+      height: auto
+      zoomable: true
+      draggable: true
+      skip_classes:
+        - custom-skip-class-name
+      auto_caption: false
+      caption_position: bottom
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde

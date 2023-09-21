@@ -24,7 +24,7 @@ class ReadMonthlySummaryCreator: FrameCreator<YearMonth> {
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_INTERVAL).timestamp(Duration.ofDays(month.lengthOfMonth().toLong())).build(),
                     DataBuilder().tag(DBTag.REQ_HISTORY_TIME_SPAN).timestamp(Duration.ofDays(month.lengthOfMonth().toLong())).build()
                 )
-                    .build()
+                .build()
             )
             .build()
 }

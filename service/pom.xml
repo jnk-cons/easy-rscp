@@ -5,20 +5,22 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+        <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
         <artifactId>jnk-easy-rscp</artifactId>
         <version>2.0.0-SNAPSHOT</version>
     </parent>
 
     <artifactId>jnk-easy-rscp-service</artifactId>
 
+    <description>Service API to access E3DC home power plants with an API abstracted from RSCP.</description>
+
     <dependencies>
         <dependency>
-            <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+            <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
             <artifactId>jnk-easy-rscp-api</artifactId>
         </dependency>
         <dependency>
-            <groupId>de.jnkconsulting.e3dc.easyrscp</groupId>
+            <groupId>de.jnk-consulting.e3dc.easyrscp</groupId>
             <artifactId>jnk-easy-rscp-lowlevel</artifactId>
         </dependency>
 
@@ -59,6 +61,11 @@
     <build>
         <sourceDirectory>src/main/kotlin</sourceDirectory>
         <testSourceDirectory>src/test/kotlin</testSourceDirectory>
+        <resources>
+            <resource>
+                <directory>../target/generated-sources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

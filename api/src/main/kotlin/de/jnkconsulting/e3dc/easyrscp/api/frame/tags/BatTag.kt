@@ -20,6 +20,8 @@ enum class BatTag(
 ) : Tag {
 
     /**
+     * hex = "0x03040000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Contains all request TAGs, the container MUST contain an index
@@ -30,6 +32,8 @@ enum class BatTag(
     REQ_DATA(hex = "0x03040000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x03040001", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en: Index of the requested device (at the moment always 0 for the battery), can occur in the request and in the response.
@@ -40,6 +44,8 @@ enum class BatTag(
     INDEX(hex = "0x03040001", type = DataType.UINT16),
 
     /**
+     * hex = "0x03840000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: Response with all data of the REQ_DATA request
@@ -50,6 +56,8 @@ enum class BatTag(
     DATA(hex = "0x03840000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x03800001", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for calculated SOC value
@@ -60,6 +68,8 @@ enum class BatTag(
     RSOC(hex = "0x03800001", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800002", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for total battery voltage
@@ -70,6 +80,8 @@ enum class BatTag(
     MODULE_VOLTAGE(hex = "0x03800002", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800003", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for total battery current
@@ -80,6 +92,8 @@ enum class BatTag(
     CURRENT(hex = "0x03800003", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800004", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for maximum battery voltage
@@ -90,6 +104,8 @@ enum class BatTag(
     MAX_BAT_VOLTAGE(hex = "0x03800004", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800005", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for maximum battery charging current
@@ -100,6 +116,8 @@ enum class BatTag(
     MAX_CHARGE_CURRENT(hex = "0x03800005", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800006", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for end-of-discharge voltage
@@ -110,6 +128,8 @@ enum class BatTag(
     EOD_VOLTAGE(hex = "0x03800006", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800007", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for maximum battery discharge current
@@ -120,6 +140,8 @@ enum class BatTag(
     MAX_DISCHARGE_CURRENT(hex = "0x03800007", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800008", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for battery charge cycles
@@ -130,6 +152,8 @@ enum class BatTag(
     CHARGE_CYCLES(hex = "0x03800008", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800009", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for the terminal voltage
@@ -140,6 +164,8 @@ enum class BatTag(
     TERMINAL_VOLTAGE(hex = "0x03800009", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x0380000A", type = DataType.BITFIELD
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for battery status
@@ -150,6 +176,8 @@ enum class BatTag(
     STATUS_CODE(hex = "0x0380000A", type = DataType.BITFIELD),
 
     /**
+     * hex = "0x0380000B", type = DataType.BITFIELD
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for battery error
@@ -160,6 +188,8 @@ enum class BatTag(
     ERROR_CODE(hex = "0x0380000B", type = DataType.BITFIELD),
 
     /**
+     * hex = "0x0380000C", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for battery designation
@@ -170,6 +200,8 @@ enum class BatTag(
     DEVICE_NAME(hex = "0x0380000C", type = DataType.STRING),
 
     /**
+     * hex = "0x0380000D", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Return value for number of DCBs found
@@ -180,6 +212,8 @@ enum class BatTag(
     DCB_COUNT(hex = "0x0380000D", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x03800016", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -189,6 +223,8 @@ enum class BatTag(
     MAX_DCB_CELL_TEMPERATURE(hex = "0x03800016", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800017", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -199,6 +235,8 @@ enum class BatTag(
     MIN_DCB_CELL_TEMPERATURE(hex = "0x03800017", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800019", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: A container with all temperatures for the requested DCB.
@@ -208,6 +246,8 @@ enum class BatTag(
     DCB_CELL_TEMPERATURE(hex = "0x03800019", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x0380001B", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en: A container with all voltages for the requested DCB.
@@ -218,6 +258,8 @@ enum class BatTag(
     DCB_CELL_VOLTAGE(hex = "0x0380001B", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x0380001E", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -227,6 +269,8 @@ enum class BatTag(
     READY_FOR_SHUTDOWN(hex = "0x0380001E", type = DataType.BOOL),
 
     /**
+     * hex = "0x03800020", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: This container contains the response to a REQ_INFO. It always contains the following TAGs:
@@ -240,6 +284,8 @@ enum class BatTag(
     INFO(hex = "0x03800020", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x03800021", type = DataType.UCHAR8
+     *
      * Original E3DC Documentation:
      *
      * en: Battery training mode
@@ -257,6 +303,8 @@ enum class BatTag(
     TRAINING_MODE(hex = "0x03800021", type = DataType.UCHAR8),
 
     /**
+     * hex = "0x03000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -267,6 +315,8 @@ enum class BatTag(
     REQ_RSOC(hex = "0x03000001", type = DataType.NONE),
 
     /**
+     * hex = "0x03000002", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -277,6 +327,8 @@ enum class BatTag(
     REQ_MODULE_VOLTAGE(hex = "0x03000002", type = DataType.NONE),
 
     /**
+     * hex = "0x03000003", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -287,6 +339,8 @@ enum class BatTag(
     REQ_CURRENT(hex = "0x03000003", type = DataType.NONE),
 
     /**
+     * hex = "0x03000004", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -297,6 +351,8 @@ enum class BatTag(
     REQ_MAX_BAT_VOLTAGE(hex = "0x03000004", type = DataType.NONE),
 
     /**
+     * hex = "0x03000005", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -307,6 +363,8 @@ enum class BatTag(
     REQ_MAX_CHARGE_CURRENT(hex = "0x03000005", type = DataType.NONE),
 
     /**
+     * hex = "0x03000006", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -317,6 +375,8 @@ enum class BatTag(
     REQ_EOD_VOLTAGE(hex = "0x03000006", type = DataType.NONE),
 
     /**
+     * hex = "0x03000007", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -327,6 +387,8 @@ enum class BatTag(
     REQ_MAX_DISCHARGE_CURRENT(hex = "0x03000007", type = DataType.NONE),
 
     /**
+     * hex = "0x03000008", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -337,6 +399,8 @@ enum class BatTag(
     REQ_CHARGE_CYCLES(hex = "0x03000008", type = DataType.NONE),
 
     /**
+     * hex = "0x03000009", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -347,6 +411,8 @@ enum class BatTag(
     REQ_TERMINAL_VOLTAGE(hex = "0x03000009", type = DataType.NONE),
 
     /**
+     * hex = "0x0300000A", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -357,6 +423,8 @@ enum class BatTag(
     REQ_STATUS_CODE(hex = "0x0300000A", type = DataType.NONE),
 
     /**
+     * hex = "0x0300000B", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -367,6 +435,8 @@ enum class BatTag(
     REQ_ERROR_CODE(hex = "0x0300000B", type = DataType.NONE),
 
     /**
+     * hex = "0x0300000C", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -377,6 +447,8 @@ enum class BatTag(
     REQ_DEVICE_NAME(hex = "0x0300000C", type = DataType.NONE),
 
     /**
+     * hex = "0x0300000D", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -387,6 +459,8 @@ enum class BatTag(
     REQ_DCB_COUNT(hex = "0x0300000D", type = DataType.NONE),
 
     /**
+     * hex = "0x03000016", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -397,6 +471,8 @@ enum class BatTag(
     REQ_MAX_DCB_CELL_TEMPERATURE(hex = "0x03000016", type = DataType.NONE),
 
     /**
+     * hex = "0x03000017", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -407,6 +483,8 @@ enum class BatTag(
     REQ_MIN_DCB_CELL_TEMPERATURE(hex = "0x03000017", type = DataType.NONE),
 
     /**
+     * hex = "0x0300001E", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -417,6 +495,8 @@ enum class BatTag(
     REQ_READY_FOR_SHUTDOWN(hex = "0x0300001E", type = DataType.NONE),
 
     /**
+     * hex = "0x03000020", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -427,6 +507,8 @@ enum class BatTag(
     REQ_INFO(hex = "0x03000020", type = DataType.NONE),
 
     /**
+     * hex = "0x03000021", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en: Can only be used within a REQ_BAT_DATA container!
@@ -437,6 +519,8 @@ enum class BatTag(
     REQ_TRAINING_MODE(hex = "0x03000021", type = DataType.NONE),
 
     /**
+     * hex = "0x03800100", type = DataType.UINT16
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -446,6 +530,8 @@ enum class BatTag(
     DCB_INDEX(hex = "0x03800100", type = DataType.UINT16),
 
     /**
+     * hex = "0x03800101", type = DataType.UINT64
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -455,6 +541,8 @@ enum class BatTag(
     DCB_LAST_MESSAGE_TIMESTAMP(hex = "0x03800101", type = DataType.UINT64),
 
     /**
+     * hex = "0x03800102", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -464,6 +552,8 @@ enum class BatTag(
     DCB_MAX_CHARGE_VOLTAGE(hex = "0x03800102", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800103", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -473,6 +563,8 @@ enum class BatTag(
     DCB_MAX_CHARGE_CURRENT(hex = "0x03800103", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800104", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -482,6 +574,8 @@ enum class BatTag(
     DCB_END_OF_DISCHARGE(hex = "0x03800104", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800105", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -491,6 +585,8 @@ enum class BatTag(
     DCB_MAX_DISCHARGE_CURRENT(hex = "0x03800105", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800106", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -500,6 +596,8 @@ enum class BatTag(
     DCB_FULL_CHARGE_CAPACITY(hex = "0x03800106", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800107", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -509,6 +607,8 @@ enum class BatTag(
     DCB_REMAINING_CAPACITY(hex = "0x03800107", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800108", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -518,6 +618,8 @@ enum class BatTag(
     DCB_SOC(hex = "0x03800108", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800109", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -527,6 +629,8 @@ enum class BatTag(
     DCB_SOH(hex = "0x03800109", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800110", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -536,6 +640,8 @@ enum class BatTag(
     DCB_CYCLE_COUNT(hex = "0x03800110", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800111", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -545,6 +651,8 @@ enum class BatTag(
     DCB_CURRENT(hex = "0x03800111", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800112", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -554,6 +662,8 @@ enum class BatTag(
     DCB_VOLTAGE(hex = "0x03800112", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800113", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -563,6 +673,8 @@ enum class BatTag(
     DCB_CURRENT_AVG_30S(hex = "0x03800113", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800114", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -572,6 +684,8 @@ enum class BatTag(
     DCB_VOLTAGE_AVG_30S(hex = "0x03800114", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800115", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -581,6 +695,8 @@ enum class BatTag(
     DCB_DESIGN_CAPACITY(hex = "0x03800115", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800116", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -590,6 +706,8 @@ enum class BatTag(
     DCB_DESIGN_VOLTAGE(hex = "0x03800116", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800117", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -599,6 +717,8 @@ enum class BatTag(
     DCB_CHARGE_LOW_TEMPERATURE(hex = "0x03800117", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800118", type = DataType.FLOAT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -608,6 +728,8 @@ enum class BatTag(
     DCB_CHARGE_HIGH_TEMPERATURE(hex = "0x03800118", type = DataType.FLOAT32),
 
     /**
+     * hex = "0x03800119", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -617,6 +739,8 @@ enum class BatTag(
     DCB_MANUFACTURE_DATE(hex = "0x03800119", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800120", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -626,6 +750,8 @@ enum class BatTag(
     DCB_SERIALNO(hex = "0x03800120", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800121", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -635,6 +761,8 @@ enum class BatTag(
     DCB_PROTOCOL_VERSION(hex = "0x03800121", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800122", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -644,6 +772,8 @@ enum class BatTag(
     DCB_FW_VERSION(hex = "0x03800122", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800123", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -653,6 +783,8 @@ enum class BatTag(
     DCB_DATA_TABLE_VERSION(hex = "0x03800123", type = DataType.UINT32),
 
     /**
+     * hex = "0x03800124", type = DataType.UINT32
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -662,6 +794,8 @@ enum class BatTag(
     DCB_PCB_VERSION(hex = "0x03800124", type = DataType.UINT32),
 
     /**
+     * hex = "0x03060000", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -671,6 +805,8 @@ enum class BatTag(
     REQ_DEVICE_STATE(hex = "0x03060000", type = DataType.NONE),
 
     /**
+     * hex = "0x03860000", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en: DEVICE_CONNECTED & DEVICE_WORKING & DEVICE_IN_SERVICE
@@ -681,6 +817,8 @@ enum class BatTag(
     DEVICE_STATE(hex = "0x03860000", type = DataType.CONTAINER),
 
     /**
+     * hex = "0x03860001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en: Occurs only in the BAT_DEVICE_STATE response
@@ -691,6 +829,8 @@ enum class BatTag(
     DEVICE_CONNECTED(hex = "0x03860001", type = DataType.BOOL),
 
     /**
+     * hex = "0x03860002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en: Occurs only in the BAT_DEVICE_STATE response
@@ -701,6 +841,8 @@ enum class BatTag(
     DEVICE_WORKING(hex = "0x03860002", type = DataType.BOOL),
 
     /**
+     * hex = "0x03860003", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en: Occurs only in the BAT_DEVICE_STATE response
@@ -711,6 +853,8 @@ enum class BatTag(
     DEVICE_IN_SERVICE(hex = "0x03860003", type = DataType.BOOL),
 
     /**
+     * hex = "0x03FFFFFF", type = DataType.ERROR
+     *
      * Original E3DC Documentation:
      *
      * en:

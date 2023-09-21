@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.connection
 
 import de.jnkconsulting.e3dc.easyrscp.api.connection.E3DCConnectionData
+import de.jnkconsulting.e3dc.easyrscp.api.connection.RSCPAuthenticationException
 import de.jnkconsulting.e3dc.easyrscp.api.connection.SocketFactory
 import de.jnkconsulting.e3dc.easyrscp.api.crypt.AESCipher
 import de.jnkconsulting.e3dc.easyrscp.api.crypt.AESCipherFactory
@@ -13,6 +14,7 @@ import io.mockk.every
 import io.mockk.mockk
 import io.mockk.slot
 import io.mockk.verify
+import org.junit.jupiter.api.Assertions
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
@@ -22,7 +24,7 @@ import java.net.Socket
 
 class DefaultHomePowerPlantConnectionFactoryTest {
     private val connectionData: E3DCConnectionData = mockk {
-        every { user } returns "portal-user"
+        every { portalUser } returns "portal-user"
         every { portalPassword } returns "portal-password"
     }
     private val aesCipherFactory = mockk<AESCipherFactory>()
@@ -51,10 +53,48 @@ class DefaultHomePowerPlantConnectionFactoryTest {
         every { socket.getInputStream() } returns ByteArrayInputStream(encryptedAuthenticationAnswer)
         every { aes.decrypt(encryptedAuthenticationAnswer) } returns decryptedAuthenticationAnswer
         every { frameParser.parseRSCPFrame(decryptedAuthenticationAnswer) } returns answerFrame
+        every { answerFrame.intByTag(RSCPTag.AUTHENTICATION) } returns 10
 
         val result = toTest.openConnection()
 
         assertNotNull(result)
+
+        val sendFrame = DefaultFrameParser(DefaultDataParser()).parseRSCPFrame(aesCryptSlot.captured)
+        val frameData = sendFrame.data
+        assertEquals(1, frameData.size)
+        val frameContainer = sendFrame.data[0]
+        assertEquals(RSCPTag.REQ_AUTHENTICATION, frameContainer.tagObject())
+        val containerData = frameContainer.valueAsContainer(DefaultDataParser())
+        assertEquals(2, containerData.size)
+        assertEquals(RSCPTag.AUTHENTICATION_USER, containerData[0].tagObject())
+        assertEquals("portal-user", containerData[0].valueAsString())
+        assertEquals(RSCPTag.AUTHENTICATION_PASSWORD, containerData[1].tagObject())
+        assertEquals("portal-password", containerData[1].valueAsString())
+
+        verify { aes.encrypt(any()) }
+        verify { aes.decrypt(encryptedAuthenticationAnswer) }
+        verify { frameParser.parseRSCPFrame(decryptedAuthenticationAnswer) }
+    }
+
+    @Test
+    fun `test open connection thros RSCPAuthentication exception if the authentication fails`() {
+        every { aesCipherFactory.buildCipher() } returns aes
+        every { socketFactory.createSocket(connectionData) } returns socket
+        every { socket.isConnected } returns true
+
+        val aesCryptSlot = slot<ByteArray>()
+        every { aes.encrypt(capture(aesCryptSlot)) } returns encryptedAuthenticationFrame
+        val socketOutput = ByteArrayOutputStream()
+        every { socket.getOutputStream() } returns socketOutput
+        every { socket.getInputStream() } returns ByteArrayInputStream(encryptedAuthenticationAnswer)
+        every { aes.decrypt(encryptedAuthenticationAnswer) } returns decryptedAuthenticationAnswer
+        every { frameParser.parseRSCPFrame(decryptedAuthenticationAnswer) } returns answerFrame
+        every { answerFrame.intByTag(RSCPTag.AUTHENTICATION) } returns 0
+        every { socket.close() } returns Unit
+
+        assertThrows(RSCPAuthenticationException::class.java) {
+            toTest.openConnection()
+        }
 
         val sendFrame = DefaultFrameParser(DefaultDataParser()).parseRSCPFrame(aesCryptSlot.captured)
         val frameData = sendFrame.data

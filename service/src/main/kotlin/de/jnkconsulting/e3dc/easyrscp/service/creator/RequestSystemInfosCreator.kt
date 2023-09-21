@@ -12,7 +12,7 @@ import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
  */
 class RequestSystemInfosCreator: FrameCreator<Nothing?> {
 
-    override fun invoke(limits: Nothing?) =
+    override fun invoke(param: Nothing?) =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).none().build(),

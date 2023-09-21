@@ -18,13 +18,13 @@ class MonthlySummaryConverter: RequestResponseFrameConvert<HistoryData> {
         HistoryData(
             start = request.instantByTag(DBTag.REQ_HISTORY_TIME_START, DBTag.REQ_HISTORY_DATA_MONTH),
             duration = request.durationByTag(DBTag.REQ_HISTORY_TIME_SPAN, DBTag.HISTORY_DATA_MONTH),
-            batteryIn = response.floatByTag(DBTag.BAT_POWER_IN, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            batteryOut = response.floatByTag(DBTag.BAT_POWER_OUT, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            gridIn = response.floatByTag(DBTag.GRID_POWER_IN, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            gridOut = response.floatByTag(DBTag.GRID_POWER_OUT, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            pvDelivery = response.floatByTag(DBTag.DC_POWER, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            houseConsumption = response.floatByTag(DBTag.CONSUMPTION, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER),
-            selfSufficiency = response.floatByTag(DBTag.AUTARKY, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER) / 100.0f,
-            selfConsumption = response.floatByTag(DBTag.CONSUMED_PRODUCTION, DBTag.HISTORY_DATA_YEAR, DBTag.SUM_CONTAINER) / 100.0f
+            batteryIn = response.floatByTag(DBTag.BAT_POWER_IN, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            batteryOut = response.floatByTag(DBTag.BAT_POWER_OUT, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            gridIn = response.floatByTag(DBTag.GRID_POWER_IN, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            gridOut = response.floatByTag(DBTag.GRID_POWER_OUT, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            pvDelivery = response.floatByTag(DBTag.DC_POWER, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            houseConsumption = response.floatByTag(DBTag.CONSUMPTION, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER),
+            selfSufficiency = response.floatByTag(DBTag.AUTARKY, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER) / 100.0f,
+            selfConsumption = response.floatByTag(DBTag.CONSUMED_PRODUCTION, DBTag.HISTORY_DATA_MONTH, DBTag.SUM_CONTAINER) / 100.0f
         )
 }

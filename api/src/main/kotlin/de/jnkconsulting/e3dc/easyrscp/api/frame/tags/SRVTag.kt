@@ -20,6 +20,8 @@ enum class SRVTag(
 ) : Tag {
 
     /**
+     * hex = "0x08000001", type = DataType.NONE
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -29,6 +31,8 @@ enum class SRVTag(
     REQ_IS_ONLINE(hex = "0x08000001", type = DataType.NONE),
 
     /**
+     * hex = "0x08800001", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -38,6 +42,8 @@ enum class SRVTag(
     IS_ONLINE(hex = "0x08800001", type = DataType.BOOL),
 
     /**
+     * hex = "0x08000002", type = DataType.STRING
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -47,6 +53,8 @@ enum class SRVTag(
     REQ_ADD_USER(hex = "0x08000002", type = DataType.STRING),
 
     /**
+     * hex = "0x08800002", type = DataType.BOOL
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -56,6 +64,8 @@ enum class SRVTag(
     ADD_USER(hex = "0x08800002", type = DataType.BOOL),
 
     /**
+     * hex = "0x08FFFFFF", type = DataType.CONTAINER
+     *
      * Original E3DC Documentation:
      *
      * en:

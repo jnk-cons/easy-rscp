@@ -19,7 +19,7 @@ class DefaultDBServiceTest: IntegrationTestBase() {
         println(result)
     }
 
-//    @Test
+    @Test
     @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
@@ -30,7 +30,7 @@ class DefaultDBServiceTest: IntegrationTestBase() {
         println(result)
     }
 
-//    @Test
+    @Test
     @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
