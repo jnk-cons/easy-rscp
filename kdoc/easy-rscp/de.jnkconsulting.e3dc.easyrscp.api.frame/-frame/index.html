@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Frame</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.api.frame/Frame///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.api.frame</a><span class="delimiter">/</span><span class="current">Frame</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Frame</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">Frame</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>timestamp<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>controlBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-data/index.html">Data</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>parser<span class="token operator">: </span><a href="../-data-parser/index.html">DataParser</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">RSCP data frame that can be sent to or received from an E3DC home power plant.</p><p class="paragraph">A frame always consists of 3 logical parts: Timestamp reflecting the creation time of the frame Control area, contains the protocol version and a control information whether the checksum feature is used or not. Data, the RSCP data itself.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>timestamp</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Creation time of the frame</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>control</span><wbr></wbr><span><span>Bytes</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Control functions. Currently the protocol version as well as a control bit whether checksum are used or not. See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.bytes/-f-i-x-e-d_-v-a-l-u-e-s.html">FIXED_VALUES</a>.</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>data</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The data itself. See <a href="../-data/index.html">Data</a></p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>parser</span></span></u></div></span></div><div><div class="title"><p class="paragraph">The parser to use for parsing container data</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="1654304455%2FConstructors%2F94225285" anchor-label="Frame" id="1654304455%2FConstructors%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-frame.html"><span><span>Frame</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1654304455%2FConstructors%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">timestamp<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a><span class="token punctuation">, </span></span><span class="parameter ">controlBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a><span class="token punctuation">, </span></span><span class="parameter ">data<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-data/index.html">Data</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter ">parser<span class="token operator">: </span><a href="../-data-parser/index.html">DataParser</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="1825089308%2FProperties%2F94225285" anchor-label="controlBytes" id="1825089308%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="control-bytes.html"><span>control</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1825089308%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="control-bytes.html">controlBytes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-888940288%2FProperties%2F94225285" anchor-label="data" id="-888940288%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data.html"><span><span>data</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-888940288%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="data.html">data</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../-data/index.html">Data</a><span class="token operator">&gt;</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="931812075%2FProperties%2F94225285" anchor-label="parser" id="931812075%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="parser.html"><span><span>parser</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="931812075%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="parser.html">parser</a><span class="token operator">: </span><a href="../-data-parser/index.html">DataParser</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1913277990%2FProperties%2F94225285" anchor-label="timestamp" id="-1913277990%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="timestamp.html"><span><span>timestamp</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1913277990%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="timestamp.html">timestamp</a><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1938678833%2FFunctions%2F94225285" anchor-label="asByteArray" id="1938678833%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="as-byte-array.html"><span>as</span><wbr></wbr><span>Byte</span><wbr></wbr><span><span>Array</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1938678833%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="as-byte-array.html"><span class="token function">asByteArray</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte-array/index.html">ByteArray</a></div><div class="brief "><p class="paragraph">Provides the byte representation of the frame as it may be sent to or received from the home power plant.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1892809270%2FFunctions%2F94225285" anchor-label="booleanByTag" id="1892809270%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="boolean-by-tag.html"><span>boolean</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1892809270%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="boolean-by-tag.html"><span class="token function">booleanByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="boolean-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1899556656%2FFunctions%2F94225285" anchor-label="byteByTag" id="-1899556656%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="byte-by-tag.html"><span>byte</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1899556656%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="byte-by-tag.html"><span class="token function">byteByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="byte-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-byte/index.html">Byte</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1377822531%2FFunctions%2F94225285" anchor-label="containerByTag" id="-1377822531%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="container-by-tag.html"><span>container</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1377822531%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="container-by-tag.html"><span class="token function">containerByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="container-by-tag.html">tag</a> and returns the value as <a href="../-data-type/-c-o-n-t-a-i-n-e-r/index.html">DataType.CONTAINER</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="685274990%2FFunctions%2F94225285" anchor-label="dataByTag" id="685274990%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-by-tag.html"><span>data</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="685274990%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="data-by-tag.html"><span class="token function">dataByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../-data/index.html">Data</a><span class="token operator">?</span></div><div class="brief "><p class="paragraph">Searches for a data block with the specified tag</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-545651609%2FFunctions%2F94225285" anchor-label="doubleByTag" id="-545651609%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="double-by-tag.html"><span>double</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-545651609%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="double-by-tag.html"><span class="token function">doubleByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="double-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-double/index.html">Double</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="388300100%2FFunctions%2F94225285" anchor-label="durationByTag" id="388300100%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="duration-by-tag.html"><span>duration</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="388300100%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="duration-by-tag.html"><span class="token function">durationByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="/&amp;lt;Error class: unknown class&amp;gt;///PointingToDeclaration/">&lt;Error class: unknown class&gt;</span></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="duration-by-tag.html">tag</a> and returns the value as <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Duration.html">Duration</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-878150697%2FFunctions%2F94225285" anchor-label="equals" id="-878150697%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="equals.html"><span><span>equals</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-878150697%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">operator override </span><span class="token keyword">fun </span><a href="equals.html"><span class="token function">equals</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">other<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-any/index.html">Any</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="252138818%2FFunctions%2F94225285" anchor-label="floatByTag" id="252138818%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="float-by-tag.html"><span>float</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="252138818%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="float-by-tag.html"><span class="token function">floatByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="float-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-float/index.html">Float</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2085376209%2FFunctions%2F94225285" anchor-label="hashCode" id="-2085376209%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hash-code.html"><span>hash</span><wbr></wbr><span><span>Code</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2085376209%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="hash-code.html"><span class="token function">hashCode</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-659162083%2FFunctions%2F94225285" anchor-label="instantByTag" id="-659162083%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="instant-by-tag.html"><span>instant</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-659162083%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="instant-by-tag.html"><span class="token function">instantByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="instant-by-tag.html">tag</a> and returns the value as <a href="https://docs.oracle.com/javase/8/docs/api/java/time/Instant.html">Instant</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1799869519%2FFunctions%2F94225285" anchor-label="intByTag" id="1799869519%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="int-by-tag.html"><span>int</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1799869519%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="int-by-tag.html"><span class="token function">intByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="int-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="557840060%2FFunctions%2F94225285" anchor-label="isChecksumEnabled" id="557840060%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="is-checksum-enabled.html"><span>is</span><wbr></wbr><span>Checksum</span><wbr></wbr><span><span>Enabled</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="557840060%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="is-checksum-enabled.html"><span class="token function">isChecksumEnabled</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-boolean/index.html">Boolean</a></div><div class="brief "><p class="paragraph">Query whether the frame calculates the checksum or not.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-865127460%2FFunctions%2F94225285" anchor-label="longByTag" id="-865127460%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="long-by-tag.html"><span>long</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-865127460%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="long-by-tag.html"><span class="token function">longByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="long-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-long/index.html">Long</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1321745838%2FFunctions%2F94225285" anchor-label="resultCodeByTag" id="1321745838%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="result-code-by-tag.html"><span>result</span><wbr></wbr><span>Code</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1321745838%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="result-code-by-tag.html"><span class="token function">resultCodeByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/index.html">ResultCode</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="result-code-by-tag.html">tag</a> and returns the value as <a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/index.html">ResultCode</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1879292126%2FFunctions%2F94225285" anchor-label="shortByTag" id="-1879292126%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="short-by-tag.html"><span>short</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1879292126%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="short-by-tag.html"><span class="token function">shortByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="short-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-short/index.html">Short</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-974862297%2FFunctions%2F94225285" anchor-label="stringByTag" id="-974862297%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="string-by-tag.html"><span>string</span><wbr></wbr><span>By</span><wbr></wbr><span><span>Tag</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-974862297%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="string-by-tag.html"><span class="token function">stringByTag</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">tag<span class="token operator">: </span><a href="../-tag/index.html">Tag</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">vararg </span>containerPath<span class="token operator">: </span><a href="../-tag/index.html">Tag</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div><div class="brief "><p class="paragraph">Searches for a data block of type <a href="string-by-tag.html">tag</a> and returns the value as <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2031425022%2FFunctions%2F94225285" anchor-label="toString" id="2031425022%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="to-string.html"><span>to</span><wbr></wbr><span><span>String</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2031425022%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="to-string.html"><span class="token function">toString</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

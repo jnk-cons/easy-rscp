@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>FieldSizes</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.api.bytes/FieldSizes///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.api.bytes</a><span class="delimiter">/</span><span class="current">FieldSizes</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Field</span><wbr></wbr><span><span>Sizes</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="index.html">FieldSizes</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>frameHeaderMagicBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>frameHeaderControlBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>frameHeaderDataLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timestampEpochSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>timestampEpochNanos<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>checksum<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dataTagSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dataTypeSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dataValueLengthSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Helper class to define different field sizes in the RSCP protocol. All sizes are specified in byte</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Control</span><wbr></wbr><span><span>Bytes</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the control area in a FrameHeader in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Magic</span><wbr></wbr><span><span>Bytes</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the MagicBytes area in a FrameHeader in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Length</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the length specification field in a frame header in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>timestamp</span><wbr></wbr><span>Epoch</span><wbr></wbr><span><span>Seconds</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size in bytes, of the seconds part in a value field of type <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-data-type/-t-i-m-e-s-t-a-m-p/index.html">DataType.TIMESTAMP</a>.</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>timestamp</span><wbr></wbr><span>Epoch</span><wbr></wbr><span><span>Nanos</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size in bytes, of the nanosecond portion in a value field of type <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-data-type/-t-i-m-e-s-t-a-m-p/index.html">DataType.TIMESTAMP</a>.</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>checksum</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the CRC checksum section in a frame in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>data</span><wbr></wbr><span>Tag</span><wbr></wbr><span><span>Size</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the tag section in a data area of a frame in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>data</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Size</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the type section in a data area of a frame in bytes</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>data</span><wbr></wbr><span>Value</span><wbr></wbr><span>Length</span><wbr></wbr><span><span>Size</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Size of the length section in a data area of a frame in bytes</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1965268481%2FConstructors%2F94225285" anchor-label="FieldSizes" id="-1965268481%2FConstructors%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-field-sizes.html"><span>Field</span><wbr></wbr><span><span>Sizes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1965268481%2FConstructors%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">frameHeaderMagicBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">frameHeaderControlBytes<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">frameHeaderDataLength<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">timestampEpochSeconds<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">timestampEpochNanos<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">checksum<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dataTagSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dataTypeSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a><span class="token punctuation">, </span></span><span class="parameter ">dataValueLengthSize<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="2050964502%2FProperties%2F94225285" anchor-label="checksum" id="2050964502%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="checksum.html"><span><span>checksum</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2050964502%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="checksum.html">checksum</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1746732946%2FProperties%2F94225285" anchor-label="completeHeaderSize" id="1746732946%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="complete-header-size.html"><span>complete</span><wbr></wbr><span>Header</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1746732946%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="complete-header-size.html">completeHeaderSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div><div class="brief "><p class="paragraph">Size of a whole frame header in bytes</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2141840496%2FProperties%2F94225285" anchor-label="dataTagSize" id="2141840496%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-tag-size.html"><span>data</span><wbr></wbr><span>Tag</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2141840496%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="data-tag-size.html">dataTagSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1858837620%2FProperties%2F94225285" anchor-label="dataTypeSize" id="1858837620%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-type-size.html"><span>data</span><wbr></wbr><span>Type</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1858837620%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="data-type-size.html">dataTypeSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="238487411%2FProperties%2F94225285" anchor-label="dataValueLengthSize" id="238487411%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="data-value-length-size.html"><span>data</span><wbr></wbr><span>Value</span><wbr></wbr><span>Length</span><wbr></wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="238487411%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="data-value-length-size.html">dataValueLengthSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="633040249%2FProperties%2F94225285" anchor-label="frameHeaderControlBytes" id="633040249%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frame-header-control-bytes.html"><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Control</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="633040249%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="frame-header-control-bytes.html">frameHeaderControlBytes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1879900137%2FProperties%2F94225285" anchor-label="frameHeaderDataLength" id="-1879900137%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frame-header-data-length.html"><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Data</span><wbr></wbr><span><span>Length</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1879900137%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="frame-header-data-length.html">frameHeaderDataLength</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1911521207%2FProperties%2F94225285" anchor-label="frameHeaderMagicBytes" id="-1911521207%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="frame-header-magic-bytes.html"><span>frame</span><wbr></wbr><span>Header</span><wbr></wbr><span>Magic</span><wbr></wbr><span><span>Bytes</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1911521207%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="frame-header-magic-bytes.html">frameHeaderMagicBytes</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="488019349%2FProperties%2F94225285" anchor-label="timestampEpochNanos" id="488019349%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="timestamp-epoch-nanos.html"><span>timestamp</span><wbr></wbr><span>Epoch</span><wbr></wbr><span><span>Nanos</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="488019349%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="timestamp-epoch-nanos.html">timestampEpochNanos</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1031783019%2FProperties%2F94225285" anchor-label="timestampEpochSeconds" id="-1031783019%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="timestamp-epoch-seconds.html"><span>timestamp</span><wbr></wbr><span>Epoch</span><wbr></wbr><span><span>Seconds</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1031783019%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="timestamp-epoch-seconds.html">timestampEpochSeconds</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

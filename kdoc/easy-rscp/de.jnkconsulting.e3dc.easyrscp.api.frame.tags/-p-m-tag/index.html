@@ -1,0 +1,997 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>PMTag</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.api.frame.tags/PMTag///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags</a><span class="delimiter">/</span><span class="current">PMTag</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>PMTag</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">PMTag</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">PMTag</a><span class="token operator">&gt; </span>, <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-tag/index.html">Tag</a></div><p class="paragraph">Contains tags for reading and controlling the PowerManagement System</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>namespace</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Der Namespace des Tags für die Abbildung des jeweiligen Bereichs</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>hex</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Code of the tag in HexString format (0x0304001)</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span><span>type</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Tag data type <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-data-type/index.html">DataType</a></p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="-1661075306%2FClasslikes%2F94225285" anchor-label="REQ_DATA" id="-1661075306%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-d-a-t-a/index.html">REQ_DATA</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1661075306%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-d-a-t-a/index.html">REQ_DATA</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05040000&quot;, type = DataType.CONTAINER</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2042484561%2FClasslikes%2F94225285" anchor-label="INDEX" id="-2042484561%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-d-e-x/index.html">INDEX</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2042484561%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-i-n-d-e-x/index.html">INDEX</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05040001&quot;, type = DataType.UINT16</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1187941195%2FClasslikes%2F94225285" anchor-label="DATA" id="-1187941195%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-a-t-a/index.html">DATA</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1187941195%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-a-t-a/index.html">DATA</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05840000&quot;, type = DataType.CONTAINER</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="959538475%2FClasslikes%2F94225285" anchor-label="REQ_POWER_L1" id="959538475%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-p-o-w-e-r_-l1/index.html">REQ_POWER_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="959538475%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-p-o-w-e-r_-l1/index.html">REQ_POWER_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000001&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1405197972%2FClasslikes%2F94225285" anchor-label="REQ_POWER_L2" id="-1405197972%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-p-o-w-e-r_-l2/index.html">REQ_POWER_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1405197972%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-p-o-w-e-r_-l2/index.html">REQ_POWER_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000002&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="525032877%2FClasslikes%2F94225285" anchor-label="REQ_POWER_L3" id="525032877%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-p-o-w-e-r_-l3/index.html">REQ_POWER_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="525032877%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-p-o-w-e-r_-l3/index.html">REQ_POWER_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000003&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-29829715%2FClasslikes%2F94225285" anchor-label="REQ_ACTIVE_PHASES" id="-29829715%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-a-c-t-i-v-e_-p-h-a-s-e-s/index.html">REQ_ACTIVE_PHASES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-29829715%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-a-c-t-i-v-e_-p-h-a-s-e-s/index.html">REQ_ACTIVE_PHASES</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000004&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="697427151%2FClasslikes%2F94225285" anchor-label="REQ_MODE" id="697427151%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-m-o-d-e/index.html">REQ_MODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="697427151%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-m-o-d-e/index.html">REQ_MODE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000005&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="697317688%2FClasslikes%2F94225285" anchor-label="REQ_ENERGY_L1" id="697317688%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-e-n-e-r-g-y_-l1/index.html">REQ_ENERGY_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="697317688%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-e-n-e-r-g-y_-l1/index.html">REQ_ENERGY_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000006&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1667418759%2FClasslikes%2F94225285" anchor-label="REQ_ENERGY_L2" id="-1667418759%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-e-n-e-r-g-y_-l2/index.html">REQ_ENERGY_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1667418759%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-e-n-e-r-g-y_-l2/index.html">REQ_ENERGY_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000007&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="262812090%2FClasslikes%2F94225285" anchor-label="REQ_ENERGY_L3" id="262812090%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-e-n-e-r-g-y_-l3/index.html">REQ_ENERGY_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="262812090%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-e-n-e-r-g-y_-l3/index.html">REQ_ENERGY_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000008&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1993884576%2FClasslikes%2F94225285" anchor-label="REQ_DEVICE_ID" id="-1993884576%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-d-e-v-i-c-e_-i-d/index.html">REQ_DEVICE_ID</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1993884576%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-d-e-v-i-c-e_-i-d/index.html">REQ_DEVICE_ID</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000009&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1566592176%2FClasslikes%2F94225285" anchor-label="REQ_ERROR_CODE" id="-1566592176%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-e-r-r-o-r_-c-o-d-e/index.html">REQ_ERROR_CODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1566592176%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-e-r-r-o-r_-c-o-d-e/index.html">REQ_ERROR_CODE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0500000A&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1201046400%2FClasslikes%2F94225285" anchor-label="REQ_SET_PHASE_ELIMINATION" id="1201046400%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-s-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">REQ_SET_PHASE_ELIMINATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1201046400%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-s-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">REQ_SET_PHASE_ELIMINATION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0500000B&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1795772812%2FClasslikes%2F94225285" anchor-label="REQ_GET_PHASE_ELIMINATION" id="-1795772812%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-g-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">REQ_GET_PHASE_ELIMINATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1795772812%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-g-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">REQ_GET_PHASE_ELIMINATION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000018&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1164746144%2FClasslikes%2F94225285" anchor-label="REQ_FIRMWARE_VERSION" id="1164746144%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-f-i-r-m-w-a-r-e_-v-e-r-s-i-o-n/index.html">REQ_FIRMWARE_VERSION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1164746144%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-f-i-r-m-w-a-r-e_-v-e-r-s-i-o-n/index.html">REQ_FIRMWARE_VERSION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0500000C&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="533271538%2FClasslikes%2F94225285" anchor-label="REQ_VOLTAGE_L1" id="533271538%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-v-o-l-t-a-g-e_-l1/index.html">REQ_VOLTAGE_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="533271538%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-v-o-l-t-a-g-e_-l1/index.html">REQ_VOLTAGE_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000011&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1831464909%2FClasslikes%2F94225285" anchor-label="REQ_VOLTAGE_L2" id="-1831464909%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-v-o-l-t-a-g-e_-l2/index.html">REQ_VOLTAGE_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1831464909%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-v-o-l-t-a-g-e_-l2/index.html">REQ_VOLTAGE_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000012&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="98765940%2FClasslikes%2F94225285" anchor-label="REQ_VOLTAGE_L3" id="98765940%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-v-o-l-t-a-g-e_-l3/index.html">REQ_VOLTAGE_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="98765940%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-v-o-l-t-a-g-e_-l3/index.html">REQ_VOLTAGE_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000013&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1254048806%2FClasslikes%2F94225285" anchor-label="REQ_TYPE" id="1254048806%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-t-y-p-e/index.html">REQ_TYPE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1254048806%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-t-y-p-e/index.html">REQ_TYPE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05000014&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1749004746%2FClasslikes%2F94225285" anchor-label="POWER_L1" id="1749004746%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-w-e-r_-l1/index.html">POWER_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1749004746%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-p-o-w-e-r_-l1/index.html">POWER_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800001&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-615731701%2FClasslikes%2F94225285" anchor-label="POWER_L2" id="-615731701%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-w-e-r_-l2/index.html">POWER_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-615731701%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-p-o-w-e-r_-l2/index.html">POWER_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800002&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1314499148%2FClasslikes%2F94225285" anchor-label="POWER_L3" id="1314499148%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-p-o-w-e-r_-l3/index.html">POWER_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1314499148%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-p-o-w-e-r_-l3/index.html">POWER_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800003&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-947088274%2FClasslikes%2F94225285" anchor-label="ACTIVE_PHASES" id="-947088274%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-a-c-t-i-v-e_-p-h-a-s-e-s/index.html">ACTIVE_PHASES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-947088274%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-a-c-t-i-v-e_-p-h-a-s-e-s/index.html">ACTIVE_PHASES</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800004&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1170561262%2FClasslikes%2F94225285" anchor-label="MODE" id="1170561262%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-o-d-e/index.html">MODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1170561262%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-o-d-e/index.html">MODE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800005&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-599031687%2FClasslikes%2F94225285" anchor-label="ENERGY_L1" id="-599031687%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-n-e-r-g-y_-l1/index.html">ENERGY_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-599031687%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-e-n-e-r-g-y_-l1/index.html">ENERGY_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800006&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1331199162%2FClasslikes%2F94225285" anchor-label="ENERGY_L2" id="1331199162%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-n-e-r-g-y_-l2/index.html">ENERGY_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1331199162%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-e-n-e-r-g-y_-l2/index.html">ENERGY_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800007&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1033537285%2FClasslikes%2F94225285" anchor-label="ENERGY_L3" id="-1033537285%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-n-e-r-g-y_-l3/index.html">ENERGY_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1033537285%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-e-n-e-r-g-y_-l3/index.html">ENERGY_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800008&quot;, type = DataType.DOUBLE64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1004733345%2FClasslikes%2F94225285" anchor-label="DEVICE_ID" id="1004733345%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-v-i-c-e_-i-d/index.html">DEVICE_ID</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1004733345%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-e-v-i-c-e_-i-d/index.html">DEVICE_ID</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800009&quot;, type = DataType.UINT32</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1196250159%2FClasslikes%2F94225285" anchor-label="ERROR_CODE" id="1196250159%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-e-r-r-o-r_-c-o-d-e/index.html">ERROR_CODE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1196250159%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-e-r-r-o-r_-c-o-d-e/index.html">ERROR_CODE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0580000A&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1612451519%2FClasslikes%2F94225285" anchor-label="SET_PHASE_ELIMINATION" id="-1612451519%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">SET_PHASE_ELIMINATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1612451519%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-s-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">SET_PHASE_ELIMINATION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0580000B&quot;, type = DataType.BOOL</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-314303435%2FClasslikes%2F94225285" anchor-label="GET_PHASE_ELIMINATION" id="-314303435%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">GET_PHASE_ELIMINATION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-314303435%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-g-e-t_-p-h-a-s-e_-e-l-i-m-i-n-a-t-i-o-n/index.html">GET_PHASE_ELIMINATION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800018&quot;, type = DataType.BOOL</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-303047873%2FClasslikes%2F94225285" anchor-label="FIRMWARE_VERSION" id="-303047873%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-f-i-r-m-w-a-r-e_-v-e-r-s-i-o-n/index.html">FIRMWARE_VERSION</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-303047873%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-f-i-r-m-w-a-r-e_-v-e-r-s-i-o-n/index.html">FIRMWARE_VERSION</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0580000C&quot;, type = DataType.UCHAR8</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-998853423%2FClasslikes%2F94225285" anchor-label="VOLTAGE_L1" id="-998853423%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-o-l-t-a-g-e_-l1/index.html">VOLTAGE_L1</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-998853423%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-v-o-l-t-a-g-e_-l1/index.html">VOLTAGE_L1</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800011&quot;, type = DataType.FLOAT32</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="931377426%2FClasslikes%2F94225285" anchor-label="VOLTAGE_L2" id="931377426%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-o-l-t-a-g-e_-l2/index.html">VOLTAGE_L2</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="931377426%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-v-o-l-t-a-g-e_-l2/index.html">VOLTAGE_L2</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800012&quot;, type = DataType.FLOAT32</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1433359021%2FClasslikes%2F94225285" anchor-label="VOLTAGE_L3" id="-1433359021%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-v-o-l-t-a-g-e_-l3/index.html">VOLTAGE_L3</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1433359021%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-v-o-l-t-a-g-e_-l3/index.html">VOLTAGE_L3</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800013&quot;, type = DataType.FLOAT32</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1727182917%2FClasslikes%2F94225285" anchor-label="TYPE" id="1727182917%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-t-y-p-e/index.html">TYPE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1727182917%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-t-y-p-e/index.html">TYPE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800014&quot;, type = DataType.UINT16</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-970365802%2FClasslikes%2F94225285" anchor-label="CS_START_TIME" id="-970365802%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-s-t-a-r-t_-t-i-m-e/index.html">CS_START_TIME</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-970365802%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-s-t-a-r-t_-t-i-m-e/index.html">CS_START_TIME</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800051&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-418539758%2FClasslikes%2F94225285" anchor-label="CS_LAST_TIME" id="-418539758%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-l-a-s-t_-t-i-m-e/index.html">CS_LAST_TIME</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-418539758%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-l-a-s-t_-t-i-m-e/index.html">CS_LAST_TIME</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800052&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="319896193%2FClasslikes%2F94225285" anchor-label="CS_SUCC_FRAMES_ALL" id="319896193%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-s-u-c-c_-f-r-a-m-e-s_-a-l-l/index.html">CS_SUCC_FRAMES_ALL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="319896193%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-s-u-c-c_-f-r-a-m-e-s_-a-l-l/index.html">CS_SUCC_FRAMES_ALL</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800053&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="699356913%2FClasslikes%2F94225285" anchor-label="CS_SUCC_FRAMES_100" id="699356913%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-s-u-c-c_-f-r-a-m-e-s_100/index.html">CS_SUCC_FRAMES_100</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="699356913%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-s-u-c-c_-f-r-a-m-e-s_100/index.html">CS_SUCC_FRAMES_100</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800054&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1239806422%2FClasslikes%2F94225285" anchor-label="CS_EXP_FRAMES_ALL" id="1239806422%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-e-x-p_-f-r-a-m-e-s_-a-l-l/index.html">CS_EXP_FRAMES_ALL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1239806422%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-e-x-p_-f-r-a-m-e-s_-a-l-l/index.html">CS_EXP_FRAMES_ALL</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800055&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1619267142%2FClasslikes%2F94225285" anchor-label="CS_EXP_FRAMES_100" id="1619267142%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-e-x-p_-f-r-a-m-e-s_100/index.html">CS_EXP_FRAMES_100</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1619267142%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-e-x-p_-f-r-a-m-e-s_100/index.html">CS_EXP_FRAMES_100</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800056&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="172565390%2FClasslikes%2F94225285" anchor-label="CS_ERR_FRAMES_ALL" id="172565390%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-e-r-r_-f-r-a-m-e-s_-a-l-l/index.html">CS_ERR_FRAMES_ALL</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="172565390%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-e-r-r_-f-r-a-m-e-s_-a-l-l/index.html">CS_ERR_FRAMES_ALL</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800057&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="552026110%2FClasslikes%2F94225285" anchor-label="CS_ERR_FRAMES_100" id="552026110%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-e-r-r_-f-r-a-m-e-s_100/index.html">CS_ERR_FRAMES_100</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="552026110%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-e-r-r_-f-r-a-m-e-s_100/index.html">CS_ERR_FRAMES_100</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800058&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1360703199%2FClasslikes%2F94225285" anchor-label="CS_UNK_FRAMES" id="1360703199%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-u-n-k_-f-r-a-m-e-s/index.html">CS_UNK_FRAMES</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1360703199%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-u-n-k_-f-r-a-m-e-s/index.html">CS_UNK_FRAMES</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05800059&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="861541711%2FClasslikes%2F94225285" anchor-label="CS_ERR_FRAME" id="861541711%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-c-s_-e-r-r_-f-r-a-m-e/index.html">CS_ERR_FRAME</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="861541711%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-c-s_-e-r-r_-f-r-a-m-e/index.html">CS_ERR_FRAME</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x0580005A&quot;, type = DataType.UINT64</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2129353140%2FClasslikes%2F94225285" anchor-label="REQ_DEVICE_STATE" id="2129353140%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-q_-d-e-v-i-c-e_-s-t-a-t-e/index.html">REQ_DEVICE_STATE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2129353140%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-q_-d-e-v-i-c-e_-s-t-a-t-e/index.html">REQ_DEVICE_STATE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05060000&quot;, type = DataType.NONE</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1363919149%2FClasslikes%2F94225285" anchor-label="DEVICE_STATE" id="-1363919149%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-v-i-c-e_-s-t-a-t-e/index.html">DEVICE_STATE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1363919149%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-e-v-i-c-e_-s-t-a-t-e/index.html">DEVICE_STATE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05860000&quot;, type = DataType.CONTAINER</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2062367819%2FClasslikes%2F94225285" anchor-label="DEVICE_CONNECTED" id="2062367819%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-v-i-c-e_-c-o-n-n-e-c-t-e-d/index.html">DEVICE_CONNECTED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2062367819%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-e-v-i-c-e_-c-o-n-n-e-c-t-e-d/index.html">DEVICE_CONNECTED</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05860001&quot;, type = DataType.BOOL</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-200088077%2FClasslikes%2F94225285" anchor-label="DEVICE_WORKING" id="-200088077%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-v-i-c-e_-w-o-r-k-i-n-g/index.html">DEVICE_WORKING</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-200088077%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-e-v-i-c-e_-w-o-r-k-i-n-g/index.html">DEVICE_WORKING</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05860002&quot;, type = DataType.BOOL</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1206235647%2FClasslikes%2F94225285" anchor-label="DEVICE_IN_SERVICE" id="-1206235647%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-d-e-v-i-c-e_-i-n_-s-e-r-v-i-c-e/index.html">DEVICE_IN_SERVICE</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1206235647%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-d-e-v-i-c-e_-i-n_-s-e-r-v-i-c-e/index.html">DEVICE_IN_SERVICE</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05860003&quot;, type = DataType.BOOL</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1722556818%2FClasslikes%2F94225285" anchor-label="GENERAL_ERROR" id="-1722556818%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-g-e-n-e-r-a-l_-e-r-r-o-r/index.html">GENERAL_ERROR</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1722556818%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-g-e-n-e-r-a-l_-e-r-r-o-r/index.html">GENERAL_ERROR</a></div></div><div class="brief "><p class="paragraph">hex = &quot;0x05FFFFFF&quot;, type = DataType.ERROR</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="374226362%2FProperties%2F94225285" anchor-label="hex" id="374226362%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="hex.html"><span><span>hex</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="374226362%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="hex.html">hex</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-372974862%2FProperties%2F94225285" anchor-label="name" id="-372974862%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-372974862%2FProperties%2F94225285"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-372974862%2FProperties%2F94225285">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1464592006%2FProperties%2F94225285" anchor-label="namespace" id="-1464592006%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="namespace.html"><span><span>namespace</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1464592006%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="namespace.html">namespace</a><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-namespace/index.html">Namespace</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F94225285" anchor-label="ordinal" id="-739389684%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-739389684%2FProperties%2F94225285"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-739389684%2FProperties%2F94225285">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-327362549%2FProperties%2F94225285" anchor-label="type" id="-327362549%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="type.html"><span><span>type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-327362549%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">val </span><a href="type.html">type</a><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-data-type/index.html">DataType</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="477629399%2FFunctions%2F94225285" anchor-label="valueOf" id="477629399%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="477629399%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">PMTag</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-888189661%2FFunctions%2F94225285" anchor-label="values" id="-888189661%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-888189661%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">PMTag</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

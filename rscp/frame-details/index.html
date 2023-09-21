@@ -1,0 +1,1535 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="Jochen Zink">
+      
+      
+        <link rel="canonical" href="http://127.0.0.1:8080/rscp/frame-details/">
+      
+      
+        <link rel="prev" href="../authentication/">
+      
+      
+        <link rel="next" href="../../kdoc/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.2, mkdocs-material-9.3.1">
+    
+    
+      
+        <title>Frames in Detail - easy-rscp</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.046329b4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#the-big-picture" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="easy-rscp" class="md-header__button md-logo" aria-label="easy-rscp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            easy-rscp
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Frames in Detail
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jnk-cons/easy-rscp" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="easy-rscp" class="md-nav__button md-logo" aria-label="easy-rscp" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    easy-rscp
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jnk-cons/easy-rscp" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Getting started
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Getting started
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/setup/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting-started/hello-world/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hello RSCP
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Service API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Service API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../service/general-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../service/extension-points/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Extension points
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Low level API
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Low level API
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lowlevel/general-concepts/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    General concept
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lowlevel/connection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Connection setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lowlevel/crypt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encryption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lowlevel/frame/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Frames and Data
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+        
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RSCP
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            RSCP
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../basic-rscp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Basic stuff
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../encryption/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Encryption
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../authentication/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Authentication
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Frames in Detail
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Frames in Detail
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" class="md-nav__link">
+    The big picture
+  </a>
+  
+    <nav class="md-nav" aria-label="The big picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame" class="md-nav__link">
+    Frame
+  </a>
+  
+    <nav class="md-nav" aria-label="Frame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#magic-bytes" class="md-nav__link">
+    Magic Bytes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-bytes" class="md-nav__link">
+    Control Bytes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    Timestamp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-block" class="md-nav__link">
+    Data block
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checksum" class="md-nav__link">
+    Checksum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenblock" class="md-nav__link">
+    Datenblock
+  </a>
+  
+    <nav class="md-nav" aria-label="Datenblock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag" class="md-nav__link">
+    Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length_1" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../kdoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    About
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            About
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/license/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    License
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../about/release-notes/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Release Notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-big-picture" class="md-nav__link">
+    The big picture
+  </a>
+  
+    <nav class="md-nav" aria-label="The big picture">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame" class="md-nav__link">
+    Frame
+  </a>
+  
+    <nav class="md-nav" aria-label="Frame">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#magic-bytes" class="md-nav__link">
+    Magic Bytes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#control-bytes" class="md-nav__link">
+    Control Bytes
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timestamp" class="md-nav__link">
+    Timestamp
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-block" class="md-nav__link">
+    Data block
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#checksum" class="md-nav__link">
+    Checksum
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#datenblock" class="md-nav__link">
+    Datenblock
+  </a>
+  
+    <nav class="md-nav" aria-label="Datenblock">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tag" class="md-nav__link">
+    Tag
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#type" class="md-nav__link">
+    Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#length_1" class="md-nav__link">
+    Length
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    Value
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#namespaces" class="md-nav__link">
+    Namespaces
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tags" class="md-nav__link">
+    Tags
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-types" class="md-nav__link">
+    Data types
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Frames in Detail</h1>
+
+<h2 id="the-big-picture">The big picture<a class="headerlink" href="#the-big-picture" title="Permanent link">&para;</a></h2>
+<details class="note">
+<summary>Please Zoom</summary>
+<p>To visualize the frame structure I used Gantt charts here. They are actually meant for something else, but they serve their purpose and can be easily generated with <a href="https://mermaid.js.org/">mermaid.js</a>. Unfortunately the diagrams don't offer a zoom function, so use the browser zoom!</p>
+</details>
+<p>The following diagrams show the structure of a frame. And this byte by byte. Please note that the bytes are transmitted in little endian order.</p>
+<h3 id="frame">Frame<a class="headerlink" href="#frame" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>gantt
+    title Structure of a frame
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Frame
+        Whole frame          : frame, 2014-01-01, 30d         
+    section Header        
+        Magic bytes          : mb, 2014-01-01, 2d
+        CTRL                 : ctrl, after mb, 2d
+        Timestamp            : ts, after ctrl, 12d
+        length               : dlength, after ts, 2d
+    section Data        
+        Data                 : crit, data, after dlength, 8d
+    section Checksum
+        CRC32                : active, crc, after data, 4d</code></pre>
+<p>In the diagram above the structure of a frame is shown. Please note that the length of the data block is variable and is only shown here as an example of 8 bytes. In reality a data block is significantly longer.</p>
+<h4 id="magic-bytes">Magic Bytes<a class="headerlink" href="#magic-bytes" title="Permanent link">&para;</a></h4>
+<p>Each frame starts with a 2 byte MagicByte block. This always contains the values E3DC (Hexcode ...)</p>
+<pre class="mermaid"><code>gantt
+    title Magic Bytes
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Magic Bytes
+        0xE3                : e3, 2014-01-01, 1d
+        0xDC                : dc, after e3, 1d</code></pre>
+<h4 id="control-bytes">Control Bytes<a class="headerlink" href="#control-bytes" title="Permanent link">&para;</a></h4>
+<p>The control bytes currently contain 2 pieces of information.</p>
+<ol>
+<li>Does the frame contain a checksum at the end (the checksum is optional)?</li>
+<li>Which protocol version is used? To my knowledge this is always 0x01 so far</li>
+</ol>
+<p>Both information are placed in the first byte. The second byte is intended for future use is currently always 0.</p>
+<pre class="mermaid"><code>gantt
+    title Control Bytes
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section CRC true
+        0x00                : b1, 2014-01-01, 1d
+        0x11                : b2, after b1, 1d
+    section CRC false
+        0x00                : b1, 2014-01-01, 1d
+        0x01                : b2, after b1, 1d</code></pre>
+<h4 id="timestamp">Timestamp<a class="headerlink" href="#timestamp" title="Permanent link">&para;</a></h4>
+<p>The timestamp area indicates the creation time of the frame. In seconds and nanoseconds since 01/01/1970 00:00. As I understand it in UTC.</p>
+<p>The first 8 bytes indicate the seconds value and the next 4 bytes the nanoseconds.</p>
+<p>The following timestamp block, represents the timestamp 2023-09-20T07:57:05.362489Z.</p>
+<p>Since the 01.01.1970 00:00 o'clock up to this Timestamp 1,695,196,625 seconds and 362,489,000 nanoseconds have passed.</p>
+<pre class="mermaid"><code>gantt
+    title Timestamp
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Timestamp
+        0xd1a50a6500000000  : seconds, 2014-01-01, 8d
+        0xa8249b15          : nanos, after seconds, 4d</code></pre>
+<h4 id="length">Length<a class="headerlink" href="#length" title="Permanent link">&para;</a></h4>
+<p>In the length field the length of the following data block is indicated in bytes. Since a frame can consist of several data blocks, the sum of all data block lengths is specified here.</p>
+<p>In the example 28bytes (0x1c00 in hexcode Little Endian)</p>
+<pre class="mermaid"><code>gantt
+    title Length
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Timestamp
+        0x1c00  : length, 2014-01-01, 2d</code></pre>
+<h4 id="data-block">Data block<a class="headerlink" href="#data-block" title="Permanent link">&para;</a></h4>
+<p>One or more data blocks follow. The length is determined by the previous length field. The structure is described in detail in the data block area.</p>
+<h4 id="checksum">Checksum<a class="headerlink" href="#checksum" title="Permanent link">&para;</a></h4>
+<p>If the frame uses a checksum, it is specified here, with a length of 4 bytes. The standard algorithm CRC32 is used.</p>
+<pre class="mermaid"><code>gantt
+    title CRC32
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Timestamp
+        0xe2a60c5d  : crc, 2014-01-01, 4d</code></pre>
+<h3 id="datenblock">Datenblock<a class="headerlink" href="#datenblock" title="Permanent link">&para;</a></h3>
+<p>A data block represents a concrete value in a frame. Exception: A data block is of the type 'container'. Then it contains further data blocks</p>
+<pre class="mermaid"><code>gantt
+    title Structure of a Data Block
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Data
+        Whole Block          : block, 2014-01-01, 15d         
+    section Header        
+        Tag                  : tag, 2014-01-01, 4d
+        Type                 : type, after tag, 1d
+        Length               : length, after type, 2d        
+    section Value        
+        Value                : crit, value, after length, 8d</code></pre>
+<h4 id="tag">Tag<a class="headerlink" href="#tag" title="Permanent link">&para;</a></h4>
+<p>The tag gives a meaning to the content. It describes which area of the home power plant it is (namespace), whether it is a request or response block, and which field from the respective namespace is meant.</p>
+<p>For example the tag <code>MAC_ADDRESS</code> from the namespace <code>INFO</code>. This has the value <code>0a80000a</code>.</p>
+<pre class="mermaid"><code>gantt
+    title The Tag INFO.MAC_ADDRESS
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section Namespace
+        0x0a                : ns, 2014-01-01, 1d         
+    section Tag        
+        0x00800a            : tag, after ns, 3d</code></pre>
+<details class="info" open="open">
+<summary>Info</summary>
+<p>Whether it is a request or response block can be seen by the first bit(!) of the tag area. 0=request, 1=response</p>
+</details>
+<h4 id="type">Type<a class="headerlink" href="#type" title="Permanent link">&para;</a></h4>
+<p>In the next byte the data type is specified. That is, how the value area in the block is to be interpreted (number, string, etc.).</p>
+<pre class="mermaid"><code>gantt
+    title Datatype String
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section String
+        0x0d                : type, 2014-01-01, 1d</code></pre>
+<h4 id="length_1">Length<a class="headerlink" href="#length_1" title="Permanent link">&para;</a></h4>
+<p>This area is 2 bytes long and specifies the length in bytes of the following value area.</p>
+<pre class="mermaid"><code>gantt
+    title Lengthj
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section String
+        0x1100               : length, 2014-01-01, 2d</code></pre>
+<h4 id="value">Value<a class="headerlink" href="#value" title="Permanent link">&para;</a></h4>
+<p>Here hides the actual value, which can be interpreted depending on length and type. Here is an example for the software release number <code>H20_2023_024</code> (tag <code>INFO.SW_RELEASE</code>)</p>
+<pre class="mermaid"><code>gantt
+    title Example String
+    dateFormat YYYY-MM-DD
+    axisFormat %d
+    tickInterval 1day
+    section String
+        0x4832305f323032335f303234               : value, 2014-01-01, 2d</code></pre>
+<details class="note" open="open">
+<summary>Blocks as values</summary>
+</details>
+<p>If the data type is <code>container</code>, the value area contains a complete further data block(s)!</p>
+<h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
+<p>To make things a little clearer, let's take a look at a request frame and its corresponding response frame.</p>
+<p>We want to query the live data of the current PV production and the battery. For this purpose, we first assemble the query frame.</p>
+<p>In human readable form:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Timestamp:  2023-09-20T08:42:32.818989Z
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>WithChecksum:   true
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    Tag:    EMS.REQ_POWER_PV - 01000001
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>    Type:   NONE - 00
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>    Value:  [NONE] - 
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>    Tag:    EMS.REQ_POWER_BAT - 01000002
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>    Type:   NONE - 00
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>    Value:  [NONE] - 
+</span></code></pre></div></p>
+<p>In home power plant readable form:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>e3dc001178b00a6500000000c8c7d0300e0001000001000000020000010000004c769f09
+</span></code></pre></div></p>
+<p>And once disassembled:</p>
+<table>
+<thead>
+<tr>
+<th>Bytes</th>
+<th style="text-align: right;">Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 - 2</td>
+<td style="text-align: right;">e3dc</td>
+<td>Magic Bytes</td>
+</tr>
+<tr>
+<td>3 - 4</td>
+<td style="text-align: right;">0011</td>
+<td>Controlbytes -&gt; protocol version 1 and checksum is enabled</td>
+</tr>
+<tr>
+<td>5 - 12</td>
+<td style="text-align: right;">78b00a6500000000</td>
+<td>Timestamp, seconds since 01.01.1970 00:00 UTC -&gt; 1,695,199,352</td>
+</tr>
+<tr>
+<td>13 - 16</td>
+<td style="text-align: right;">c8c7d030</td>
+<td>Timestamp, Nanoseconds -&gt; 818,989,000</td>
+</tr>
+<tr>
+<td>17 - 18</td>
+<td style="text-align: right;">0e00</td>
+<td>Length of the data block area in bytes -&gt; 14 bytes</td>
+</tr>
+<tr>
+<td>18 - 21</td>
+<td style="text-align: right;">01000001</td>
+<td>Namespace + Tag -&gt; EMS.REQ_POWER_PV</td>
+</tr>
+<tr>
+<td>22</td>
+<td style="text-align: right;">00</td>
+<td>Data type -&gt; None</td>
+</tr>
+<tr>
+<td>23 - 24</td>
+<td style="text-align: right;">0000</td>
+<td>Length of the data block -&gt; Data type is <code>none</code>, therefore 0</td>
+</tr>
+<tr>
+<td>25 - 28</td>
+<td style="text-align: right;">02000001</td>
+<td>Namespace + Tag -&gt; EMS.REQ_POWER_BAT</td>
+</tr>
+<tr>
+<td>29</td>
+<td style="text-align: right;">00</td>
+<td>Data type -&gt; None</td>
+</tr>
+<tr>
+<td>31-32</td>
+<td style="text-align: right;">0000</td>
+<td>Length of the data block -&gt; data type is <code>none</code>, therefore 0</td>
+</tr>
+<tr>
+<td>33-36</td>
+<td style="text-align: right;">4c769f09</td>
+<td>CRC32 checksum</td>
+</tr>
+</tbody>
+</table>
+<p>As a response we get the following frame:</p>
+<p>In human readable form:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>Timestamp:  2023-09-20T08:42:35.019685Z
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>WithChecksum:   true
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    Tag:    EMS.POWER_PV - 01800001
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>    Type:   INT32 - 06
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>    Value:  4687 - 4f120000
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>    Tag:    EMS.POWER_BAT - 01800002
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a>    Type:   INT32 - 06
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a>    Value:  2139 - 5b080000
+</span></code></pre></div></p>
+<p>In home power plant readable form:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>e3dc00117bb00a6500000000885e2c011600010080010604004f120000020080010604005b08000058156e18
+</span></code></pre></div></p>
+<p>And once disassembled:</p>
+<table>
+<thead>
+<tr>
+<th>Bytes</th>
+<th style="text-align: right;">Value</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 - 2</td>
+<td style="text-align: right;">e3dc</td>
+<td>Magic Bytes</td>
+</tr>
+<tr>
+<td>3 - 4</td>
+<td style="text-align: right;">0011</td>
+<td>Kontrolbytes -&gt; Protocol version 1 and checksum is activated</td>
+</tr>
+<tr>
+<td>5 - 12</td>
+<td style="text-align: right;">7bb00a6500000000</td>
+<td>Timestamp, seconds since 01.01.1970 00:00 UTC -&gt; 1,695,199,355</td>
+</tr>
+<tr>
+<td>13 - 16</td>
+<td style="text-align: right;">885e2c01</td>
+<td>Timestamp, Nanoseconds -&gt; 19,685,000</td>
+</tr>
+<tr>
+<td>17 - 18</td>
+<td style="text-align: right;">1600</td>
+<td>Length of the data block area in bytes -&gt; 22 bytes</td>
+</tr>
+<tr>
+<td>18 - 21</td>
+<td style="text-align: right;">01008001</td>
+<td>Namespace + Tag -&gt; EMS.POWER_PV</td>
+</tr>
+<tr>
+<td>22</td>
+<td style="text-align: right;">06</td>
+<td>Data type -&gt; INT32</td>
+</tr>
+<tr>
+<td>23 - 24</td>
+<td style="text-align: right;">0400</td>
+<td>Length of the data block -&gt; data type is <code>INT32</code>, therefore 4 bytes</td>
+</tr>
+<tr>
+<td>25 - 28</td>
+<td style="text-align: right;">4f120000</td>
+<td>Actual value -&gt; data type is <code>INT32</code>, therefore 4,687</td>
+</tr>
+<tr>
+<td>29 - 32</td>
+<td style="text-align: right;">02008001</td>
+<td>Namespace + Tag -&gt; EMS.POWER_BAT</td>
+</tr>
+<tr>
+<td>33</td>
+<td style="text-align: right;">06</td>
+<td>Data type -&gt; INT32</td>
+</tr>
+<tr>
+<td>34 - 35</td>
+<td style="text-align: right;">0400</td>
+<td>Length of the data block -&gt; data type is <code>INT32</code>, therefore 4 bytes</td>
+</tr>
+<tr>
+<td>36 - 39</td>
+<td style="text-align: right;">5b080000</td>
+<td>Actual value -&gt; data type is <code>INT32</code>, therefore 2,139</td>
+</tr>
+<tr>
+<td>40 - 43</td>
+<td style="text-align: right;">58156e18</td>
+<td>CRC32 checksume</td>
+</tr>
+</tbody>
+</table>
+<h2 id="namespaces">Namespaces<a class="headerlink" href="#namespaces" title="Permanent link">&para;</a></h2>
+<p>E3DC has split all tags into different namespaces to create some overview. All namespaces known to me are documented in kdoc in the enum class <a href="../../kdoc/easy-rscp/de.jnkconsulting.e3dc.easyrscp.api.frame/-namespace/"><code>de.jnkconsulting.e3dc.easyrscp.api.frame.Namespace</code></a>.</p>
+<h2 id="tags">Tags<a class="headerlink" href="#tags" title="Permanent link">&para;</a></h2>
+<p>The multitude of tags is also documented in kdoc. Each namespace has its own enum class to ensure at least some overview.</p>
+<p>If I know anything about the structure and meaning of the tag, it is stored in kdoc. Partly E3DC has documented a little bit. If available, I have included the original E3DC documentation in kdoc and marked it with <code>Original E3DC Documentation:</code>. Once translated in English and once in German, as supplied by E3DC. </p>
+<p>Here you can find the tags <a href="../../kdoc/easy-rscp/de.jnkconsulting.e3dc.easyrscp.api.frame.tags/">TAG API</a>.</p>
+<h2 id="data-types">Data types<a class="headerlink" href="#data-types" title="Permanent link">&para;</a></h2>
+<p>The protocol defines a set of data types. These are documented in the enum class <a href="../../kdoc/easy-rscp/de.jnkconsulting.e3dc.easyrscp.api.frame/-data-type/"><code>de.jnkconsulting.e3dc.easyrscp.api.frame.DataType</code></a>.</p>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../authentication/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Authentication" rel="prev">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Authentication
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../kdoc/" class="md-footer__link md-footer__link--next" aria-label="Next: API" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                API
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2023 by, Jochen Zink
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "navigation.footer", "navigation.path", "content.code.copy", "content.code.select", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.dfff1995.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.dff1b7c8.min.js"></script>
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>DefaultDBSummaryService</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.service/DefaultDBSummaryService///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.service</a><span class="delimiter">/</span><span class="current">DefaultDBSummaryService</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>Default</span><wbr></wbr><span>DBSummary</span><wbr></wbr><span><span>Service</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">DefaultDBSummaryService</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connectionPool<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.connection/-connection-pool/index.html">ConnectionPool</a><span class="token punctuation">, </span></span><span class="parameter ">convertFrameToDailySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>DailySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">convertFrameToMonthlySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>MonthlySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">convertFrameToYearlySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>YearlySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">createRequestDailySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html">LocalDate</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadDailySummaryCreator()<span class="token punctuation">, </span></span><span class="parameter ">createRequestMonthlySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html">YearMonth</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadMonthlySummaryCreator()<span class="token punctuation">, </span></span><span class="parameter ">createRequestYearlySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Year.html">Year</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadYearlySummaryCreator()</span></span><span class="token punctuation">)</span> : <a href="../../de.jnkconsulting.e3dc.easyrscp.api.service/-d-b-summary-service/index.html">DBSummaryService</a></div><p class="paragraph">Service to retrieve the summary data of a time period (day, month, year, etc) from the home power plant database.S</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>connection</span><wbr></wbr><span><span>Pool</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Connection pool to be used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>convert</span><wbr></wbr><span>Frame</span><wbr></wbr><span>To</span><wbr></wbr><span>Daily</span><wbr></wbr><span><span>Summary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Converter to create a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a> object from a frame for the daily summary. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter.db/-daily-summary-converter/index.html">DailySummaryConverter</a> is used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>convert</span><wbr></wbr><span>Frame</span><wbr></wbr><span>To</span><wbr></wbr><span>Monthly</span><wbr></wbr><span><span>Summary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Converter to create a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a> object from a frame for the monthly summary. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter.db/-monthly-summary-converter/index.html">MonthlySummaryConverter</a> is used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>convert</span><wbr></wbr><span>Frame</span><wbr></wbr><span>To</span><wbr></wbr><span>Yearly</span><wbr></wbr><span><span>Summary</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Converter to create a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a> object from a frame for the yearlu summary. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter.db/-yearly-summary-converter/index.html">YearlySummaryConverter</a> is used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>create</span><wbr></wbr><span>Request</span><wbr></wbr><span>Daily</span><wbr></wbr><span>Summary</span><wbr></wbr><span><span>Frame</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Creator for frames to query the summary of a specific day. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator.db/-read-daily-summary-creator/index.html">ReadDailySummaryCreator</a> is used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>create</span><wbr></wbr><span>Request</span><wbr></wbr><span>Monthly</span><wbr></wbr><span>Summary</span><wbr></wbr><span><span>Frame</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Creator for frames to query the summary of a specific month. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator.db/-read-monthly-summary-creator/index.html">ReadMonthlySummaryCreator</a> is used</p></div></div></div></div><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>create</span><wbr></wbr><span>Request</span><wbr></wbr><span>Yearly</span><wbr></wbr><span>Summary</span><wbr></wbr><span><span>Frame</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Creator for frames to query the summary of a specific year. By default, an instance of <a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator.db/-read-yearly-summary-creator/index.html">ReadYearlySummaryCreator</a> is used</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="645109304%2FConstructors%2F94225285" anchor-label="DefaultDBSummaryService" id="645109304%2FConstructors%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-default-d-b-summary-service.html"><span>Default</span><wbr></wbr><span>DBSummary</span><wbr></wbr><span><span>Service</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="645109304%2FConstructors%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">connectionPool<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.connection/-connection-pool/index.html">ConnectionPool</a><span class="token punctuation">, </span></span><span class="parameter ">convertFrameToDailySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>DailySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">convertFrameToMonthlySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>MonthlySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">convertFrameToYearlySummary<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.converter/-request-response-frame-convert/index.html">RequestResponseFrameConvert</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a><span class="token operator">&gt;</span><span class="token operator"> = </span>YearlySummaryConverter()<span class="token punctuation">, </span></span><span class="parameter ">createRequestDailySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html">LocalDate</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadDailySummaryCreator()<span class="token punctuation">, </span></span><span class="parameter ">createRequestMonthlySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html">YearMonth</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadMonthlySummaryCreator()<span class="token punctuation">, </span></span><span class="parameter ">createRequestYearlySummaryFrame<span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.service.creator/-frame-creator/index.html">FrameCreator</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Year.html">Year</a><span class="token operator">&gt;</span><span class="token operator"> = </span>ReadYearlySummaryCreator()</span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-331813894%2FFunctions%2F94225285" anchor-label="readDailySummary" id="-331813894%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-daily-summary.html"><span>read</span><wbr></wbr><span>Daily</span><wbr></wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-331813894%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read-daily-summary.html"><span class="token function">readDailySummary</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">day<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/LocalDate.html">LocalDate</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a></div><div class="brief "><p class="paragraph">Reads the basic data for a concrete day</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-589181764%2FFunctions%2F94225285" anchor-label="readMonthlySummary" id="-589181764%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-monthly-summary.html"><span>read</span><wbr></wbr><span>Monthly</span><wbr></wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-589181764%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read-monthly-summary.html"><span class="token function">readMonthlySummary</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">yearMonth<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/YearMonth.html">YearMonth</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a></div><div class="brief "><p class="paragraph">Reads the basic data for a concrete month</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-590508549%2FFunctions%2F94225285" anchor-label="readYearlySummary" id="-590508549%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="read-yearly-summary.html"><span>read</span><wbr></wbr><span>Yearly</span><wbr></wbr><span><span>Summary</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-590508549%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="read-yearly-summary.html"><span class="token function">readYearlySummary</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">year<span class="token operator">: </span><a href="https://docs.oracle.com/javase/8/docs/api/java/time/Year.html">Year</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-history-data/index.html">HistoryData</a></div><div class="brief "><p class="paragraph">Reads the basic data for a concrete year</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

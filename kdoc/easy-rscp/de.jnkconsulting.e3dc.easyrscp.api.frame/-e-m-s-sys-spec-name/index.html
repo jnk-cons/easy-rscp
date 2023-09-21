@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>EMSSysSpecName</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.api.frame/EMSSysSpecName///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.api.frame</a><span class="delimiter">/</span><span class="current">EMSSysSpecName</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>EMSSys</span><wbr></wbr><span>Spec</span><wbr></wbr><span><span>Name</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">enum </span><a href="index.html">EMSSysSpecName</a> : <a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">EMSSysSpecName</a><span class="token operator">&gt; </span></div><p class="paragraph">Previously known possible values in a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-g-e-t_-s-y-s_-s-p-e-c-s/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.GET_SYS_SPECS</a> data block.</p><p class="paragraph">A GET_SYS_SPECS block is a block of type <a href="../-data-type/-c-o-n-t-a-i-n-e-r/index.html">DataType.CONTAINER</a>, which in turn contains blocks of type <a href="../-data-type/-c-o-n-t-a-i-n-e-r/index.html">DataType.CONTAINER</a> and the <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c/index.html">Tag</a>. Jeder SYS_SPEC Block besteht aus drei weiteren Blöcken</p><ul><li><p class="paragraph"><a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-i-n-d-e-x/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_INDEX</a></p></li><li><p class="paragraph"><a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-n-a-m-e/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_NAME</a></p></li><li><p class="paragraph"><a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-v-a-l-u-e_-i-n-t/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_VALUE_INT</a> resp. <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-v-a-l-u-e_-s-t-r-i-n-g/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_VALUE_STRING</a></p></li></ul><p class="paragraph">This enum maps the previously known values of <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-n-a-m-e/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_NAME</a>.</p><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span><h4 class="">Parameters</h4><div class="table"><div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM"><div class="main-subrow keyValue "><div class=""><span class="inline-flex"><div><u><span>rscp</span><wbr></wbr><span><span>Name</span></span></u></div></span></div><div><div class="title"><p class="paragraph">Name in the value of the <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-s-y-s_-s-p-e-c_-n-a-m-e/index.html">de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag.SYS_SPEC_NAME</a> data block.</p></div></div></div></div></div></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button><button class="section-tab" data-togglable="ENTRY">Entries</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="ENTRY">
+        <h2 class="">Entries</h2>
+        <div class="table"><a data-name="1146206164%2FClasslikes%2F94225285" anchor-label="HYBRID_MODE_SUPPORTED" id="1146206164%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-h-y-b-r-i-d_-m-o-d-e_-s-u-p-p-o-r-t-e-d/index.html">HYBRID_MODE_SUPPORTED</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1146206164%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-h-y-b-r-i-d_-m-o-d-e_-s-u-p-p-o-r-t-e-d/index.html">HYBRID_MODE_SUPPORTED</a></div></div><div class="brief "><p class="paragraph">Speculation: Describes whether the Hybrid operating mode is supported; rscpName = &quot;hybridModeSupported&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1329375654%2FClasslikes%2F94225285" anchor-label="INSTALLED_BATTERY_CAPACITY" id="-1329375654%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-i-n-s-t-a-l-l-e-d_-b-a-t-t-e-r-y_-c-a-p-a-c-i-t-y/index.html">INSTALLED_BATTERY_CAPACITY</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1329375654%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-i-n-s-t-a-l-l-e-d_-b-a-t-t-e-r-y_-c-a-p-a-c-i-t-y/index.html">INSTALLED_BATTERY_CAPACITY</a></div></div><div class="brief "><p class="paragraph">Returns the installed battery capacity. Presumed unit is kWh; rscpName = &quot;installedBatteryCapacity&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1242419628%2FClasslikes%2F94225285" anchor-label="MAX_AC_POWER" id="1242419628%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-a-c_-p-o-w-e-r/index.html">MAX_AC_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1242419628%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-a-c_-p-o-w-e-r/index.html">MAX_AC_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown: Probably the maximum possible AC power across all phases?. Unit ... Watt?; rscpName = &quot;maxAcPower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="167363792%2FClasslikes%2F94225285" anchor-label="MAX_BATTERY_CHARGE_POWER" id="167363792%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-b-a-t-t-e-r-y_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_CHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="167363792%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-b-a-t-t-e-r-y_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_CHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Maximum possible charging power of the battery in watts. This value may differ from the maximum possible charging power of the system itself. See <a href="-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_CHARGE_POWER</a>; rscpName = &quot;maxBatChargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="428976698%2FClasslikes%2F94225285" anchor-label="MAX_BATTERY_DISCHARGE_POWER" id="428976698%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-b-a-t-t-e-r-y_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_DISCHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="428976698%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-b-a-t-t-e-r-y_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_DISCHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Maximum possible discharging power of the battery in watts. This value may differ from the maximum possible discharging power of the system itself. See <a href="-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_DISCHARGE_POWER</a>; rscpName = &quot;maxBatDischargPower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1221992642%2FClasslikes%2F94225285" anchor-label="MAX_CHARGE_POWER" id="-1221992642%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_CHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1221992642%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_CHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Maximum possible charging power of the system in watts. This value may differ from the maximum possible charging power of the battery. See <a href="-m-a-x_-b-a-t-t-e-r-y_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_CHARGE_POWER</a>; rscpName = &quot;maxChargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="711282956%2FClasslikes%2F94225285" anchor-label="MAX_DISCHARGE_POWER" id="711282956%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_DISCHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="711282956%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_DISCHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Maximum possible discharging power of the system in watts. This value may differ from the maximum possible discharging power of the battery. See <a href="-m-a-x_-b-a-t-t-e-r-y_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_DISCHARGE_POWER</a>; rscpName = &quot;maxDischargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1051100022%2FClasslikes%2F94225285" anchor-label="MAX_FBC_CHARGE_POWER" id="1051100022%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-f-b-c_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_FBC_CHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1051100022%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-f-b-c_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_FBC_CHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. In my system the value is identical to <a href="-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_CHARGE_POWER</a> and <a href="-m-a-x_-b-a-t-t-e-r-y_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_CHARGE_POWER</a>. Therefore the unit is pretty sure Watt; rscpName = &quot;maxFbcChargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-334519852%2FClasslikes%2F94225285" anchor-label="MAX_FBC_DISCHARGE_POWER" id="-334519852%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-f-b-c_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_FBC_DISCHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-334519852%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-f-b-c_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_FBC_DISCHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. In my system the value is identical to <a href="-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_DISCHARGE_POWER</a> and <a href="-m-a-x_-b-a-t-t-e-r-y_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_BATTERY_DISCHARGE_POWER</a>. Therefore the unit is pretty sure Watt; rscpName = &quot;maxFbcDischargePower&quot;)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-993001072%2FClasslikes%2F94225285" anchor-label="MAX_PV_POWER" id="-993001072%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-p-v_-p-o-w-e-r/index.html">MAX_PV_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-993001072%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-p-v_-p-o-w-e-r/index.html">MAX_PV_POWER</a></div></div><div class="brief "><p class="paragraph">Should presumably provide the peak power in watts. My system returns here an int container with data type <a href="../-data-type/-e-r-r-o-r/index.html">DataType.ERROR</a>. Therefore: One does not know; rscpName = &quot;maxPvPower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-400470181%2FClasslikes%2F94225285" anchor-label="MAX_START_CHARGE_POWER" id="-400470181%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-400470181%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. Probably the maximum power in watts, from when the battery is charged. I guess <a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a> and <a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a> give the limits for the charge limit (See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_CHARGE_POWER</a> and <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_DISCHARGE_POWER</a>); rscpName = &quot;maxStartChargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1963265999%2FClasslikes%2F94225285" anchor-label="MAX_START_DISCHARGE_POWER" id="1963265999%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-a-x_-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_DISCHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1963265999%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-a-x_-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_DISCHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. Probably the maximum power in watts, from when the battery is discharged. I guess <a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a> and <a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a> give the limits for the charge limit (See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_CHARGE_POWER</a> and <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_DISCHARGE_POWER</a>; rscpName = &quot;maxStartDischargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1055025197%2FClasslikes%2F94225285" anchor-label="MIN_START_CHARGE_POWER" id="1055025197%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1055025197%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. Probably the minimum power in watts, from when the battery is charged. I guess <a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a> and <a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a> give the limits for the charge limit (See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_CHARGE_POWER</a> and <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_DISCHARGE_POWER</a>; rscpName = &quot;minStartChargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="636251581%2FClasslikes%2F94225285" anchor-label="MIN_START_DISCHARGE_POWER" id="636251581%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-m-i-n_-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_DISCHARGE_POWER</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="636251581%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-m-i-n_-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_DISCHARGE_POWER</a></div></div><div class="brief "><p class="paragraph">Unknown. Probably the minimum power in watts, from when the battery is discharged. I guess <a href="-m-i-n_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MIN_START_CHARGE_POWER</a> and <a href="-m-a-x_-s-t-a-r-t_-c-h-a-r-g-e_-p-o-w-e-r/index.html">MAX_START_CHARGE_POWER</a> give the limits for the charge limit (See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_CHARGE_POWER</a> and <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-m-a-x_-d-i-s-c-h-a-r-g-e_-p-o-w-e-r/index.html">EMSTag.MAX_DISCHARGE_POWER</a>; rscpName = &quot;minStartDischargePower&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-995242806%2FClasslikes%2F94225285" anchor-label="RECOMMENDED_MIN_CHARGE_LIMIT" id="-995242806%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-c-o-m-m-e-n-d-e-d_-m-i-n_-c-h-a-r-g-e_-l-i-m-i-t/index.html">RECOMMENDED_MIN_CHARGE_LIMIT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-995242806%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-c-o-m-m-e-n-d-e-d_-m-i-n_-c-h-a-r-g-e_-l-i-m-i-t/index.html">RECOMMENDED_MIN_CHARGE_LIMIT</a></div></div><div class="brief "><p class="paragraph">Recommended minimum charge limit of the battery in watts; rscpName = &quot;recommendedMinChargeLimit&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1746766892%2FClasslikes%2F94225285" anchor-label="RECOMMENDED_MIN_DISCHARGE_LIMIT" id="1746766892%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-r-e-c-o-m-m-e-n-d-e-d_-m-i-n_-d-i-s-c-h-a-r-g-e_-l-i-m-i-t/index.html">RECOMMENDED_MIN_DISCHARGE_LIMIT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1746766892%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-r-e-c-o-m-m-e-n-d-e-d_-m-i-n_-d-i-s-c-h-a-r-g-e_-l-i-m-i-t/index.html">RECOMMENDED_MIN_DISCHARGE_LIMIT</a></div></div><div class="brief "><p class="paragraph">Recommended minimum discharge limit of the battery in watts; rscpName = &quot;recommendedMinDischargeLimit&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-690322756%2FClasslikes%2F94225285" anchor-label="START_CHARGE_DEFAULT" id="-690322756%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-r-t_-c-h-a-r-g-e_-d-e-f-a-u-l-t/index.html">START_CHARGE_DEFAULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-690322756%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-s-t-a-r-t_-c-h-a-r-g-e_-d-e-f-a-u-l-t/index.html">START_CHARGE_DEFAULT</a></div></div><div class="brief "><p class="paragraph">Default value in watts, from when the battery is charged. At least the assumption. However, an EMSTag for this value is missing. For the discharge process the value is present. See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-d-i-s-c-h-a-r-g-e_-s-t-a-r-t_-p-o-w-e-r/index.html">EMSTag.DISCHARGE_START_POWER</a>; rscpName = &quot;startChargeDefault&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1419137222%2FClasslikes%2F94225285" anchor-label="START_DISCHARGE_DEFAULT" id="1419137222%2FClasslikes%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-togglable="ENTRY" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-d-e-f-a-u-l-t/index.html">START_DISCHARGE_DEFAULT</a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1419137222%2FClasslikes%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><div class="block"><a href="-s-t-a-r-t_-d-i-s-c-h-a-r-g-e_-d-e-f-a-u-l-t/index.html">START_DISCHARGE_DEFAULT</a></div></div><div class="brief "><p class="paragraph">Default value in watts, from when the battery is discharged. See <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame.tags/-e-m-s-tag/-d-i-s-c-h-a-r-g-e_-s-t-a-r-t_-p-o-w-e-r/index.html">EMSTag.DISCHARGE_START_POWER</a>; rscpName = &quot;startDischargeDefault&quot;</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-372974862%2FProperties%2F94225285" anchor-label="name" id="-372974862%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-372974862%2FProperties%2F94225285"><span><span>name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-372974862%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-372974862%2FProperties%2F94225285">name</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-739389684%2FProperties%2F94225285" anchor-label="ordinal" id="-739389684%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-739389684%2FProperties%2F94225285"><span><span>ordinal</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-739389684%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="../../de.jnkconsulting.e3dc.easyrscp.api.service.model/-result-code/-u-n-k-n-o-w-n/index.html#-739389684%2FProperties%2F94225285">ordinal</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2020807154%2FProperties%2F94225285" anchor-label="rscpName" id="-2020807154%2FProperties%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="rscp-name.html"><span>rscp</span><wbr></wbr><span><span>Name</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2020807154%2FProperties%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">val </span><a href="rscp-name.html">rscpName</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="1076064473%2FFunctions%2F94225285" anchor-label="valueOf" id="1076064473%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="value-of.html"><span>value</span><wbr></wbr><span><span>Of</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1076064473%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="value-of.html"><span class="token function">valueOf</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">EMSSysSpecName</a></div><div class="brief "><p class="paragraph">Returns the enum constant of this type with the specified name. The string must match exactly an identifier used to declare an enum constant in this type. (Extraneous whitespace characters are not permitted.)</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-804078171%2FFunctions%2F94225285" anchor-label="values" id="-804078171%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="values.html"><span><span>values</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-804078171%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword"></span><span class="token keyword">fun </span><a href="values.html"><span class="token function">values</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/latest/jvm/stdlib/kotlin/-array/index.html">Array</a><span class="token operator">&lt;</span><span class="token keyword"></span><a href="index.html">EMSSysSpecName</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns an array containing the constants of this enum type, in the order they're declared.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>RSCPRequestResponseListener</title>
+    <link href="../../../images/logo-icon.svg" rel="icon" type="image/svg">
+    <script>var pathToRoot = "../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/sourceset_dependencies.js" async="async"></script>
+<link href="../../../styles/style.css" rel="Stylesheet">
+<link href="../../../styles/main.css" rel="Stylesheet">
+<link href="../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../scripts/clipboard.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/navigation-loader.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/platform-content-handler.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/main.js" defer="defer"></script>
+<script type="text/javascript" src="../../../scripts/prism.js" async="async"></script>
+<script type="text/javascript" src="../../../scripts/symbol-parameters-wrapper_deferred.js" defer="defer"></script>
+</head>
+<body>
+    <div class="root">
+<nav class="navigation" id="navigation-wrapper">
+    <div class="navigation--inner">
+        <div class="navigation-title">
+            <button class="menu-toggle" id="menu-toggle" type="button">toggle menu</button>
+            <div class="library-name">
+                    <a class="library-name--link" href="../../../index.html">
+                            easy-rscp
+                    </a>
+            </div>
+            <div class="library-version">
+            </div>
+        </div>
+        <div class="filter-section" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter="easy-rscp/JVM">JVM</button>
+        </div>
+    </div>
+    <div class="navigation-controls">
+        <button class="navigation-controls--btn navigation-controls--theme" id="theme-toggle-button" type="button">switch theme</button>
+        <div class="navigation-controls--btn navigation-controls--search" id="searchBar" role="button">search in API</div>
+    </div>
+</nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="sidebar--inner" id="sideMenu"></div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageIds="easy-rscp::de.jnkconsulting.e3dc.easyrscp.connection/RSCPRequestResponseListener///PointingToDeclaration//94225285">
+  <div class="breadcrumbs"><a href="../../../index.html">easy-rscp</a><span class="delimiter">/</span><a href="../index.html">de.jnkconsulting.e3dc.easyrscp.connection</a><span class="delimiter">/</span><span class="current">RSCPRequestResponseListener</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span>RSCPRequest</span><wbr></wbr><span>Response</span><wbr></wbr><span><span>Listener</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">interface </span><a href="index.html">RSCPRequestResponseListener</a></div><p class="paragraph">Listener that can be registered to instances of type <a href="../-default-home-power-plant-connection/index.html">DefaultHomePowerPlantConnection</a> to receive lifecycle events in the request/response process of a frame.</p><p class="paragraph">All functions are stored with empty default implementations, so that implementing classes only need to override the functions that are needed.</p><p class="paragraph">Call order in a normal request/response cycle:</p><p class="paragraph">Before encrypting the request frame</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-before-request-frame-encryption.html">onBeforeRequestFrameEncryption</a></p></li></ul><p class="paragraph">Before sending the encrypted frame</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-before-request-send.html">onBeforeRequestSend</a></p></li></ul><p class="paragraph">After sending the encrypted frame</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-after-request-send.html">onAfterRequestSend</a></p></li></ul><p class="paragraph">After receiving the encrypted response from the home power plant.</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-answer-received.html">onAnswerReceived</a></p></li></ul><p class="paragraph">After decrypting the answer from the home power plant</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-answer-decrypted.html">onAnswerDecrypted</a></p></li></ul><p class="paragraph">After parsing the decrypted response to a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-frame/index.html">Frame</a>.</p><ul><li><p class="paragraph"><a href="on-r-s-c-p-request-response-event.html">onRSCPRequestResponseEvent</a></p></li><li><p class="paragraph"><a href="on-answer-decrypted.html">onAnswerDecrypted</a></p></li></ul><span class="kdoc-tag"><h4 class="">Since</h4><p class="paragraph">2.0</p></span></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-1731498414%2FFunctions%2F94225285" anchor-label="onAfterRequestSend" id="-1731498414%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-after-request-send.html"><span>on</span><wbr></wbr><span>After</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Send</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1731498414%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-after-request-send.html"><span class="token function">onAfterRequestSend</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-after-request-send-event/index.html">RSCPAfterRequestSendEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called after sending the encrypted binary data</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1682610290%2FFunctions%2F94225285" anchor-label="onAnswerDecrypted" id="-1682610290%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-answer-decrypted.html"><span>on</span><wbr></wbr><span>Answer</span><wbr></wbr><span><span>Decrypted</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1682610290%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-answer-decrypted.html"><span class="token function">onAnswerDecrypted</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-answer-decrypted-event/index.html">RSCPAnswerDecryptedEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called after the response from the home power plant has been decrypted</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1637435462%2FFunctions%2F94225285" anchor-label="onAnswerParsed" id="-1637435462%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-answer-parsed.html"><span>on</span><wbr></wbr><span>Answer</span><wbr></wbr><span><span>Parsed</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637435462%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-answer-parsed.html"><span class="token function">onAnswerParsed</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-answer-parsed-event/index.html">RSCPAnswerParsedEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called after the response from the home power plant has been deserialized to a <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-frame/index.html">Frame</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-933025830%2FFunctions%2F94225285" anchor-label="onAnswerReceived" id="-933025830%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-answer-received.html"><span>on</span><wbr></wbr><span>Answer</span><wbr></wbr><span><span>Received</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-933025830%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-answer-received.html"><span class="token function">onAnswerReceived</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-answer-received-event/index.html">RSCPAnswerReceivedEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called after receiving the encrypted response from the home power plant</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1711499205%2FFunctions%2F94225285" anchor-label="onBeforeRequestFrameEncryption" id="1711499205%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-before-request-frame-encryption.html"><span>on</span><wbr></wbr><span>Before</span><wbr></wbr><span>Request</span><wbr></wbr><span>Frame</span><wbr></wbr><span><span>Encryption</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1711499205%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-before-request-frame-encryption.html"><span class="token function">onBeforeRequestFrameEncryption</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-before-request-encryption-event/index.html">RSCPBeforeRequestEncryptionEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called before encrypting the request <a href="../../de.jnkconsulting.e3dc.easyrscp.api.frame/-frame/index.html">Frame</a></p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1304405234%2FFunctions%2F94225285" anchor-label="onBeforeRequestSend" id="-1304405234%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-before-request-send.html"><span>on</span><wbr></wbr><span>Before</span><wbr></wbr><span>Request</span><wbr></wbr><span><span>Send</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1304405234%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-before-request-send.html"><span class="token function">onBeforeRequestSend</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-before-request-send-event/index.html">RSCPBeforeRequestSendEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called before sending the encrypted binary data</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="386336298%2FFunctions%2F94225285" anchor-label="onRSCPRequestResponseEvent" id="386336298%2FFunctions%2F94225285" data-filterable-set="easy-rscp/JVM"></a>
+          <div class="table-row" data-filterable-current="easy-rscp/JVM" data-filterable-set="easy-rscp/JVM">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="on-r-s-c-p-request-response-event.html"><span>on</span><wbr></wbr><span>RSCPRequest</span><wbr></wbr><span>Response</span><wbr></wbr><span><span>Event</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="386336298%2FFunctions%2F94225285"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable="easy-rscp/JVM"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword"></span><span class="token keyword">fun </span><a href="on-r-s-c-p-request-response-event.html"><span class="token function">onRSCPRequestResponseEvent</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">event<span class="token operator">: </span><a href="../-r-s-c-p-request-response-event/index.html">RSCPRequestResponseEvent</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Called for each <a href="../-r-s-c-p-request-response-event/index.html">RSCPRequestResponseEvent</a> that occurs.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="footer">
+        <span class="go-to-top-icon"><a href="#content" id="go-to-top-link"></a></span><span>© 2023 Copyright</span><span
+                class="pull-right"><span>Generated by </span><a
+                href="https://github.com/Kotlin/dokka"><span>dokka</span><span class="padded-icon"></span></a></span>
+      </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
