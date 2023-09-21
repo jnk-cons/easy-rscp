@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>http://127.0.0.1:8080/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/about/license/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/about/license/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/about/release-notes/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/about/release-notes/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/getting-started/hello-world/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/getting-started/hello-world/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/getting-started/setup/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/getting-started/setup/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/lowlevel/connection/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/lowlevel/connection/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/lowlevel/crypt/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/lowlevel/crypt/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/lowlevel/frame/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/lowlevel/frame/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/lowlevel/general-concepts/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/lowlevel/general-concepts/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/rscp/authentication/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/rscp/authentication/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/rscp/basic-rscp/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/rscp/basic-rscp/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/rscp/encryption/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/rscp/encryption/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/rscp/frame-details/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/rscp/frame-details/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/service/extension-points/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/service/extension-points/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>http://127.0.0.1:8080/service/general-concepts/</loc>
+         <loc>https://jnk-cons.github.io/easy-rscp/service/general-concepts/</loc>
          <lastmod>2023-09-21</lastmod>
          <changefreq>daily</changefreq>
     </url>
