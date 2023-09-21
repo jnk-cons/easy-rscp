@@ -21,6 +21,7 @@ target/
 .run
 .scripts
 docu/docs/kdoc
+docu/site
 
 ### NetBeans ###
 /nbproject/private/

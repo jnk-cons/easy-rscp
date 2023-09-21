@@ -1,6 +1,8 @@
 package de.jnkconsulting.e3dc.easyrscp.api.bytes
 
-import de.jnkconsulting.e3dc.easyrscp.api.frame.*
+import de.jnkconsulting.e3dc.easyrscp.api.frame.DataType
+import de.jnkconsulting.e3dc.easyrscp.api.frame.Tag
+import de.jnkconsulting.e3dc.easyrscp.api.frame.UnknownTag
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.*
 import java.nio.ByteBuffer
 import java.nio.ByteOrder

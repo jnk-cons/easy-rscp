@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.frame
 
-import de.jnkconsulting.e3dc.easyrscp.api.bytes.*
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.POSITIONS
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.SIZES
 import de.jnkconsulting.e3dc.easyrscp.api.frame.DataParser
 import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.FrameParser

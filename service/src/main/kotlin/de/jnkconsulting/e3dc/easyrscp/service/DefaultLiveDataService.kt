@@ -4,8 +4,8 @@ import de.jnkconsulting.e3dc.easyrscp.api.connection.ConnectionPool
 import de.jnkconsulting.e3dc.easyrscp.api.service.LiveDataService
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.PowerState
 import de.jnkconsulting.e3dc.easyrscp.service.converter.FrameConverter
-import de.jnkconsulting.e3dc.easyrscp.service.creator.FrameCreator
 import de.jnkconsulting.e3dc.easyrscp.service.converter.PowerStateConverter
+import de.jnkconsulting.e3dc.easyrscp.service.creator.FrameCreator
 import de.jnkconsulting.e3dc.easyrscp.service.creator.RequestLiveDataCreator
 import mu.KotlinLogging
 

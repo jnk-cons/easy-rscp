@@ -3,7 +3,7 @@ package de.jnkconsulting.e3dc.easyrscp.service.converter
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
 import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.Instant
 

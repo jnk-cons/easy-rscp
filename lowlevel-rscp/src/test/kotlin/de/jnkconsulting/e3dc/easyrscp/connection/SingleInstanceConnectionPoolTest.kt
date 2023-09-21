@@ -3,9 +3,9 @@ package de.jnkconsulting.e3dc.easyrscp.connection
 import de.jnkconsulting.e3dc.easyrscp.api.connection.HomePowerPlantConnection
 import de.jnkconsulting.e3dc.easyrscp.api.connection.HomePowerPlantConnectionFactory
 import io.mockk.every
-import org.junit.jupiter.api.Assertions.*
 import io.mockk.mockk
 import io.mockk.verify
+import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import java.util.concurrent.TimeoutException

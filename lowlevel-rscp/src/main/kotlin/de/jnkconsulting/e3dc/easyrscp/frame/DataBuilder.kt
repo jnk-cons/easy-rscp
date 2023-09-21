@@ -1,10 +1,11 @@
 package de.jnkconsulting.e3dc.easyrscp.frame
 
-import de.jnkconsulting.e3dc.easyrscp.api.bytes.*
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.SIZES
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.emptyByteBuffer
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.fromHexString
 import de.jnkconsulting.e3dc.easyrscp.api.frame.Data
 import de.jnkconsulting.e3dc.easyrscp.api.frame.DataType
 import de.jnkconsulting.e3dc.easyrscp.api.frame.Tag
-import java.lang.IllegalStateException
 import java.nio.charset.Charset
 import java.time.Duration
 import java.time.Instant

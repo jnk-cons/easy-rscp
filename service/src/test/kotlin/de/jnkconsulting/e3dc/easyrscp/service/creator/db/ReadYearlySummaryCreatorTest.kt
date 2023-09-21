@@ -4,7 +4,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.frame.DataType
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.DBTag
 import de.jnkconsulting.e3dc.easyrscp.service.converter.StringFrameConverter
 import de.jnkconsulting.e3dc.easyrscp.service.testutils.assertHasDataWithType
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.Year
 

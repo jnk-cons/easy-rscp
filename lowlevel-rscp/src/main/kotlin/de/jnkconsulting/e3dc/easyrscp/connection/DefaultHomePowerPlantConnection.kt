@@ -12,7 +12,6 @@ import mu.KotlinLogging
 import java.io.ByteArrayOutputStream
 import java.io.DataInputStream
 import java.io.DataOutputStream
-import java.lang.IllegalStateException
 import java.net.Socket
 
 /**

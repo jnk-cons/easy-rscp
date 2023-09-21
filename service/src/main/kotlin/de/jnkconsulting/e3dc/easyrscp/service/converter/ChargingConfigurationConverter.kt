@@ -6,7 +6,6 @@ import de.jnkconsulting.e3dc.easyrscp.api.frame.SysSpecData
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.ChargingConfiguration
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.ChargingLimits
-import java.lang.IllegalStateException
 import kotlin.math.min
 
 /**

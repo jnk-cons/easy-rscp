@@ -1,7 +1,6 @@
 package de.jnkconsulting.e3dc.easyrscp.service.builder
 
 import de.jnkconsulting.e3dc.easyrscp.connection.ConnectionBuilder
-import java.lang.IllegalStateException
 
 /**
  * Definition of a Service Builder

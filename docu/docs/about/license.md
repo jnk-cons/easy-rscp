@@ -3,7 +3,7 @@
 ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ```text
---8<-- "docs/about/LICENSE"
+--8<-- "docs/about/mit-license.txt"
 ```
 
 ## Included projects

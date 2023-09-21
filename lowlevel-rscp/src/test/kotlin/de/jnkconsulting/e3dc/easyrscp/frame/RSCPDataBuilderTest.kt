@@ -1,7 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.frame
 
 import de.jnkconsulting.e3dc.easyrscp.api.bytes.toHexString
-import de.jnkconsulting.e3dc.easyrscp.api.frame.*
+import de.jnkconsulting.e3dc.easyrscp.api.frame.DataType
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.*
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Nested

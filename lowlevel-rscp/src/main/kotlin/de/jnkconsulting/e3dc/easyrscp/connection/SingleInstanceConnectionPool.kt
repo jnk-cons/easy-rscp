@@ -5,7 +5,6 @@ import de.jnkconsulting.e3dc.easyrscp.api.connection.HomePowerPlantConnection
 import de.jnkconsulting.e3dc.easyrscp.api.connection.HomePowerPlantConnectionFactory
 import mu.KotlinLogging
 import java.io.IOException
-import java.net.SocketException
 import java.util.concurrent.TimeoutException
 
 /**

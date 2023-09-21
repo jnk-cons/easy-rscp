@@ -1,6 +1,9 @@
 package de.jnkconsulting.e3dc.easyrscp.api.frame
 
-import de.jnkconsulting.e3dc.easyrscp.api.bytes.*
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.FIXED_VALUES
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.SIZES
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.emptyByteBuffer
+import de.jnkconsulting.e3dc.easyrscp.api.bytes.fillCRC32forFrame
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.ResultCode
 import java.time.Duration
 import java.time.Instant

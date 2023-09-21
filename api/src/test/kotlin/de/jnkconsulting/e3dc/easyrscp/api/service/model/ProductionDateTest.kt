@@ -1,6 +1,6 @@
 package de.jnkconsulting.e3dc.easyrscp.api.service.model
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.time.LocalDate
 import java.time.Month

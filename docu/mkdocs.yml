@@ -1,6 +1,6 @@
 site_name: easy-rscp
 site_author: Jochen Zink
-site_url: http://127.0.0.1:8080
+site_url: https://jnk-cons.github.io/easy-rscp/
 copyright: Copyright &copy; 2023 by, Jochen Zink
 repo_url: https://github.com/jnk-cons/easy-rscp
 nav:
