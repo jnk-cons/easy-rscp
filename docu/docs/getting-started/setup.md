@@ -52,7 +52,7 @@ The library is divided into three sections
 | jnk-easy-rscp-service  | Higher level that hides RSCP subtleties behind services. Most users should use this module. The scope will be extended in future version. | 
 
 ???+ info "Maven central"
-    Currently the library is not yet available in maven central. I am working on it
+    The artifacts are available in the maven central repository
 
 === "Maven"
     ```xml
