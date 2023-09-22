@@ -6,7 +6,7 @@ The RSCP structure is well documented by E3DC, but in terms of content there is 
 This section aims to explain the subtleties of the protocol in as much detail as possible. For example, if you want to create your own framework in another language, you can use the documentation as a basis.
 
 ???+ note "Help is welcome"
-    Much of the knowledge about RSCP that has been written down here has been determined by trial and error. There are still large gaps in our knowledge and certainly there will be errors. If you can contribute something to the documentation, you are welcome. Just report in a ticket.
+    Much of the knowledge about RSCP that has been written down here has been determined by trial and error. There are still large gaps in our knowledge and certainly there will be errors. If you can contribute something to the documentation, you are welcome. Just report in a [ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=RSCP+documentation&labels=documentation&body=Describe+your+proposal).
 
 ## Base information
 The home power plant listens on a specific port (usually 5033) and waits for RSCP requests. An RSCP request is a byte block called a frame.

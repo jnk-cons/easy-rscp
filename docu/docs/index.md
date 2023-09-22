@@ -30,17 +30,20 @@ Best in the [Getting started](getting-started/setup.md) section.
 Absolutely!
 
 ### I have found a bug
-Too bad, but that can happen. Create a ticket and we'll take a look.
+Too bad, but that can happen. Create a new [Bug](https://github.com/jnk-cons/easy-rscp/issues/new?title=Enter+the+bug+description+here&labels=bug&body=Used+easy-rscp+Version%3A+%3Center+the+version+here%3E%0A%0ASteps+to+Reproduction%3A%0A1.+...%0A2.+...%0A%0AExpected+behavior%3A%0A%3Cdescripe+the+expected+behavior%3E) and we'll take a look.
 
 You already know the solution? Very cool! Post a PR and we'll bring it to the main branch.
 
 ### I have cool extensions, improvements fixes
 The best thing to do is to create a PR.
 
-You can also participate in the project as a maintainer. Create a ticket with the title 'Maintainer'.
+You can also participate in the project as a maintainer. Create a ticket [here](https://github.com/jnk-cons/easy-rscp/issues/new?title=I+would+like+to+support+easy-rscp&labels=participation&body=Describe+how+you+can+support.+We+will+get+back+to+you+shortly.) and we will see how you can support best.
+
 
 ### I have further knowledge about the RSCP protocol
-Every drop helps to decode this protocol completely. You can create a PR for the doc, or create a ticket with the title 'RSCP'.
+Every drop helps to decode this protocol completely. You can create a PR for the doc, or create a [ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=RSCP+documentation&labels=documentation&body=Describe+your+proposal). 
+
+If you want to describe a specific RSCP tag, it is best to go to the [API description](kdoc/easy-rscp/de.jnkconsulting.e3dc.easyrscp.api.frame.tags/index.html) and the corresponding tag class. At each entry you will find a link to create a ticket for exactly this tag.
 
 ## License
 
