@@ -9,6 +9,8 @@
     <version>2.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <name>${project.artifactId}</name>
+    <url>https://github.com/jnk-cons/easy-rscp</url>
     <description>
         easy-rscp is an unofficial library to access home power plants from E3DC. This is the parent POM of each module
     </description>
@@ -168,32 +170,33 @@
                 <artifactId>dokka-maven-plugin</artifactId>
                 <executions>
                     <execution>
-                        <phase>pre-site</phase>
+                        <id>kdoc</id>
                         <goals>
                             <goal>dokka</goal>
                         </goals>
+                        <configuration>
+                            <sourceDirectories>
+                                <dir>${project.basedir}/api/src/main/kotlin</dir>
+                                <dir>${project.basedir}/lowlevel-rscp/src/main/kotlin</dir>
+                                <dir>${project.basedir}/service/src/main/kotlin</dir>
+                            </sourceDirectories>
+                            <includes>
+                                <include>${project.basedir}/docu/packages.md</include>
+                            </includes>
+                            <reportUndocumented>true</reportUndocumented>
+                            <documentedVisibilities>
+                                <visibility>PUBLIC</visibility>
+                                <visibility>PROTECTED</visibility>
+                            </documentedVisibilities>
+                            <samples>
+                                <dir>${project.basedir}/samples/src/main/kotlin</dir>
+                            </samples>
+                            <moduleName>easy-rscp</moduleName>
+                            <outputDir>${project.basedir}/docu/docs/kdoc</outputDir>
+                        </configuration>
                     </execution>
                 </executions>
-                <configuration>
-                    <sourceDirectories>
-                        <dir>${project.basedir}/api/src/main/kotlin</dir>
-                        <dir>${project.basedir}/lowlevel-rscp/src/main/kotlin</dir>
-                        <dir>${project.basedir}/service/src/main/kotlin</dir>
-                    </sourceDirectories>
-                    <includes>
-                        <include>${project.basedir}/docu/packages.md</include>
-                    </includes>
-                    <reportUndocumented>true</reportUndocumented>
-                    <documentedVisibilities>
-                        <visibility>PUBLIC</visibility>
-                        <visibility>PROTECTED</visibility>
-                    </documentedVisibilities>
-                    <samples>
-                        <dir>${project.basedir}/samples/src/main/kotlin</dir>
-                    </samples>
-                    <moduleName>easy-rscp</moduleName>
-                    <outputDir>${project.basedir}/docu/docs/kdoc</outputDir>
-                </configuration>
+
             </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
@@ -214,7 +217,7 @@
     </build>
 
     <scm>
-        <connection>scm:git:git@github.com:jnk-cons/easy-rscp.git</connection>
+        <connection>scm:git:git@github.com/jnk-cons/easy-rscp.git</connection>
         <developerConnection>scm:git:ssh://git@github.com:jnk-cons/easy-rscp.git</developerConnection>
         <url>https://github.com/jnk-cons/easy-rscp</url>
     </scm>

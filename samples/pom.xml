@@ -11,8 +11,23 @@
     </parent>
 
     <artifactId>jnk-easy-rscp-samples</artifactId>
+    <name>${project.artifactId}</name>
+    <url>https://github.com/jnk-cons/easy-rscp</url>
 
     <description>Usage examples. Used nu for kdoc generation</description>
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://raw.githubusercontent.com/jnk-cons/easy-rscp/main/LICENSE</url>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <name>Jochen Zink</name>
+            <email>jochen.zink@jnk-consulting.de</email>
+            <organizationUrl>https://www.jnk-consulting.de</organizationUrl>
+        </developer>
+    </developers>
 
     <dependencies>
         <dependency>
@@ -72,6 +87,36 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.jetbrains.dokka</groupId>
+                <artifactId>dokka-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>javadocJar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <sourceDirectories>
+                        <dir>${project.basedir}/src/main/kotlin</dir>
+                    </sourceDirectories>
+                    <includes>
+                        <include>${project.basedir}/../docu/packages.md</include>
+                        <include>${project.basedir}/docu/packages.md</include>
+                    </includes>
+                    <reportUndocumented>true</reportUndocumented>
+                    <documentedVisibilities>
+                        <visibility>PUBLIC</visibility>
+                        <visibility>PROTECTED</visibility>
+                    </documentedVisibilities>
+                    <samples>
+                        <dir>${project.basedir}/../samples/src/main/kotlin</dir>
+                    </samples>
+                    <moduleName>easy-rscp-samples</moduleName>
+                </configuration>
             </plugin>
         </plugins>
     </build>
