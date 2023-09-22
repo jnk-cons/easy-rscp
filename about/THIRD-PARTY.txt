@@ -10,7 +10,7 @@ Lists of 30 third-party dependencies.
      (Apache License, Version 2.0) Byte Buddy (without dependencies) (net.bytebuddy:byte-buddy:1.12.20 - https://bytebuddy.net/byte-buddy)
      (Apache License, Version 2.0) Byte Buddy agent (net.bytebuddy:byte-buddy-agent:1.12.20 - https://bytebuddy.net/byte-buddy-agent)
      (The Apache License, Version 2.0) org.apiguardian:apiguardian-api (org.apiguardian:apiguardian-api:1.1.2 - https://github.com/apiguardian-team/apiguardian)
-     (Bouncy Castle Licence) Bouncy Castle Provider (org.bouncycastle:bcprov-jdk15on:1.70 - https://www.bouncycastle.org/java.html)
+     (Bouncy Castle Licence) Bouncy Castle Provider (org.bouncycastle:bcprov-jdk18on:1.76 - https://www.bouncycastle.org/java.html)
      (New BSD License) Hamcrest Core (org.hamcrest:hamcrest-core:1.3 - https://github.com/hamcrest/JavaHamcrest/hamcrest-core)
      (The Apache Software License, Version 2.0) IntelliJ IDEA Annotations (org.jetbrains:annotations:13.0 - http://www.jetbrains.org)
      (The Apache License, Version 2.0) Kotlin Reflect (org.jetbrains.kotlin:kotlin-reflect:1.8.20 - https://kotlinlang.org/)
