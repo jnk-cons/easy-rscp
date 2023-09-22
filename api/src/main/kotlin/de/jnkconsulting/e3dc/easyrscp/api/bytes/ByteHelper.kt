@@ -77,7 +77,7 @@ val tagsByHexString = mutableMapOf<String, Tag>()
  *
  * @since 2.0
  */
-fun String.fromHexString() =
+fun String.fromHexString(): ByteArray =
     this
         .removePrefix("0x")
         .let {
@@ -93,7 +93,7 @@ fun String.fromHexString() =
  *
  * @since 2.0
  */
-fun ByteArray.toHexString() =
+fun ByteArray.toHexString(): String =
     joinToString("") { String.format("%02x", it) }
 
 
@@ -106,7 +106,7 @@ fun ByteArray.toHexString() =
  *
  * @since 2.0
  */
-fun ByteArray.crc32() =
+fun ByteArray.crc32(): Long =
     CRC32()
         .also { it.update(this) }
         .value

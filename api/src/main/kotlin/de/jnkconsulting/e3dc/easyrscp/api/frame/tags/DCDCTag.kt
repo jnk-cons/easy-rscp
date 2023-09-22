@@ -21,6 +21,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04040000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_DATA&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_DATA:).
      *
      * Original E3DC Documentation:
      *
@@ -33,6 +35,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04040001", type = DataType.UINT16
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.INDEX&labels=documentation&body=Documentation+update+for+enum+DCDCTag.INDEX:).
      *
      * Original E3DC Documentation:
      *
@@ -45,6 +49,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04840000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.DATA&labels=documentation&body=Documentation+update+for+enum+DCDCTag.DATA:).
      *
      * Original E3DC Documentation:
      *
@@ -57,6 +63,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000001", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_I_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_I_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -69,6 +77,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000002", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_U_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_U_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -80,6 +90,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000003", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_P_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_P_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -91,6 +103,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000004", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_I_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_I_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -102,6 +116,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000005", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_U_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_U_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -113,6 +129,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000006", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_P_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_P_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -124,6 +142,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000008", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_FIRMWARE_VERSION&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_FIRMWARE_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -135,6 +155,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000009", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_FPGA_FIRMWARE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_FPGA_FIRMWARE:).
      *
      * Original E3DC Documentation:
      *
@@ -146,6 +168,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0400000A", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_SERIAL_NUMBER&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_SERIAL_NUMBER:).
      *
      * Original E3DC Documentation:
      *
@@ -157,6 +181,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0400000B", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_BOARD_VERSION&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_BOARD_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -168,6 +194,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0400000C", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_FLASH_FILE_LIST&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_FLASH_FILE_LIST:).
      *
      * Original E3DC Documentation:
      *
@@ -179,6 +207,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0400000E", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_IS_FLASHING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_IS_FLASHING:).
      *
      * Original E3DC Documentation:
      *
@@ -190,6 +220,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0400000F", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_FLASH&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_FLASH:).
      *
      * Original E3DC Documentation:
      *
@@ -201,6 +233,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000010", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_STATUS&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -212,6 +246,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04000013", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_STATUS_AS_STRING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_STATUS_AS_STRING:).
      *
      * Original E3DC Documentation:
      *
@@ -223,6 +259,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800001", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.I_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.I_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -234,6 +272,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800002", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.U_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.U_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -245,6 +285,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800003", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.P_BAT&labels=documentation&body=Documentation+update+for+enum+DCDCTag.P_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -256,6 +298,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800004", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.I_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.I_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -267,6 +311,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800005", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.U_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.U_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -278,6 +324,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800006", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.P_DCL&labels=documentation&body=Documentation+update+for+enum+DCDCTag.P_DCL:).
      *
      * Original E3DC Documentation:
      *
@@ -289,6 +337,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800008", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.FIRMWARE_VERSION&labels=documentation&body=Documentation+update+for+enum+DCDCTag.FIRMWARE_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -300,6 +350,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800009", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.FPGA_FIRMWARE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.FPGA_FIRMWARE:).
      *
      * Original E3DC Documentation:
      *
@@ -311,6 +363,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000A", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.SERIAL_NUMBER&labels=documentation&body=Documentation+update+for+enum+DCDCTag.SERIAL_NUMBER:).
      *
      * Original E3DC Documentation:
      *
@@ -322,6 +376,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000B", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.BOARD_VERSION&labels=documentation&body=Documentation+update+for+enum+DCDCTag.BOARD_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -333,6 +389,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000C", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.FLASH_FILE_LIST&labels=documentation&body=Documentation+update+for+enum+DCDCTag.FLASH_FILE_LIST:).
      *
      * Original E3DC Documentation:
      *
@@ -344,6 +402,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000D", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.FLASH_FILE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.FLASH_FILE:).
      *
      * Original E3DC Documentation:
      *
@@ -355,6 +415,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000E", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.IS_FLASHING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.IS_FLASHING:).
      *
      * Original E3DC Documentation:
      *
@@ -366,6 +428,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x0480000F", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.FLASH&labels=documentation&body=Documentation+update+for+enum+DCDCTag.FLASH:).
      *
      * Original E3DC Documentation:
      *
@@ -377,6 +441,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800010", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.STATUS&labels=documentation&body=Documentation+update+for+enum+DCDCTag.STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -387,6 +453,8 @@ enum class DCDCTag(
     STATUS(hex = "0x04800010", type = DataType.CONTAINER),
 
     /**
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.STATE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.STATE:).
      * hex = "0x04800011", type = DataType.UCHAR8
      * Original E3DC Documentation:
      *
@@ -398,6 +466,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800012", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.SUBSTATE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.SUBSTATE:).
      *
      * Original E3DC Documentation:
      *
@@ -409,6 +479,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800013", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.STATUS_AS_STRING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.STATUS_AS_STRING:).
      *
      * Original E3DC Documentation:
      *
@@ -420,6 +492,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800014", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.STATE_AS_STRING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.STATE_AS_STRING:).
      *
      * Original E3DC Documentation:
      *
@@ -431,6 +505,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04800015", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.SUBSTATE_AS_STRING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.SUBSTATE_AS_STRING:).
      *
      * Original E3DC Documentation:
      *
@@ -442,6 +518,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04060000", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.REQ_DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -453,6 +531,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04860000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -465,6 +545,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04860001", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+DCDCTag.DEVICE_CONNECTED:).
      *
      * Original E3DC Documentation:
      *
@@ -476,6 +558,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04860002", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+DCDCTag.DEVICE_WORKING:).
      *
      * Original E3DC Documentation:
      *
@@ -487,6 +571,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04860003", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+DCDCTag.DEVICE_IN_SERVICE:).
      *
      * Original E3DC Documentation:
      *
@@ -498,6 +584,8 @@ enum class DCDCTag(
 
     /**
      * hex = "0x04FFFFFF", type = DataType.ERROR
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+DCDCTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+DCDCTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

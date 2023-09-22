@@ -212,7 +212,7 @@ data class Frame(
      *
      * @since 2.0
      */
-    fun containerByTag(tag: Tag, vararg containerPath: Tag) =
+    fun containerByTag(tag: Tag, vararg containerPath: Tag): List<Data> =
         find(tag, data, *containerPath)
             ?.valueAsContainer(parser) ?: emptyList()
 
@@ -260,7 +260,7 @@ data class Frame(
      *
      * @since 2.0
      */
-    fun durationByTag(tag: Tag, vararg containerPath: Tag) =
+    fun durationByTag(tag: Tag, vararg containerPath: Tag): Duration =
         instantByTag(tag, *containerPath)
             .let { Duration.ofSeconds(it.epochSecond, it.nano.toLong()) }
 

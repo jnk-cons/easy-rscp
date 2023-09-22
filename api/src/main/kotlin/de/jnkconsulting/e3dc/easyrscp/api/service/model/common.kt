@@ -15,46 +15,46 @@ typealias Percentage = Float
  */
 enum class ResultCode(val rscpCode: Int) {
     /**
-     * Operation successful
+     * Operation successful; rscpCode = 0
      *
      * @since 2.0
      */
-    SUCCESS(0),
+    SUCCESS(rscpCode = 0),
 
     /**
-     * Unknown: Value ignored by home power plant???
+     * Unknown: Value ignored by home power plant???; rscpCode = 1
      *
      * @since 2.0
      */
-    UNHANDLED(1),
+    UNHANDLED(rscpCode = 1),
 
     /**
-     * Missing permission to change the value
+     * Missing permission to change the value; rscpCode = 2
      *
      * @since 2.0
      */
-    ACCESS_DENIED(2),
+    ACCESS_DENIED(rscpCode = 2),
 
     /**
-     * The request value is invalid
+     * The request value is invalid; rscpCode = 3
      *
      * @since 2.0
      */
-    FORMAT_ERROR(3),
+    FORMAT_ERROR(rscpCode = 3),
 
     /**
-     * Unknown: Try again later??
+     * Unknown: Try again later??; rscpCode = 4
      *
      * @since 2.0
      */
-    AGAIN(4),
+    AGAIN(rscpCode = 4),
 
     /**
-     * For all other codes
+     * For all other codes; rscpCode = -1
      *
      * @since 2.0
      */
-    UNKNOWN(-1);
+    UNKNOWN(rscpCode = -1);
 
     companion object {
         fun byRscpCode(code: Int): ResultCode =

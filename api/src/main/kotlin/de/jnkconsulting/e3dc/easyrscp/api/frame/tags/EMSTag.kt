@@ -26,6 +26,8 @@ enum class EMSTag(
      * Request parameter to get the current energy supplied by the PV system. E3DC says that the unit is in watts. But this refers to the parameter in the response. Here the data type is [DataType.NONE].
      *
      * A data block of the type [EMSTag.POWER_PV] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_PV&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_PV:).
      *
      * Original E3DC Documentation:
      *
@@ -41,6 +43,8 @@ enum class EMSTag(
      * Request parameter to get the current amount of energy that is charged into or drawn from the battery. E3DC says that the unit is in watts. But this refers to the parameter in the response. Here the data type is [DataType.NONE].
      *
      * A data block of the type [EMSTag.POWER_BAT] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_BAT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -56,6 +60,8 @@ enum class EMSTag(
      * Request parameters to obtain the current amount of energy consumed by the house. E3DC says that the unit is in watts. But this refers to the parameter in the response. Here the data type is [DataType.NONE].
      *
      * A data block of the type [EMSTag.POWER_HOME] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_HOME&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_HOME:).
      *
      * Original E3DC Documentation:
      *
@@ -71,6 +77,8 @@ enum class EMSTag(
      * Request parameters to obtain the current amount of energy being fed in or drawn from the grid. E3DC says that the unit is in watts. But this refers to the parameter in the response. Here the data type is [DataType.NONE].
      *
      * A data block of the type [EMSTag.POWER_GRID] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_GRID&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_GRID:).
      *
      * Original E3DC Documentation:
      *
@@ -82,6 +90,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000005", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_ADD&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_ADD:).
      *
      * Original E3DC Documentation:
      *
@@ -93,6 +103,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000006", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_AUTARKY&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_AUTARKY:).
      *
      * Original E3DC Documentation:
      *
@@ -104,6 +116,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000007", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SELF_CONSUMPTION&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SELF_CONSUMPTION:).
      *
      * Original E3DC Documentation:
      *
@@ -119,6 +133,8 @@ enum class EMSTag(
      * Request parameter to get the current battery charge level. E3DC says that the unit is in percent. But this refers to the parameter in the response. Here the data type is [DataType.NONE].
      *
      * A data block of the type [EMSTag.BAT_SOC] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BAT_SOC&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BAT_SOC:).
      *
      * Original E3DC Documentation:
      *
@@ -130,6 +146,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000009", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_COUPLING_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_COUPLING_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -141,6 +159,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100000A", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_STORED_ERRORS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_STORED_ERRORS:).
      *
      * Original E3DC Documentation:
      *
@@ -152,6 +172,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000011", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -163,6 +185,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000012", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BALANCED_PHASES:).
      *
      * Original E3DC Documentation:
      *
@@ -174,6 +198,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000013", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_INSTALLED_PEAK_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_INSTALLED_PEAK_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -187,6 +213,8 @@ enum class EMSTag(
      * hex = "0x01000014", type = DataType.NONE
      *
      * Request parameter to get the feed-in disconnection limit in percent. A [DERATE_AT_PERCENT_VALUE] block is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_DERATE_AT_PERCENT_VALUE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_DERATE_AT_PERCENT_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -198,6 +226,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000015", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_DERATE_AT_POWER_VALUE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_DERATE_AT_POWER_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -209,6 +239,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000016", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_ERROR_BUZZER_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_ERROR_BUZZER_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -220,6 +252,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000017", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_BALANCED_PHASES:).
      *
      * Original E3DC Documentation:
      *
@@ -231,6 +265,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000018", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_INSTALLED_PEAK_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_INSTALLED_PEAK_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -242,6 +278,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000019", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_DERATE_PERCENT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_DERATE_PERCENT:).
      *
      * Original E3DC Documentation:
      *
@@ -253,6 +291,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001A", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_ERROR_BUZZER_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_ERROR_BUZZER_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -264,6 +304,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001B", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_START_ADJUST_BATTERY_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_START_ADJUST_BATTERY_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -275,6 +317,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001C", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_CANCEL_ADJUST_BATTERY_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_CANCEL_ADJUST_BATTERY_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -286,6 +330,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001D", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_ADJUST_BATTERY_VOLTAGE_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_ADJUST_BATTERY_VOLTAGE_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -297,6 +343,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001E", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_CONFIRM_ERRORS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_CONFIRM_ERRORS:).
      *
      * Original E3DC Documentation:
      *
@@ -308,6 +356,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100001F", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_WB_ALL&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_WB_ALL:).
      *
      * Original E3DC Documentation:
      *
@@ -319,6 +369,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000020", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_POWER_WB_SOLAR&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_WB_SOLAR:).
      *
      * Original E3DC Documentation:
      *
@@ -330,6 +382,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000021", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_EXT_SRC_AVAILABLE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_EXT_SRC_AVAILABLE:).
      *
      * Original E3DC Documentation:
      *
@@ -343,6 +397,8 @@ enum class EMSTag(
      * hex = "0x01800001", type = DataType.INT32
      *
      * Response parameter to an [EMSTag.REQ_POWER_PV] request parameter. Contains the current amount of energy supplied by the PV system in watts.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_PV&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_PV:).
      *
      * Original E3DC Documentation:
      *
@@ -356,6 +412,8 @@ enum class EMSTag(
      * hex = "0x01800002", type = DataType.INT32
      *
      * Response parameter to an [EMSTag.REQ_POWER_BAT] request parameter. Contains the current amount of energy drawn from the battery (negative value), or loaded into the battery (positive value) in watts.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_BAT&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_BAT:).
      *
      * Original E3DC Documentation:
      *
@@ -369,6 +427,8 @@ enum class EMSTag(
      * hex = "0x01800003", type = DataType.INT32
      *
      * Response parameter to an [EMSTag.REQ_POWER_HOME] request parameter. Contains the amount of energy currently consumed by the house in watts.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_HOME&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_HOME:).
      *
      * Original E3DC Documentation:
      *
@@ -382,6 +442,8 @@ enum class EMSTag(
      * hex = "0x01800004", type = DataType.INT32
      *
      * Response parameter to an [EMSTag.REQ_POWER_GRID] request parameter. Contains the amount of energy that is currently fed into the grid (negative value) or drawn from the grid (positive value) in watts.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_GRID&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_GRID:).
      *
      * Original E3DC Documentation:
      *
@@ -393,6 +455,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800005", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_ADD&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_ADD:).
      *
      * Original E3DC Documentation:
      *
@@ -404,6 +468,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800006", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.AUTARKY&labels=documentation&body=Documentation+update+for+enum+EMSTag.AUTARKY:).
      *
      * Original E3DC Documentation:
      *
@@ -415,6 +481,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800007", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SELF_CONSUMPTION&labels=documentation&body=Documentation+update+for+enum+EMSTag.SELF_CONSUMPTION:).
      *
      * Original E3DC Documentation:
      *
@@ -428,6 +496,8 @@ enum class EMSTag(
      * hex = "0x01800008", type = DataType.UCHAR8
      *
      * Response parameter to an [EMSTag.REQ_BAT_SOC] request parameter. Contains the current battery charge level in percent (0 - 100)..
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BAT_SOC&labels=documentation&body=Documentation+update+for+enum+EMSTag.BAT_SOC:).
      *
      * Original E3DC Documentation:
      *
@@ -439,6 +509,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800009", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.COUPLING_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.COUPLING_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -456,6 +528,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000A", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.STORED_ERRORS&labels=documentation&body=Documentation+update+for+enum+EMSTag.STORED_ERRORS:).
      *
      * Original E3DC Documentation:
      *
@@ -467,6 +541,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000B", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_CONTAINER&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_CONTAINER:).
      *
      * Original E3DC Documentation:
      *
@@ -478,6 +554,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000C", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_TYPE&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_TYPE:).
      *
      * Original E3DC Documentation:
      *
@@ -489,6 +567,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000D", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_SOURCE&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_SOURCE:).
      *
      * Original E3DC Documentation:
      *
@@ -500,6 +580,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000E", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_MESSAGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_MESSAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -511,6 +593,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180000F", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_CODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_CODE:).
      *
      * Original E3DC Documentation:
      *
@@ -522,6 +606,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800010", type = DataType.UINT64
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_TIMESTAMP&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_TIMESTAMP:).
      *
      * Original E3DC Documentation:
      *
@@ -533,6 +619,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800011", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -544,6 +632,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800012", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.BALANCED_PHASES:).
      *
      * Original E3DC Documentation:
      *
@@ -555,6 +645,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800013", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.INSTALLED_PEAK_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.INSTALLED_PEAK_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -584,6 +676,8 @@ enum class EMSTag(
      * The plant is de-energized at 5,390 W feed-in.
      *
      * Only the installer can change the DERATE_AT_PERCENT_VALUE value.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.DERATE_AT_PERCENT_VALUE&labels=documentation&body=Documentation+update+for+enum+EMSTag.DERATE_AT_PERCENT_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -595,6 +689,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800015", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.DERATE_AT_POWER_VALUE&labels=documentation&body=Documentation+update+for+enum+EMSTag.DERATE_AT_POWER_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -606,6 +702,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800016", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ERROR_BUZZER_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.ERROR_BUZZER_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -617,6 +715,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800017", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_BALANCED_PHASES:).
      *
      * Original E3DC Documentation:
      *
@@ -628,6 +728,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800018", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_INSTALLED_PEAK_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_INSTALLED_PEAK_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -639,6 +741,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800019", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_DERATE_PERCENT&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_DERATE_PERCENT:).
      *
      * Original E3DC Documentation:
      *
@@ -650,6 +754,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001A", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_ERROR_BUZZER_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_ERROR_BUZZER_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -661,6 +767,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001B", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.START_ADJUST_BATTERY_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.START_ADJUST_BATTERY_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -672,6 +780,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001C", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.CANCEL_ADJUST_BATTERY_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.CANCEL_ADJUST_BATTERY_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -683,6 +793,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001D", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ADJUST_BATTERY_VOLTAGE_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.ADJUST_BATTERY_VOLTAGE_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -694,6 +806,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001E", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.CONFIRM_ERRORS&labels=documentation&body=Documentation+update+for+enum+EMSTag.CONFIRM_ERRORS:).
      *
      * Original E3DC Documentation:
      *
@@ -705,6 +819,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180001F", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_WB_ALL&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_WB_ALL:).
      *
      * Original E3DC Documentation:
      *
@@ -716,6 +832,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800020", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_WB_SOLAR&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_WB_SOLAR:).
      *
      * Original E3DC Documentation:
      *
@@ -727,6 +845,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800021", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EXT_SRC_AVAILABLE&labels=documentation&body=Documentation+update+for+enum+EMSTag.EXT_SRC_AVAILABLE:).
      *
      * Original E3DC Documentation:
      *
@@ -738,6 +858,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000030", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -758,6 +880,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000031", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_POWER_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_POWER_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -781,6 +905,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000032", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_POWER_VALUE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_POWER_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -792,6 +918,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800030", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -804,6 +932,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000040", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -815,6 +945,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800040", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -826,6 +958,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000041", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_USED_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_USED_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -837,6 +971,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000042", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BAT_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BAT_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -848,6 +984,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000043", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_DCDC_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_DCDC_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -859,6 +997,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000044", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_USER_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_USER_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -870,6 +1010,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000045", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_USED_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_USED_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -881,6 +1023,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000046", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BAT_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BAT_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -892,6 +1036,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000047", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_DCDC_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_DCDC_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -903,6 +1049,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000048", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_USER_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_USER_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -914,6 +1062,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800041", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.USED_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.USED_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -925,6 +1075,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800042", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BAT_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.BAT_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -936,6 +1088,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800043", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.DCDC_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.DCDC_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -947,6 +1101,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800044", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.USER_CHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.USER_CHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -958,6 +1114,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800045", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.USED_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.USED_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -969,6 +1127,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800046", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BAT_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.BAT_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -980,6 +1140,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800047", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.DCDC_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.DCDC_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -991,6 +1153,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800048", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.USER_DISCHARGE_LIMIT&labels=documentation&body=Documentation+update+for+enum+EMSTag.USER_DISCHARGE_LIMIT:).
      *
      * Original E3DC Documentation:
      *
@@ -1002,6 +1166,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000060", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_POWER_CONTROL_OFFSET&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_POWER_CONTROL_OFFSET:).
      *
      * Original E3DC Documentation:
      *
@@ -1014,6 +1180,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800060", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_POWER_CONTROL_OFFSET&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_POWER_CONTROL_OFFSET:).
      *
      * Original E3DC Documentation:
      *
@@ -1025,6 +1193,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000071", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_REMAINING_BAT_CHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_REMAINING_BAT_CHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1036,6 +1206,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800071", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REMAINING_BAT_CHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REMAINING_BAT_CHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1048,6 +1220,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000072", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_REMAINING_BAT_DISCHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_REMAINING_BAT_DISCHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1059,6 +1233,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800072", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REMAINING_BAT_DISCHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REMAINING_BAT_DISCHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1071,6 +1247,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000073", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_EMERGENCY_POWER_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_EMERGENCY_POWER_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -1082,6 +1260,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800073", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EMERGENCY_POWER_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.EMERGENCY_POWER_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -1099,6 +1279,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000074", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_EMERGENCY_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_EMERGENCY_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1114,6 +1296,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800074", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_EMERGENCY_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_EMERGENCY_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1125,6 +1309,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000075", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_OVERRIDE_AVAILABLE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_OVERRIDE_AVAILABLE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1137,6 +1323,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800075", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_OVERRIDE_AVAILABLE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_OVERRIDE_AVAILABLE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1148,6 +1336,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800076", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1167,6 +1357,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000076", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1178,6 +1370,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800077", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1190,6 +1384,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000077", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1201,6 +1397,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800078", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1220,6 +1418,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000078", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1232,6 +1432,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800079", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1244,6 +1446,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000079", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1256,6 +1460,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000080", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_GET_IDLE_PERIODS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_IDLE_PERIODS:).
      *
      * Original E3DC Documentation:
      *
@@ -1267,6 +1473,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800080", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GET_IDLE_PERIODS&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_IDLE_PERIODS:).
      *
      * Original E3DC Documentation:
      *
@@ -1278,6 +1486,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000081", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_IDLE_PERIODS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_IDLE_PERIODS:).
      *
      * Original E3DC Documentation:
      *
@@ -1289,6 +1499,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800081", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_IDLE_PERIODS&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_IDLE_PERIODS:).
      *
      * Original E3DC Documentation:
      *
@@ -1300,6 +1512,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000082", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD:).
      *
      * Original E3DC Documentation:
      *
@@ -1311,6 +1525,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000083", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_TYPE&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_TYPE:).
      *
      * Original E3DC Documentation:
      *
@@ -1322,6 +1538,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000084", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_DAY&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_DAY:).
      *
      * Original E3DC Documentation:
      *
@@ -1333,6 +1551,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000085", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_START&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_START:).
      *
      * Original E3DC Documentation:
      *
@@ -1344,6 +1564,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000086", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_END&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_END:).
      *
      * Original E3DC Documentation:
      *
@@ -1355,6 +1577,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000087", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_HOUR&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_HOUR:).
      *
      * Original E3DC Documentation:
      *
@@ -1366,6 +1590,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000088", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_MINUTE&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_MINUTE:).
      *
      * Original E3DC Documentation:
      *
@@ -1377,6 +1603,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000089", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_ACTIVE&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_ACTIVE:).
      *
      * Original E3DC Documentation:
      *
@@ -1388,6 +1616,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100008A", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_IDLE_PERIOD_CHANGE_MARKER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_IDLE_PERIOD_CHANGE_MARKER:).
      *
      * Original E3DC Documentation:
      *
@@ -1399,6 +1629,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180008A", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.IDLE_PERIOD_CHANGE_MARKER&labels=documentation&body=Documentation+update+for+enum+EMSTag.IDLE_PERIOD_CHANGE_MARKER:).
      *
      * Original E3DC Documentation:
      *
@@ -1412,6 +1644,8 @@ enum class EMSTag(
      * hex = "0x0100008B", type = DataType.NONE
      *
      * Request parameter to query the current energy settings of the home power plant. A data block of the type [EMSTag.GET_POWER_SETTINGS] is supplied as a response.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_GET_POWER_SETTINGS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_POWER_SETTINGS:).
      *
      * Original E3DC Documentation:
      *
@@ -1434,6 +1668,8 @@ enum class EMSTag(
      * - [EMSTag.POWERSAVE_ENABLED]
      * - [EMSTag.WEATHER_REGULATED_CHARGE_ENABLED]
      * - [EMSTag.WEATHER_FORECAST_MODE]
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GET_POWER_SETTINGS&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_POWER_SETTINGS:).
      *
      * Original E3DC Documentation:
      *
@@ -1445,6 +1681,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100008C", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_POWER_SETTINGS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_POWER_SETTINGS:).
      *
      * Original E3DC Documentation:
      *
@@ -1460,6 +1698,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180008C", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_POWER_SETTINGS&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_POWER_SETTINGS:).
      *
      * Original E3DC Documentation:
      *
@@ -1477,6 +1717,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000100", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWER_LIMITS_USED&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_LIMITS_USED:).
      *
      * Original E3DC Documentation:
      *
@@ -1488,6 +1730,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800100", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_POWER_LIMITS_USED&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_POWER_LIMITS_USED:).
      *
      * Original E3DC Documentation:
      *
@@ -1499,6 +1743,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000101", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MAX_CHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.MAX_CHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1510,6 +1756,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800101", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_MAX_CHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_MAX_CHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1531,6 +1779,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000102", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MAX_DISCHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.MAX_DISCHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1542,6 +1792,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800102", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_MAX_DISCHARGE_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_MAX_DISCHARGE_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1563,6 +1815,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000103", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.DISCHARGE_START_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.DISCHARGE_START_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1574,6 +1828,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800103", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_DISCHARGE_START_POWER&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_DISCHARGE_START_POWER:).
      *
      * Original E3DC Documentation:
      *
@@ -1593,6 +1849,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000104", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.POWERSAVE_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWERSAVE_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -1604,6 +1862,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800104", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_POWERSAVE_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_POWERSAVE_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -1615,6 +1875,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000105", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.WEATHER_REGULATED_CHARGE_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.WEATHER_REGULATED_CHARGE_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -1626,6 +1888,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000106", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.WEATHER_FORECAST_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.WEATHER_FORECAST_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1637,6 +1901,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800105", type = DataType.CHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.RES_WEATHER_REGULATED_CHARGE_ENABLED&labels=documentation&body=Documentation+update+for+enum+EMSTag.RES_WEATHER_REGULATED_CHARGE_ENABLED:).
      *
      * Original E3DC Documentation:
      *
@@ -1648,6 +1914,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100008D", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SETTINGS_CHANGE_MARKER&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SETTINGS_CHANGE_MARKER:).
      *
      * Original E3DC Documentation:
      *
@@ -1659,6 +1927,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180008D", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SETTINGS_CHANGE_MARKER&labels=documentation&body=Documentation+update+for+enum+EMSTag.SETTINGS_CHANGE_MARKER:).
      *
      * Original E3DC Documentation:
      *
@@ -1670,6 +1940,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100008E", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_GET_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_MANUAL_CHARGE:).
      *
      * Original E3DC Documentation:
      *
@@ -1681,6 +1953,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180008E", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GET_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_MANUAL_CHARGE:).
      *
      * Original E3DC Documentation:
      *
@@ -1692,6 +1966,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000150", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MANUAL_CHARGE_START_COUNTER&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_START_COUNTER:).
      *
      * Original E3DC Documentation:
      *
@@ -1703,6 +1979,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000151", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MANUAL_CHARGE_ACTIVE&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_ACTIVE:).
      *
      * Original E3DC Documentation:
      *
@@ -1714,6 +1992,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000152", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MANUAL_CHARGE_ENERGY_COUNTER&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_ENERGY_COUNTER:).
      *
      * Original E3DC Documentation:
      *
@@ -1725,6 +2005,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000153", type = DataType.TIMESTAMP
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.MANUAL_CHARGE_LASTSTART&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_LASTSTART:).
      *
      * Original E3DC Documentation:
      *
@@ -1736,6 +2018,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0100008F", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_START_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_START_MANUAL_CHARGE:).
      *
      * Original E3DC Documentation:
      *
@@ -1747,6 +2031,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x0180008F", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.START_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.START_MANUAL_CHARGE:).
      *
      * Original E3DC Documentation:
      *
@@ -1758,6 +2044,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000090", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_START_EMERGENCYPOWER_TEST&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_START_EMERGENCYPOWER_TEST:).
      *
      * Original E3DC Documentation:
      *
@@ -1769,6 +2057,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800090", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.START_EMERGENCYPOWER_TEST&labels=documentation&body=Documentation+update+for+enum+EMSTag.START_EMERGENCYPOWER_TEST:).
      *
      * Original E3DC Documentation:
      *
@@ -1781,6 +2071,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000091", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_GET_GENERATOR_STATE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_GENERATOR_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -1792,6 +2084,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800091", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GET_GENERATOR_STATE&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_GENERATOR_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -1825,6 +2119,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000092", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_SET_GENERATOR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_SET_GENERATOR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1842,6 +2138,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800092", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SET_GENERATOR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_GENERATOR_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -1861,6 +2159,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000093", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_EMERGENCYPOWER_TEST_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_EMERGENCYPOWER_TEST_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -1872,6 +2172,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800093", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EMERGENCYPOWER_TEST_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.EMERGENCYPOWER_TEST_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -1883,6 +2185,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000094", type = DataType.TIMESTAMP
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EPTEST_NEXT_TESTSTART&labels=documentation&body=Documentation+update+for+enum+EMSTag.EPTEST_NEXT_TESTSTART:).
      *
      * Original E3DC Documentation:
      *
@@ -1894,6 +2198,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000095", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EPTEST_START_COUNTER&labels=documentation&body=Documentation+update+for+enum+EMSTag.EPTEST_START_COUNTER:).
      *
      * Original E3DC Documentation:
      *
@@ -1905,6 +2211,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000096", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.EPTEST_RUNNING&labels=documentation&body=Documentation+update+for+enum+EMSTag.EPTEST_RUNNING:).
      *
      * Original E3DC Documentation:
      *
@@ -1918,6 +2226,8 @@ enum class EMSTag(
      * hex = "0x01000097", type = DataType.NONE
      *
      * Request parameter to retrieve the system specification of the home power plant. A block of the type [EMSTag.GET_SYS_SPECS] is delivered as a response
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_GET_SYS_SPECS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_SYS_SPECS:).
      *
      * Original E3DC Documentation:
      *
@@ -1933,6 +2243,8 @@ enum class EMSTag(
      * Response parameter to a request parameter of type [EMSTag.REQ_GET_SYS_SPECS].
      *
      * This container contains a list of further data blocks, each of which is again a container of type [EMSTag.SYS_SPEC].
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GET_SYS_SPECS&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_SYS_SPECS:).
      *
      * Original E3DC Documentation:
      *
@@ -1953,6 +2265,8 @@ enum class EMSTag(
      * - [EMSTag.SYS_SPEC_INDEX]
      * - [EMSTag.SYS_SPEC_NAME]
      * - [EMSTag.SYS_SPEC_VALUE_INT] or [EMSTag.SYS_SPEC_VALUE_STRING]
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SYS_SPEC&labels=documentation&body=Documentation+update+for+enum+EMSTag.SYS_SPEC:).
      *
      * Original E3DC Documentation:
      *
@@ -1968,6 +2282,8 @@ enum class EMSTag(
      * hex = "0x0100009A", type = DataType.INT32
      *
      * Data block indicating the position (index) of the enclosing [EMSTag.SYS_SPEC] data block in the [EMSTag.GET_SYS_SPECS] container.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SYS_SPEC_INDEX&labels=documentation&body=Documentation+update+for+enum+EMSTag.SYS_SPEC_INDEX:).
      *
      * Original E3DC Documentation:
      *
@@ -1984,6 +2300,8 @@ enum class EMSTag(
      * Data block which specifies the name of the specification value. This data block occurs within an [EMSTag.SYS_SPEC] container.
      *
      * The possible values have an enum character. All known values can be taken from the class [de.jnkconsulting.e3dc.easyrscp.api.frame.EMSSysSpecName].
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SYS_SPEC_NAME&labels=documentation&body=Documentation+update+for+enum+EMSTag.SYS_SPEC_NAME:).
      *
      * Original E3DC Documentation:
      *
@@ -1999,6 +2317,8 @@ enum class EMSTag(
      * hex = "0x0100009C", type = DataType.INT32
      *
      * Data block that specifies the value of a system property as [Int]. This data block occurs within an [EMSTag.SYS_SPEC] container.
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SYS_SPEC_VALUE_INT&labels=documentation&body=Documentation+update+for+enum+EMSTag.SYS_SPEC_VALUE_INT:).
      *
      * Original E3DC Documentation:
      *
@@ -2016,6 +2336,8 @@ enum class EMSTag(
      *
      *
      * ATTENTION: Until now I have never seen this block. At my home power plant only blocks of type [EMSTag.SYS_SPEC_VALUE_INT] are delivered
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.SYS_SPEC_VALUE_STRING&labels=documentation&body=Documentation+update+for+enum+EMSTag.SYS_SPEC_VALUE_STRING:).
      *
      * Original E3DC Documentation:
      *
@@ -2028,6 +2350,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01050000", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.REQ_ALIVE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_ALIVE:).
      *
      * Original E3DC Documentation:
      *
@@ -2040,6 +2364,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01850000", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.ALIVE&labels=documentation&body=Documentation+update+for+enum+EMSTag.ALIVE:).
      *
      * Original E3DC Documentation:
      *
@@ -2051,6 +2377,8 @@ enum class EMSTag(
 
     /**
      * hex = "0x01FFFFFF", type = DataType.ERROR
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EMSTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+EMSTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *
@@ -2061,5 +2389,4 @@ enum class EMSTag(
     GENERAL_ERROR(hex = "0x01FFFFFF", type = DataType.ERROR),
 
 }
-
 

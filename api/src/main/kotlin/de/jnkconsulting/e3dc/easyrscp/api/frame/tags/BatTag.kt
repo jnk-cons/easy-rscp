@@ -21,6 +21,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03040000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_DATA&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DATA:).
      *
      * Original E3DC Documentation:
      *
@@ -33,6 +35,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03040001", type = DataType.UINT16
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.INDEX&labels=documentation&body=Documentation+update+for+enum+BatTag.INDEX:).
      *
      * Original E3DC Documentation:
      *
@@ -45,6 +49,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03840000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DATA&labels=documentation&body=Documentation+update+for+enum+BatTag.DATA:).
      *
      * Original E3DC Documentation:
      *
@@ -57,6 +63,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800001", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.RSOC&labels=documentation&body=Documentation+update+for+enum+BatTag.RSOC:).
      *
      * Original E3DC Documentation:
      *
@@ -69,6 +77,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800002", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MODULE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.MODULE_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -81,6 +91,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800003", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -93,6 +105,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800004", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MAX_BAT_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.MAX_BAT_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -105,6 +119,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800005", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MAX_CHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.MAX_CHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -117,6 +133,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800006", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.EOD_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.EOD_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -129,6 +147,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800007", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MAX_DISCHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.MAX_DISCHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -141,6 +161,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800008", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.CHARGE_CYCLES&labels=documentation&body=Documentation+update+for+enum+BatTag.CHARGE_CYCLES:).
      *
      * Original E3DC Documentation:
      *
@@ -153,6 +175,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800009", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.TERMINAL_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.TERMINAL_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -165,6 +189,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380000A", type = DataType.BITFIELD
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.STATUS_CODE&labels=documentation&body=Documentation+update+for+enum+BatTag.STATUS_CODE:).
      *
      * Original E3DC Documentation:
      *
@@ -177,6 +203,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380000B", type = DataType.BITFIELD
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.ERROR_CODE&labels=documentation&body=Documentation+update+for+enum+BatTag.ERROR_CODE:).
      *
      * Original E3DC Documentation:
      *
@@ -189,6 +217,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380000C", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_NAME:).
      *
      * Original E3DC Documentation:
      *
@@ -201,6 +231,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380000D", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_COUNT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_COUNT:).
      *
      * Original E3DC Documentation:
      *
@@ -213,6 +245,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800016", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MAX_DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.MAX_DCB_CELL_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -224,6 +258,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800017", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.MIN_DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.MIN_DCB_CELL_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -236,6 +272,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800019", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CELL_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -247,6 +285,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380001B", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CELL_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CELL_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -259,6 +299,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0380001E", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.READY_FOR_SHUTDOWN&labels=documentation&body=Documentation+update+for+enum+BatTag.READY_FOR_SHUTDOWN:).
      *
      * Original E3DC Documentation:
      *
@@ -270,6 +312,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800020", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.INFO&labels=documentation&body=Documentation+update+for+enum+BatTag.INFO:).
      *
      * Original E3DC Documentation:
      *
@@ -285,6 +329,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800021", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.TRAINING_MODE&labels=documentation&body=Documentation+update+for+enum+BatTag.TRAINING_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -304,6 +350,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000001", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_RSOC&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_RSOC:).
      *
      * Original E3DC Documentation:
      *
@@ -316,6 +364,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000002", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MODULE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MODULE_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -328,6 +378,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000003", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -340,6 +392,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000004", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MAX_BAT_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_BAT_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -352,6 +406,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000005", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MAX_CHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_CHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -364,6 +420,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000006", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_EOD_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_EOD_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -376,6 +434,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000007", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MAX_DISCHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_DISCHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -388,6 +448,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000008", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_CHARGE_CYCLES&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_CHARGE_CYCLES:).
      *
      * Original E3DC Documentation:
      *
@@ -400,6 +462,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000009", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_TERMINAL_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_TERMINAL_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -412,6 +476,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0300000A", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_STATUS_CODE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_STATUS_CODE:).
      *
      * Original E3DC Documentation:
      *
@@ -424,6 +490,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0300000B", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_ERROR_CODE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_ERROR_CODE:).
      *
      * Original E3DC Documentation:
      *
@@ -436,6 +504,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0300000C", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DEVICE_NAME:).
      *
      * Original E3DC Documentation:
      *
@@ -448,6 +518,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0300000D", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_DCB_COUNT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DCB_COUNT:).
      *
      * Original E3DC Documentation:
      *
@@ -460,6 +532,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000016", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MAX_DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_DCB_CELL_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -472,6 +546,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000017", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_MIN_DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MIN_DCB_CELL_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -484,6 +560,8 @@ enum class BatTag(
 
     /**
      * hex = "0x0300001E", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_READY_FOR_SHUTDOWN&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_READY_FOR_SHUTDOWN:).
      *
      * Original E3DC Documentation:
      *
@@ -496,6 +574,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000020", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_INFO&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_INFO:).
      *
      * Original E3DC Documentation:
      *
@@ -508,6 +588,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03000021", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_TRAINING_MODE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_TRAINING_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -520,6 +602,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800100", type = DataType.UINT16
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_INDEX&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_INDEX:).
      *
      * Original E3DC Documentation:
      *
@@ -531,6 +615,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800101", type = DataType.UINT64
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_LAST_MESSAGE_TIMESTAMP&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_LAST_MESSAGE_TIMESTAMP:).
      *
      * Original E3DC Documentation:
      *
@@ -542,6 +628,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800102", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_MAX_CHARGE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_MAX_CHARGE_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -553,6 +641,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800103", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_MAX_CHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_MAX_CHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -564,6 +654,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800104", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_END_OF_DISCHARGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_END_OF_DISCHARGE:).
      *
      * Original E3DC Documentation:
      *
@@ -575,6 +667,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800105", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_MAX_DISCHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_MAX_DISCHARGE_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -586,6 +680,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800106", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_FULL_CHARGE_CAPACITY&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_FULL_CHARGE_CAPACITY:).
      *
      * Original E3DC Documentation:
      *
@@ -597,6 +693,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800107", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_REMAINING_CAPACITY&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_REMAINING_CAPACITY:).
      *
      * Original E3DC Documentation:
      *
@@ -608,6 +706,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800108", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_SOC&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_SOC:).
      *
      * Original E3DC Documentation:
      *
@@ -619,6 +719,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800109", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_SOH&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_SOH:).
      *
      * Original E3DC Documentation:
      *
@@ -630,6 +732,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800110", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CYCLE_COUNT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CYCLE_COUNT:).
      *
      * Original E3DC Documentation:
      *
@@ -641,6 +745,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800111", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CURRENT:).
      *
      * Original E3DC Documentation:
      *
@@ -652,6 +758,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800112", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -663,6 +771,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800113", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CURRENT_AVG_30S&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CURRENT_AVG_30S:).
      *
      * Original E3DC Documentation:
      *
@@ -674,6 +784,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800114", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_VOLTAGE_AVG_30S&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_VOLTAGE_AVG_30S:).
      *
      * Original E3DC Documentation:
      *
@@ -685,6 +797,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800115", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_DESIGN_CAPACITY&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_DESIGN_CAPACITY:).
      *
      * Original E3DC Documentation:
      *
@@ -696,6 +810,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800116", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_DESIGN_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_DESIGN_VOLTAGE:).
      *
      * Original E3DC Documentation:
      *
@@ -707,6 +823,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800117", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CHARGE_LOW_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CHARGE_LOW_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -718,6 +836,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800118", type = DataType.FLOAT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_CHARGE_HIGH_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CHARGE_HIGH_TEMPERATURE:).
      *
      * Original E3DC Documentation:
      *
@@ -729,6 +849,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800119", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_MANUFACTURE_DATE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_MANUFACTURE_DATE:).
      *
      * Original E3DC Documentation:
      *
@@ -740,6 +862,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800120", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_SERIALNO&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_SERIALNO:).
      *
      * Original E3DC Documentation:
      *
@@ -751,6 +875,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800121", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_PROTOCOL_VERSION&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_PROTOCOL_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -762,6 +888,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800122", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_FW_VERSION&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_FW_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -773,6 +901,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800123", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_DATA_TABLE_VERSION&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_DATA_TABLE_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -784,6 +914,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03800124", type = DataType.UINT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DCB_PCB_VERSION&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_PCB_VERSION:).
      *
      * Original E3DC Documentation:
      *
@@ -795,6 +927,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03060000", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -806,6 +940,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03860000", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -818,6 +954,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03860001", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_CONNECTED:).
      *
      * Original E3DC Documentation:
      *
@@ -830,6 +968,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03860002", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_WORKING:).
      *
      * Original E3DC Documentation:
      *
@@ -842,6 +982,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03860003", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_IN_SERVICE:).
      *
      * Original E3DC Documentation:
      *
@@ -854,6 +996,8 @@ enum class BatTag(
 
     /**
      * hex = "0x03FFFFFF", type = DataType.ERROR
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+BatTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+BatTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

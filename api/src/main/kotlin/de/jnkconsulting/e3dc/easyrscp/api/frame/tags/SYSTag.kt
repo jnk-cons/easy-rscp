@@ -21,6 +21,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C000001", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.REQ_SYSTEM_REBOOT&labels=documentation&body=Documentation+update+for+enum+SYSTag.REQ_SYSTEM_REBOOT:).
      *
      * Original E3DC Documentation:
      *
@@ -32,6 +34,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C800001", type = DataType.INT32
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.SYSTEM_REBOOT&labels=documentation&body=Documentation+update+for+enum+SYSTag.SYSTEM_REBOOT:).
      *
      * Original E3DC Documentation:
      *
@@ -43,6 +47,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C000002", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.REQ_IS_SYSTEM_REBOOTING&labels=documentation&body=Documentation+update+for+enum+SYSTag.REQ_IS_SYSTEM_REBOOTING:).
      *
      * Original E3DC Documentation:
      *
@@ -54,6 +60,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C800002", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.IS_SYSTEM_REBOOTING&labels=documentation&body=Documentation+update+for+enum+SYSTag.IS_SYSTEM_REBOOTING:).
      *
      * Original E3DC Documentation:
      *
@@ -65,6 +73,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C000003", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.REQ_RESTART_APPLICATION&labels=documentation&body=Documentation+update+for+enum+SYSTag.REQ_RESTART_APPLICATION:).
      *
      * Original E3DC Documentation:
      *
@@ -76,6 +86,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C800003", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.RESTART_APPLICATION&labels=documentation&body=Documentation+update+for+enum+SYSTag.RESTART_APPLICATION:).
      *
      * Original E3DC Documentation:
      *
@@ -87,6 +99,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0C800011", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.SCRIPT_FILE&labels=documentation&body=Documentation+update+for+enum+SYSTag.SCRIPT_FILE:).
      *
      * Original E3DC Documentation:
      *
@@ -98,6 +112,8 @@ enum class SYSTag(
 
     /**
      * hex = "0x0CFFFFFF", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SYSTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+SYSTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

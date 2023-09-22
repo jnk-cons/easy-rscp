@@ -22,6 +22,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00000001", type = DataType.CONTAINER
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.REQ_AUTHENTICATION&labels=documentation&body=Documentation+update+for+enum+RSCPTag.REQ_AUTHENTICATION:).
      *
      * Original E3DC Documentation:
      *
@@ -33,6 +35,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00000002", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.AUTHENTICATION_USER&labels=documentation&body=Documentation+update+for+enum+RSCPTag.AUTHENTICATION_USER:).
      *
      * Original E3DC Documentation:
      *
@@ -44,6 +48,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00000003", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.AUTHENTICATION_PASSWORD&labels=documentation&body=Documentation+update+for+enum+RSCPTag.AUTHENTICATION_PASSWORD:).
      *
      * Original E3DC Documentation:
      *
@@ -55,6 +61,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00800001", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.AUTHENTICATION&labels=documentation&body=Documentation+update+for+enum+RSCPTag.AUTHENTICATION:).
      *
      * Original E3DC Documentation:
      *
@@ -76,6 +84,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00000004", type = DataType.NONE
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.REQ_USER_LEVEL&labels=documentation&body=Documentation+update+for+enum+RSCPTag.REQ_USER_LEVEL:).
      *
      * Original E3DC Documentation:
      *
@@ -87,6 +97,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00800004", type = DataType.UCHAR8
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.USER_LEVEL&labels=documentation&body=Documentation+update+for+enum+RSCPTag.USER_LEVEL:).
      *
      * Original E3DC Documentation:
      *
@@ -98,6 +110,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00000005", type = DataType.STRING
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.REQ_SET_ENCRYPTION_PASSPHRASE&labels=documentation&body=Documentation+update+for+enum+RSCPTag.REQ_SET_ENCRYPTION_PASSPHRASE:).
      *
      * Original E3DC Documentation:
      *
@@ -109,6 +123,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00800005", type = DataType.BOOL
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.SET_ENCRYPTION_PASSPHRASE&labels=documentation&body=Documentation+update+for+enum+RSCPTag.SET_ENCRYPTION_PASSPHRASE:).
      *
      * Original E3DC Documentation:
      *
@@ -120,6 +136,8 @@ enum class RSCPTag(
 
     /**
      * hex = "0x00FFFFFF", type = DataType.ERROR
+	 *
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+RSCPTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+RSCPTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *
