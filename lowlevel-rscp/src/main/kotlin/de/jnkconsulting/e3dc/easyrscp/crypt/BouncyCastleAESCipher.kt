@@ -48,7 +48,7 @@ class BouncyCastleAESCipher(rscpPassword: String): AESCipher {
                 updateIv(message, ivDecryption)
             }.let {
                 var lastZeroIdx: Int = it.size - 1
-                while (lastZeroIdx >= 0 && it.get(lastZeroIdx).toInt() == 0) {
+                while (lastZeroIdx >= 0 && it[lastZeroIdx].toInt() == 0) {
                     --lastZeroIdx
                 }
                 it.copyOf(lastZeroIdx + 1)
@@ -67,7 +67,7 @@ class BouncyCastleAESCipher(rscpPassword: String): AESCipher {
 
     private fun createCipher(forEncryption: Boolean, iv: ByteArray) =
         PaddedBufferedBlockCipher(
-            CBCBlockCipher(RijndaelEngine(blockSize)),
+            CBCBlockCipher.newInstance(RijndaelEngine(blockSize)),
             ZeroBytePadding()
         ).also {
             val keySize = blockSize / 8
