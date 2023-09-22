@@ -197,6 +197,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000015", type = DataType.NONE
      *
+     * Request parameter to get the feed-in disconnection limit in percent. A [DERATE_AT_PERCENT_VALUE] block is supplied as a response.
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -564,6 +566,24 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800014", type = DataType.FLOAT32
+     *
+     * Response tag to a [REQ_DERATE_AT_PERCENT_VALUE] request.
+     *
+     * Empirical insight:
+     *
+     * This is the ratio max. feed-in power / INSTALLED_PEAK_POWER in percent.
+     *
+     * Example: The plant has 7.7 kWp and may only feed in 70% of this peak power.
+     *
+     * INSTALLED_PEAK_POWER = 7700 W
+     *
+     * DERATE_AT_PERCENT_VALUE = 70 %
+     *
+     * 7700 * 70 / 100 = 5390
+     *
+     * The plant is de-energized at 5,390 W feed-in.
+     *
+     * Only the installer can change the DERATE_AT_PERCENT_VALUE value.
      *
      * Original E3DC Documentation:
      *
