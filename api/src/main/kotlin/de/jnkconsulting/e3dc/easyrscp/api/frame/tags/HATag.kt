@@ -21,7 +21,7 @@ enum class HATag(
     /**
      * hex = "0x09000001", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_DATAPOINT_LIST&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DATAPOINT_LIST:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_DATAPOINT_LIST&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DATAPOINT_LIST:).
      *
      * Original E3DC Documentation:
      *
@@ -34,7 +34,7 @@ enum class HATag(
     /**
      * hex = "0x09000010", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_ACTUATOR_STATES&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_ACTUATOR_STATES:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_ACTUATOR_STATES&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_ACTUATOR_STATES:).
      *
      * Original E3DC Documentation:
      *
@@ -47,7 +47,7 @@ enum class HATag(
     /**
      * hex = "0x09000020", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_ADD_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_ADD_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_ADD_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_ADD_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -61,7 +61,7 @@ enum class HATag(
     /**
      * hex = "0x09000030", type = DataType.UINT16
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_REMOVE_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_REMOVE_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_REMOVE_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_REMOVE_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -74,7 +74,7 @@ enum class HATag(
     /**
      * hex = "0x09000040", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_COMMAND_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_COMMAND_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_COMMAND_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_COMMAND_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -88,7 +88,7 @@ enum class HATag(
     /**
      * hex = "0x09000041", type = DataType.STRING
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_COMMAND&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_COMMAND:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_COMMAND&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_COMMAND:).
      *
      * Original E3DC Documentation:
      *
@@ -101,7 +101,7 @@ enum class HATag(
     /**
      * hex = "0x09000050", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_DESCRIPTIONS_CHANGE&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DESCRIPTIONS_CHANGE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_DESCRIPTIONS_CHANGE&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DESCRIPTIONS_CHANGE:).
      *
      * Original E3DC Documentation:
      *
@@ -115,7 +115,7 @@ enum class HATag(
     /**
      * hex = "0x09000060", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_CONFIGURATION_CHANGE_COUNTER&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_CONFIGURATION_CHANGE_COUNTER:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_CONFIGURATION_CHANGE_COUNTER&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_CONFIGURATION_CHANGE_COUNTER:).
      *
      * Original E3DC Documentation:
      *
@@ -128,7 +128,7 @@ enum class HATag(
     /**
      * hex = "0x09800060", type = DataType.UINT32
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.CONFIGURATION_CHANGE_COUNTER&labels=documentation&body=Documentation+update+for+enum+HATag.CONFIGURATION_CHANGE_COUNTER:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.CONFIGURATION_CHANGE_COUNTER&labels=documentation&body=Documentation+update+for+enum+HATag.CONFIGURATION_CHANGE_COUNTER:).
      *
      * Original E3DC Documentation:
      *
@@ -141,7 +141,7 @@ enum class HATag(
     /**
      * hex = "0x09800001", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_LIST&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_LIST:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_LIST&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_LIST:).
      *
      * Original E3DC Documentation:
      *
@@ -154,7 +154,7 @@ enum class HATag(
     /**
      * hex = "0x09800002", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT:).
      *
      * Original E3DC Documentation:
      *
@@ -168,7 +168,7 @@ enum class HATag(
     /**
      * hex = "0x09800003", type = DataType.UINT16
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_INDEX&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_INDEX:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_INDEX&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_INDEX:).
      *
      * Original E3DC Documentation:
      *
@@ -181,7 +181,7 @@ enum class HATag(
     /**
      * hex = "0x09800004", type = DataType.UINT32
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_TYPE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_TYPE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_TYPE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_TYPE:).
      *
      * Original E3DC Documentation:
      *
@@ -194,7 +194,7 @@ enum class HATag(
     /**
      * hex = "0x09800005", type = DataType.STRING
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_NAME&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_NAME:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_NAME&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_NAME:).
      *
      * Original E3DC Documentation:
      *
@@ -207,7 +207,7 @@ enum class HATag(
     /**
      * hex = "0x09800011", type = DataType.CHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -221,7 +221,7 @@ enum class HATag(
     /**
      * hex = "0x09800013", type = DataType.UINT64
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_STATE_TIMESTAMP&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE_TIMESTAMP:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_STATE_TIMESTAMP&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE_TIMESTAMP:).
      *
      * Original E3DC Documentation:
      *
@@ -235,7 +235,7 @@ enum class HATag(
     /**
      * hex = "0x09800014", type = DataType.CHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_STATE_VALUE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE_VALUE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_STATE_VALUE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_STATE_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -249,7 +249,7 @@ enum class HATag(
     /**
      * hex = "0x09800015", type = DataType.CHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_SUPPLY_QUALITY&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_SUPPLY_QUALITY:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_SUPPLY_QUALITY&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_SUPPLY_QUALITY:).
      *
      * Original E3DC Documentation:
      *
@@ -278,7 +278,7 @@ enum class HATag(
     /**
      * hex = "0x09800016", type = DataType.CHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_SIGNAL_QUALITY&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_SIGNAL_QUALITY:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_SIGNAL_QUALITY&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_SIGNAL_QUALITY:).
      *
      * Original E3DC Documentation:
      *
@@ -297,7 +297,7 @@ enum class HATag(
     /**
      * hex = "0x09800012", type = DataType.CHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_MODE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_MODE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_MODE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_MODE:).
      *
      * Original E3DC Documentation:
      *
@@ -311,7 +311,7 @@ enum class HATag(
     /**
      * hex = "0x09800006", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTIONS&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTIONS:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTIONS&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTIONS:).
      *
      * Original E3DC Documentation:
      *
@@ -325,7 +325,7 @@ enum class HATag(
     /**
      * hex = "0x09800007", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION:).
      *
      * Original E3DC Documentation:
      *
@@ -338,7 +338,7 @@ enum class HATag(
     /**
      * hex = "0x09800008", type = DataType.STRING
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION_NAME&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION_NAME:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION_NAME&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION_NAME:).
      *
      * Original E3DC Documentation:
      *
@@ -351,7 +351,7 @@ enum class HATag(
     /**
      * hex = "0x09800009", type = DataType.INT32
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION_VALUE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION_VALUE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DATAPOINT_DESCRIPTION_VALUE&labels=documentation&body=Documentation+update+for+enum+HATag.DATAPOINT_DESCRIPTION_VALUE:).
      *
      * Original E3DC Documentation:
      *
@@ -364,7 +364,7 @@ enum class HATag(
     /**
      * hex = "0x09800010", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.ACTUATOR_STATES&labels=documentation&body=Documentation+update+for+enum+HATag.ACTUATOR_STATES:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.ACTUATOR_STATES&labels=documentation&body=Documentation+update+for+enum+HATag.ACTUATOR_STATES:).
      *
      * Original E3DC Documentation:
      *
@@ -378,7 +378,7 @@ enum class HATag(
     /**
      * hex = "0x09800020", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.ADD_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.ADD_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.ADD_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.ADD_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -391,7 +391,7 @@ enum class HATag(
     /**
      * hex = "0x09800030", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REMOVE_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REMOVE_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REMOVE_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.REMOVE_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -404,7 +404,7 @@ enum class HATag(
     /**
      * hex = "0x09800040", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.COMMAND_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.COMMAND_ACTUATOR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.COMMAND_ACTUATOR&labels=documentation&body=Documentation+update+for+enum+HATag.COMMAND_ACTUATOR:).
      *
      * Original E3DC Documentation:
      *
@@ -417,7 +417,7 @@ enum class HATag(
     /**
      * hex = "0x09800050", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DESCRIPTIONS_CHANGE&labels=documentation&body=Documentation+update+for+enum+HATag.DESCRIPTIONS_CHANGE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DESCRIPTIONS_CHANGE&labels=documentation&body=Documentation+update+for+enum+HATag.DESCRIPTIONS_CHANGE:).
      *
      * Original E3DC Documentation:
      *
@@ -430,7 +430,7 @@ enum class HATag(
     /**
      * hex = "0x09060000", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DEVICE_STATE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.REQ_DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -443,7 +443,7 @@ enum class HATag(
     /**
      * hex = "0x09860000", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_STATE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -458,7 +458,7 @@ enum class HATag(
     /**
      * hex = "0x09860001", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_CONNECTED:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_CONNECTED:).
      *
      * Original E3DC Documentation:
      *
@@ -471,7 +471,7 @@ enum class HATag(
     /**
      * hex = "0x09860002", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_WORKING:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_WORKING:).
      *
      * Original E3DC Documentation:
      *
@@ -484,7 +484,7 @@ enum class HATag(
     /**
      * hex = "0x09860003", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_IN_SERVICE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+HATag.DEVICE_IN_SERVICE:).
      *
      * Original E3DC Documentation:
      *
@@ -497,7 +497,7 @@ enum class HATag(
     /**
      * hex = "0x09FFFFFF", type = DataType.ERROR
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+HATag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+HATag.GENERAL_ERROR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+HATag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+HATag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

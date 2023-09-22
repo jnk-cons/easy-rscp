@@ -22,7 +22,7 @@ enum class SRVTag(
     /**
      * hex = "0x08000001", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SRVTag.REQ_IS_ONLINE&labels=documentation&body=Documentation+update+for+enum+SRVTag.REQ_IS_ONLINE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+SRVTag.REQ_IS_ONLINE&labels=documentation&body=Documentation+update+for+enum+SRVTag.REQ_IS_ONLINE:).
      *
      * Original E3DC Documentation:
      *
@@ -35,7 +35,7 @@ enum class SRVTag(
     /**
      * hex = "0x08800001", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SRVTag.IS_ONLINE&labels=documentation&body=Documentation+update+for+enum+SRVTag.IS_ONLINE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+SRVTag.IS_ONLINE&labels=documentation&body=Documentation+update+for+enum+SRVTag.IS_ONLINE:).
      *
      * Original E3DC Documentation:
      *
@@ -48,7 +48,7 @@ enum class SRVTag(
     /**
      * hex = "0x08000002", type = DataType.STRING
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SRVTag.REQ_ADD_USER&labels=documentation&body=Documentation+update+for+enum+SRVTag.REQ_ADD_USER:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+SRVTag.REQ_ADD_USER&labels=documentation&body=Documentation+update+for+enum+SRVTag.REQ_ADD_USER:).
      *
      * Original E3DC Documentation:
      *
@@ -61,7 +61,7 @@ enum class SRVTag(
     /**
      * hex = "0x08800002", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SRVTag.ADD_USER&labels=documentation&body=Documentation+update+for+enum+SRVTag.ADD_USER:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+SRVTag.ADD_USER&labels=documentation&body=Documentation+update+for+enum+SRVTag.ADD_USER:).
      *
      * Original E3DC Documentation:
      *
@@ -74,7 +74,7 @@ enum class SRVTag(
     /**
      * hex = "0x08FFFFFF", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+SRVTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+SRVTag.GENERAL_ERROR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+SRVTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+SRVTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

@@ -22,7 +22,7 @@ enum class UMTag(
     /**
      * hex = "0x0D000001", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+UMTag.REQ_UPDATE_STATUS&labels=documentation&body=Documentation+update+for+enum+UMTag.REQ_UPDATE_STATUS:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+UMTag.REQ_UPDATE_STATUS&labels=documentation&body=Documentation+update+for+enum+UMTag.REQ_UPDATE_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -35,7 +35,7 @@ enum class UMTag(
     /**
      * hex = "0x0D800001", type = DataType.INT32
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+UMTag.UPDATE_STATUS&labels=documentation&body=Documentation+update+for+enum+UMTag.UPDATE_STATUS:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+UMTag.UPDATE_STATUS&labels=documentation&body=Documentation+update+for+enum+UMTag.UPDATE_STATUS:).
      *
      * Original E3DC Documentation:
      *
@@ -58,7 +58,7 @@ enum class UMTag(
     /**
      * hex = "0x0D000003", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+UMTag.REQ_CHECK_FOR_UPDATES&labels=documentation&body=Documentation+update+for+enum+UMTag.REQ_CHECK_FOR_UPDATES:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+UMTag.REQ_CHECK_FOR_UPDATES&labels=documentation&body=Documentation+update+for+enum+UMTag.REQ_CHECK_FOR_UPDATES:).
      *
      * Original E3DC Documentation:
      *
@@ -71,7 +71,7 @@ enum class UMTag(
     /**
      * hex = "0x0D800003", type = DataType.UCHAR8
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+UMTag.CHECK_FOR_UPDATES&labels=documentation&body=Documentation+update+for+enum+UMTag.CHECK_FOR_UPDATES:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+UMTag.CHECK_FOR_UPDATES&labels=documentation&body=Documentation+update+for+enum+UMTag.CHECK_FOR_UPDATES:).
      *
      * Original E3DC Documentation:
      *
@@ -90,7 +90,7 @@ enum class UMTag(
     /**
      * hex = "0x0DFFFFFF", type = DataType.ERROR
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+UMTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+UMTag.GENERAL_ERROR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+UMTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+UMTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *

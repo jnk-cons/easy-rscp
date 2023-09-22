@@ -22,7 +22,7 @@ enum class EPTag(
     /**
      * hex = "0x0B000003", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.REQ_IS_READY_FOR_SWITCH&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_READY_FOR_SWITCH:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.REQ_IS_READY_FOR_SWITCH&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_READY_FOR_SWITCH:).
      *
      * Original E3DC Documentation:
      *
@@ -35,7 +35,7 @@ enum class EPTag(
     /**
      * hex = "0x0B000004", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.REQ_IS_GRID_CONNECTED&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_GRID_CONNECTED:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.REQ_IS_GRID_CONNECTED&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_GRID_CONNECTED:).
      *
      * Original E3DC Documentation:
      *
@@ -48,7 +48,7 @@ enum class EPTag(
     /**
      * hex = "0x0B000005", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.REQ_IS_ISLAND_GRID&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_ISLAND_GRID:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.REQ_IS_ISLAND_GRID&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_ISLAND_GRID:).
      *
      * Original E3DC Documentation:
      *
@@ -61,7 +61,7 @@ enum class EPTag(
     /**
      * hex = "0x0B000006", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.REQ_IS_INVALID_STATE&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_INVALID_STATE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.REQ_IS_INVALID_STATE&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_INVALID_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -74,7 +74,7 @@ enum class EPTag(
     /**
      * hex = "0x0B000007", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.REQ_IS_POSSIBLE&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_POSSIBLE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.REQ_IS_POSSIBLE&labels=documentation&body=Documentation+update+for+enum+EPTag.REQ_IS_POSSIBLE:).
      *
      * Original E3DC Documentation:
      *
@@ -87,7 +87,7 @@ enum class EPTag(
     /**
      * hex = "0x0B800003", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.IS_READY_FOR_SWITCH&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_READY_FOR_SWITCH:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.IS_READY_FOR_SWITCH&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_READY_FOR_SWITCH:).
      *
      * Original E3DC Documentation:
      *
@@ -100,7 +100,7 @@ enum class EPTag(
     /**
      * hex = "0x0B800004", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.IS_GRID_CONNECTED&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_GRID_CONNECTED:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.IS_GRID_CONNECTED&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_GRID_CONNECTED:).
      *
      * Original E3DC Documentation:
      *
@@ -113,7 +113,7 @@ enum class EPTag(
     /**
      * hex = "0x0B800005", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.IS_ISLAND_GRID&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_ISLAND_GRID:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.IS_ISLAND_GRID&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_ISLAND_GRID:).
      *
      * Original E3DC Documentation:
      *
@@ -126,7 +126,7 @@ enum class EPTag(
     /**
      * hex = "0x0B800006", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.IS_INVALID_STATE&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_INVALID_STATE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.IS_INVALID_STATE&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_INVALID_STATE:).
      *
      * Original E3DC Documentation:
      *
@@ -139,7 +139,7 @@ enum class EPTag(
     /**
      * hex = "0x0B800007", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.IS_POSSIBLE&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_POSSIBLE:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.IS_POSSIBLE&labels=documentation&body=Documentation+update+for+enum+EPTag.IS_POSSIBLE:).
      *
      * Original E3DC Documentation:
      *
@@ -152,7 +152,7 @@ enum class EPTag(
     /**
      * hex = "0x0BFFFFFF", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title='Documentation+improvement+for+EPTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+EPTag.GENERAL_ERROR:).
+	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EPTag.GENERAL_ERROR&labels=documentation&body=Documentation+update+for+enum+EPTag.GENERAL_ERROR:).
      *
      * Original E3DC Documentation:
      *
