@@ -186,6 +186,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000014", type = DataType.NONE
      *
+     * Request parameter to get the feed-in disconnection limit in percent. A [DERATE_AT_PERCENT_VALUE] block is supplied as a response.
+     *
      * Original E3DC Documentation:
      *
      * en:
@@ -196,8 +198,6 @@ enum class EMSTag(
 
     /**
      * hex = "0x01000015", type = DataType.NONE
-     *
-     * Request parameter to get the feed-in disconnection limit in percent. A [DERATE_AT_PERCENT_VALUE] block is supplied as a response.
      *
      * Original E3DC Documentation:
      *
