@@ -12,7 +12,7 @@ import java.net.Socket
  * @since 2.0
  */
 class DefaultSocketFactory: SocketFactory {
-    override fun createSocket(connectionData: E3DCConnectionData) =
+    override fun createSocket(connectionData: E3DCConnectionData): Socket =
         Socket(connectionData.address, connectionData.port).apply {
             tcpNoDelay = true
             soTimeout = connectionData.timeoutMillis.toInt()

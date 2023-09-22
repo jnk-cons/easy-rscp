@@ -14,7 +14,7 @@ import de.jnkconsulting.e3dc.easyrscp.service.converter.RequestResponseFrameConv
  */
 class YearlySummaryConverter: RequestResponseFrameConvert<HistoryData> {
 
-    override fun invoke(request: Frame, response: Frame) =
+    override fun invoke(request: Frame, response: Frame): HistoryData =
         HistoryData(
             start = request.instantByTag(DBTag.REQ_HISTORY_TIME_START, DBTag.REQ_HISTORY_DATA_YEAR),
             duration = request.durationByTag(DBTag.REQ_HISTORY_TIME_SPAN, DBTag.REQ_HISTORY_DATA_YEAR),

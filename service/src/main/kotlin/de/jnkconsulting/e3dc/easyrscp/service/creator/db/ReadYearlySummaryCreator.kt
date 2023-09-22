@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.service.creator.db
 
 
+import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.DBTag
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
 import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
@@ -14,7 +15,7 @@ import java.time.*
  */
 class ReadYearlySummaryCreator: FrameCreator<Year> {
 
-    override fun invoke(year: Year) =
+    override fun invoke(year: Year): Frame =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(DBTag.REQ_HISTORY_DATA_YEAR).container(

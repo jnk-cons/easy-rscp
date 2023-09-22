@@ -11,7 +11,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.service.model.WriteChargingLimitsResul
  */
 class WriteChargingLimitsResultConverter: FrameConverter<WriteChargingLimitsResult> {
 
-    override fun invoke(frame: Frame) =
+    override fun invoke(frame: Frame): WriteChargingLimitsResult =
         WriteChargingLimitsResult(
             maxCurrentChargingPower = frame.resultCodeByTag(EMSTag.RES_MAX_CHARGE_POWER, EMSTag.SET_POWER_SETTINGS),
             maxCurrentDischargingPower = frame.resultCodeByTag(EMSTag.RES_MAX_DISCHARGE_POWER, EMSTag.SET_POWER_SETTINGS),

@@ -41,7 +41,7 @@ class LiveDataServiceBuilder: DefaultServiceBuilder<LiveDataService>() {
      *
      * @since 2.0
      */
-    fun withPowerStateFrameConverter(converter: FrameConverter<PowerState>) =
+    fun withPowerStateFrameConverter(converter: FrameConverter<PowerState>): LiveDataServiceBuilder =
         converter
             .let {
                 convertFrameToPowerState = it
@@ -58,7 +58,7 @@ class LiveDataServiceBuilder: DefaultServiceBuilder<LiveDataService>() {
      *
      * @since 2.0
      */
-    fun withRequestLiveDataFrameCreator(creator: FrameCreator<Nothing?>) =
+    fun withRequestLiveDataFrameCreator(creator: FrameCreator<Nothing?>): LiveDataServiceBuilder =
         creator
             .let {
                 this.createRequestLiveDataFrame = it

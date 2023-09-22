@@ -32,7 +32,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun tag(bytes: ByteArray) =
+    fun tag(bytes: ByteArray): DataBuilder =
         bytes
             .also { tag = it }
             .let { this }
@@ -46,7 +46,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun tag(tag: Tag) =
+    fun tag(tag: Tag): DataBuilder =
         tag
             .let {
                 dataType = it.type.code
@@ -63,7 +63,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun raw(value: ByteArray, type: Byte) =
+    fun raw(value: ByteArray, type: Byte): DataBuilder =
         value
             .also {
                 this.value = it
@@ -80,7 +80,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun timestamp(timestamp: Instant) =
+    fun timestamp(timestamp: Instant): DataBuilder =
         emptyByteBuffer(SIZES.timestampEpochSeconds + SIZES.timestampEpochNanos)
             .putLong(timestamp.epochSecond)
             .putInt(timestamp.nano)
@@ -97,7 +97,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun timestamp(timestamp: Duration) =
+    fun timestamp(timestamp: Duration): DataBuilder =
         timestamp(Instant.ofEpochSecond(timestamp.seconds, timestamp.nano.toLong()))
 
     /**
@@ -107,7 +107,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun none() =
+    fun none(): DataBuilder =
         raw(ByteArray(0), DataType.NONE.code)
 
     /**
@@ -119,7 +119,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun bool(value: Boolean) =
+    fun bool(value: Boolean): DataBuilder =
         ByteArray(1)
             .also { it[0] = (if (value) 1 else 0).toByte() }
             .let { raw(it, DataType.BOOL.code) }
@@ -133,7 +133,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun char8(value: Byte) =
+    fun char8(value: Byte): DataBuilder =
         emptyByteBuffer(1)
             .put(value)
             .array()
@@ -148,7 +148,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun uchar8(value: Byte) =
+    fun uchar8(value: Byte): DataBuilder =
         emptyByteBuffer(1)
             .put(value)
             .array()
@@ -163,7 +163,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun int16(value: Short) =
+    fun int16(value: Short): DataBuilder =
        emptyByteBuffer(Short.SIZE_BYTES)
            .putShort(value)
            .array()
@@ -178,7 +178,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun uint16(value: Short) =
+    fun uint16(value: Short): DataBuilder =
         emptyByteBuffer(Short.SIZE_BYTES)
             .putShort(value)
             .array()
@@ -193,7 +193,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun int32(value: Int) =
+    fun int32(value: Int): DataBuilder =
         emptyByteBuffer(Int.SIZE_BYTES)
             .putInt(value)
             .array()
@@ -208,7 +208,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun uint32(value: Int) =
+    fun uint32(value: Int): DataBuilder =
         emptyByteBuffer(Int.SIZE_BYTES)
             .putInt(value)
             .array()
@@ -223,7 +223,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun int64(value: Long) =
+    fun int64(value: Long): DataBuilder =
         emptyByteBuffer(Long.SIZE_BYTES)
             .putLong(value)
             .array()
@@ -238,7 +238,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun uint64(value: Long) =
+    fun uint64(value: Long): DataBuilder =
         emptyByteBuffer(Long.SIZE_BYTES)
             .putLong(value)
             .array()
@@ -253,7 +253,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun float32(value: Float) =
+    fun float32(value: Float): DataBuilder =
         emptyByteBuffer(Float.SIZE_BYTES)
             .putFloat(value)
             .array()
@@ -268,7 +268,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun double64(value: Double) =
+    fun double64(value: Double): DataBuilder =
         emptyByteBuffer(Double.SIZE_BYTES)
             .putDouble(value)
             .array()
@@ -283,7 +283,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun bitfield(value: Byte) =
+    fun bitfield(value: Byte): DataBuilder =
         emptyByteBuffer(1)
             .put(value)
             .array()
@@ -300,7 +300,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun string(value: String) =
+    fun string(value: String): DataBuilder =
         raw(value.toByteArray(Charset.forName("UTF-8")), DataType.STRING.code)
 
     /**
@@ -312,7 +312,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun container(value: List<Data>) =
+    fun container(value: List<Data>): DataBuilder =
         value
             .forEach { containerAdd(it) }
             .let { this }
@@ -326,7 +326,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun container(vararg value: Data) =
+    fun container(vararg value: Data): DataBuilder =
         value
             .forEach { containerAdd(it) }
             .let { this }
@@ -346,7 +346,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun bytearray(value: ByteArray) =
+    fun bytearray(value: ByteArray): DataBuilder =
         raw(value, DataType.BYTEARRAY.code)
 
     /**
@@ -358,7 +358,7 @@ class DataBuilder {
      *
      * @since 2.0
      */
-    fun build() =
+    fun build(): Data =
         tag
             .let { it?: throw IllegalStateException("tag is required") }
             .also { ensureValueIsSet() }

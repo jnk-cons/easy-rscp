@@ -41,7 +41,7 @@ class InfoServiceBuilder: DefaultServiceBuilder<InfoService>() {
      *
      * @since 2.0
      */
-    fun withSystemInfoFrameConverter(converter: FrameConverter<SystemInfo>) =
+    fun withSystemInfoFrameConverter(converter: FrameConverter<SystemInfo>): InfoServiceBuilder =
         converter
             .let {
                 convertFrameToSystemInfo = it
@@ -58,7 +58,7 @@ class InfoServiceBuilder: DefaultServiceBuilder<InfoService>() {
      *
      * @since 2.0
      */
-    fun withRequestReadSystemInfoCreator(creator: FrameCreator<Nothing?>) =
+    fun withRequestReadSystemInfoCreator(creator: FrameCreator<Nothing?>): InfoServiceBuilder =
         creator
             .let {
                 this.createReadSystemInfoFrame = it

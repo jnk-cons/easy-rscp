@@ -1,9 +1,6 @@
 package de.jnkconsulting.e3dc.easyrscp.connection
 
-import de.jnkconsulting.e3dc.easyrscp.api.connection.E3DCConnectionData
-import de.jnkconsulting.e3dc.easyrscp.api.connection.HomePowerPlantConnectionFactory
-import de.jnkconsulting.e3dc.easyrscp.api.connection.RSCPAuthenticationException
-import de.jnkconsulting.e3dc.easyrscp.api.connection.SocketFactory
+import de.jnkconsulting.e3dc.easyrscp.api.connection.*
 import de.jnkconsulting.e3dc.easyrscp.api.crypt.AESCipherFactory
 import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.FrameParser
@@ -35,7 +32,7 @@ class DefaultHomePowerPlantConnectionFactory(
     private val logger = KotlinLogging.logger {}
 
 
-    override fun openConnection() =
+    override fun openConnection(): HomePowerPlantConnection =
         DefaultHomePowerPlantConnection(connectionData, aesFactory, socketFactory, frameParser, requestResponseListener)
             .also { logger.trace { "New connection object created for $connectionData. Send authentication frame." } }
             .also { it.connect() }

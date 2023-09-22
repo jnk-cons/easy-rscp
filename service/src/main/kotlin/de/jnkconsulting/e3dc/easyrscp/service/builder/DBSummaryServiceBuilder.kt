@@ -56,7 +56,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withDailySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>) =
+    fun withDailySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>): DBSummaryServiceBuilder =
         converter
             .let {
                 convertFrameToDailySummary = it
@@ -73,7 +73,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withMonthlySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>) =
+    fun withMonthlySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>): DBSummaryServiceBuilder =
         converter
             .let {
                 convertFrameToMonthlySummary = it
@@ -90,7 +90,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withYearlySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>) =
+    fun withYearlySummaryFrameConverter(converter: RequestResponseFrameConvert<HistoryData>): DBSummaryServiceBuilder =
         converter
             .let {
                 convertFrameToYearlySummary = it
@@ -107,7 +107,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withRequestDailySummaryFrameCreator(creator: FrameCreator<LocalDate>?) =
+    fun withRequestDailySummaryFrameCreator(creator: FrameCreator<LocalDate>?): DBSummaryServiceBuilder =
         creator
             .let {
                 createRequestDailySummaryFrame = it
@@ -124,7 +124,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withRequestMonthlySummaryFrameCreator(creator: FrameCreator<YearMonth>?) =
+    fun withRequestMonthlySummaryFrameCreator(creator: FrameCreator<YearMonth>?): DBSummaryServiceBuilder =
         creator
             .let {
                 createRequestMonthlySummaryFrame = it
@@ -141,7 +141,7 @@ class DBSummaryServiceBuilder: DefaultServiceBuilder<DBSummaryService>() {
      *
      * @since 2.0
      */
-    fun withRequestYearlySummaryFrameCreator(creator: FrameCreator<Year>?) =
+    fun withRequestYearlySummaryFrameCreator(creator: FrameCreator<Year>?): DBSummaryServiceBuilder =
         creator
             .let {
                 createRequestYearlySummaryFrame = it

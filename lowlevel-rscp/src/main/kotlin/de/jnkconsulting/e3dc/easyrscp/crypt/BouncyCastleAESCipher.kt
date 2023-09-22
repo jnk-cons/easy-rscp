@@ -31,7 +31,7 @@ class BouncyCastleAESCipher(rscpPassword: String): AESCipher {
         }
     }
 
-    override fun encrypt(message: ByteArray) =
+    override fun encrypt(message: ByteArray): ByteArray =
         createCipher(true, ivEncryption).let {
             ByteArray(it.getOutputSize(message.size)).apply {
                 val len = it.processBytes(message, 0, message.size, this, 0)

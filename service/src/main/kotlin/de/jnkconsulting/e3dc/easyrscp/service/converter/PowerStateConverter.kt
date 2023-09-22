@@ -11,7 +11,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.service.model.PowerState
  */
 class PowerStateConverter: FrameConverter<PowerState> {
 
-    override fun invoke(frame: Frame) =
+    override fun invoke(frame: Frame): PowerState =
         PowerState(
             timestamp = frame.timestamp,
             pvDelivery = frame.intByTag(EMSTag.POWER_PV),

@@ -27,7 +27,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun withParser(parser: DataParser) =
+    fun withParser(parser: DataParser): FrameBuilder =
         parser
             .also { this.parser = it }
             .let { this }
@@ -41,7 +41,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun timestamp(timestamp: Instant) =
+    fun timestamp(timestamp: Instant): FrameBuilder =
         timestamp
             .also { this.timestamp = it }
             .let { this }
@@ -55,7 +55,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun addData(toAdd: Data) =
+    fun addData(toAdd: Data): FrameBuilder =
         data
             .add(toAdd)
             .let { this }
@@ -69,7 +69,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun addData(toAdd: Collection<Data>) =
+    fun addData(toAdd: Collection<Data>): FrameBuilder =
         data
             .addAll(toAdd)
             .let { this }
@@ -83,7 +83,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun addData(vararg toAdd: Data) =
+    fun addData(vararg toAdd: Data): FrameBuilder =
         data
             .addAll(toAdd)
             .let { this }
@@ -95,7 +95,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun enableChecksum() =
+    fun enableChecksum(): FrameBuilder =
         this
             .also {
                 controlBytes = FIXED_VALUES.controlBytesWithChecksum
@@ -108,7 +108,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun disableChecksum() =
+    fun disableChecksum(): FrameBuilder =
         this
             .also {
                 controlBytes = FIXED_VALUES.controlBytesWithoutChecksum
@@ -121,7 +121,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun withChecksumEnabled(enabled: Boolean) =
+    fun withChecksumEnabled(enabled: Boolean): FrameBuilder =
         when (enabled) {
             true -> enableChecksum()
             false -> disableChecksum()
@@ -134,7 +134,7 @@ class FrameBuilder {
      *
      * @since 2.0
      */
-    fun build() =
+    fun build(): Frame =
         Frame(
             timestamp = timestamp?: Instant.now(),
             controlBytes = controlBytes,

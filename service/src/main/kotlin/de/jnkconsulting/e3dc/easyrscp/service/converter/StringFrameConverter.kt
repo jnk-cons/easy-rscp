@@ -14,7 +14,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
  */
 class StringFrameConverter: FrameConverter<String> {
 
-    override fun invoke(frame: Frame) =
+    override fun invoke(frame: Frame): String =
         StringBuilder()
             .append("Timestamp:\t${frame.timestamp}\n")
             .append("WithChecksum:\t${frame.isChecksumEnabled()}\n")

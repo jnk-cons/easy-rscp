@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.service.creator.db
 
 
+import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.DBTag
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
 import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
@@ -16,7 +17,7 @@ import java.time.ZoneId
  */
 class ReadMonthlySummaryCreator: FrameCreator<YearMonth> {
 
-    override fun invoke(month: YearMonth) =
+    override fun invoke(month: YearMonth): Frame =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(DBTag.REQ_HISTORY_DATA_MONTH).container(

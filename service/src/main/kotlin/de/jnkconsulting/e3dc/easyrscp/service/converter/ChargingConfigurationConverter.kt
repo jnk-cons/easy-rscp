@@ -15,7 +15,7 @@ import kotlin.math.min
  */
 class ChargingConfigurationConverter: FrameConverter<ChargingConfiguration> {
 
-    override fun invoke(frame: Frame) =
+    override fun invoke(frame: Frame): ChargingConfiguration =
         ChargingLimits(
             maxCurrentChargingPower = frame.intByTag(EMSTag.MAX_CHARGE_POWER, EMSTag.GET_POWER_SETTINGS),
             maxCurrentDischargingPower = frame.intByTag(EMSTag.MAX_DISCHARGE_POWER, EMSTag.GET_POWER_SETTINGS),

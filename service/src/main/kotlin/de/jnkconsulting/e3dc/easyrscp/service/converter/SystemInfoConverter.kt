@@ -12,7 +12,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.service.model.SystemInfo
  */
 class SystemInfoConverter: FrameConverter<SystemInfo> {
 
-    override fun invoke(frame: Frame) =
+    override fun invoke(frame: Frame): SystemInfo =
         SystemInfo(
             serialNumber = frame.stringByTag(InfoTag.SERIAL_NUMBER),
             softwareVersion = frame.stringByTag(InfoTag.SW_RELEASE),

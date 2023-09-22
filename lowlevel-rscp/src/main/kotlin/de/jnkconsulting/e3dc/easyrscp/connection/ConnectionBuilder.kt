@@ -56,7 +56,7 @@ class ConnectionBuilder {
      *
      * @see 2.0
      */
-    fun withAddress(address: String) =
+    fun withAddress(address: String): ConnectionBuilder =
         address
             .let {
                 this.address = it
@@ -72,7 +72,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withPort(port: Int) =
+    fun withPort(port: Int): ConnectionBuilder =
         port
             .let {
                 this.port = it
@@ -88,7 +88,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withPortalUser(portalUser: String) =
+    fun withPortalUser(portalUser: String): ConnectionBuilder =
         portalUser
             .let {
                 this.portalUser = it
@@ -104,7 +104,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withPortalPassword(portalPassword: String) =
+    fun withPortalPassword(portalPassword: String): ConnectionBuilder =
         portalPassword
             .let {
                 this.portalPassword = it
@@ -120,7 +120,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withRSCPPassword(rscpPassword: String) =
+    fun withRSCPPassword(rscpPassword: String): ConnectionBuilder =
         rscpPassword
             .let {
                 this.rscpPassword = it
@@ -137,7 +137,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withCipherFactory(cipherFactory: AESCipherFactory) =
+    fun withCipherFactory(cipherFactory: AESCipherFactory): ConnectionBuilder =
         cipherFactory
             .let {
                 this.cipherFactory = it
@@ -153,7 +153,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withSocketTimeoutMillis(timeout: Long) =
+    fun withSocketTimeoutMillis(timeout: Long): ConnectionBuilder =
         timeout
             .let {
                 this.socketTimeoutMillis = it
@@ -170,7 +170,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withSocketFactory(socketFactory: SocketFactory) =
+    fun withSocketFactory(socketFactory: SocketFactory): ConnectionBuilder =
         socketFactory
             .let {
                 this.socketFactory = it
@@ -187,7 +187,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withFrameParser(frameParser: FrameParser) =
+    fun withFrameParser(frameParser: FrameParser): ConnectionBuilder =
         frameParser
             .let {
                 this.frameParser = it
@@ -204,7 +204,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withConnectionPool(connectionPool: ConnectionPool) =
+    fun withConnectionPool(connectionPool: ConnectionPool): ConnectionBuilder =
         connectionPool
             .let {
                 this.connectionPool = it
@@ -223,7 +223,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun withConnectionPoolTimeoutMillis(timeout: Long) =
+    fun withConnectionPoolTimeoutMillis(timeout: Long): ConnectionBuilder =
         timeout
             .let {
                 this.connectionPoolTimeoutMillis = it
@@ -239,7 +239,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-   fun addRequestResponseListener(vararg listener: RSCPRequestResponseListener) =
+   fun addRequestResponseListener(vararg listener: RSCPRequestResponseListener): ConnectionBuilder =
        requestResponseListener
            .addAll(listener)
            .let { this }
@@ -283,11 +283,11 @@ class ConnectionBuilder {
     /**
      * Returns either the instance of [AESCipherFactory] set by [withCipherFactory] or creates a new one of type [BouncyCastleAESCipherFactory].
      *
-     * @return An instance of the type [BouncyCastleAESCipherFactory].
+     * @return An instance of the type [AESCipherFactory].
      *
      * @since 2.0
      */
-    fun buildCipherFactory() =
+    fun buildCipherFactory(): AESCipherFactory =
         cipherFactory ?: buildOwnCipherFactor()
 
     /**
@@ -297,7 +297,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun buildSocketFactory() =
+    fun buildSocketFactory(): SocketFactory =
         socketFactory ?: buildOwnSocketFactory()
 
     /**
@@ -307,7 +307,7 @@ class ConnectionBuilder {
      *
      * @since 2.0
      */
-    fun buildConnectionPool() =
+    fun buildConnectionPool(): ConnectionPool =
         connectionPool ?: buildOwnConnectionPool()
 
     private fun buildOwnConnectionPool(): ConnectionPool =

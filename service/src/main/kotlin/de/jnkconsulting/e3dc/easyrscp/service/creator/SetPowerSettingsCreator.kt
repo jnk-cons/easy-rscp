@@ -1,6 +1,7 @@
 package de.jnkconsulting.e3dc.easyrscp.service.creator
 
 
+import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.ChargingLimits
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
@@ -13,7 +14,7 @@ import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
  */
 class SetPowerSettingsCreator: FrameCreator<ChargingLimits> {
 
-    override fun invoke(limits: ChargingLimits) =
+    override fun invoke(limits: ChargingLimits): Frame =
         FrameBuilder()
             .addData(
                 DataBuilder().tag(EMSTag.REQ_SET_POWER_SETTINGS).container(

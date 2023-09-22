@@ -49,7 +49,7 @@ class ChargingServiceBuilder: DefaultServiceBuilder<ChargingService>() {
      *
      * @since 2.0
      */
-    fun withChargingConfigurationFrameConverter(converter: FrameConverter<ChargingConfiguration>) =
+    fun withChargingConfigurationFrameConverter(converter: FrameConverter<ChargingConfiguration>): ChargingServiceBuilder =
         converter
             .let {
                 convertFrameToChargingConfiguration = it
@@ -66,7 +66,7 @@ class ChargingServiceBuilder: DefaultServiceBuilder<ChargingService>() {
      *
      * @since 2.0
      */
-    fun withWriteChargingLimitsResultFrameConverter(converter: FrameConverter<WriteChargingLimitsResult>) =
+    fun withWriteChargingLimitsResultFrameConverter(converter: FrameConverter<WriteChargingLimitsResult>): ChargingServiceBuilder =
         converter
             .let {
                 convertFrameToWriteChargingLimitsResult = it
@@ -83,7 +83,7 @@ class ChargingServiceBuilder: DefaultServiceBuilder<ChargingService>() {
      *
      * @since 2.0
      */
-    fun withRequestChargingConfigurationFrameCreator(creator: FrameCreator<Nothing?>) =
+    fun withRequestChargingConfigurationFrameCreator(creator: FrameCreator<Nothing?>): ChargingServiceBuilder =
         creator
             .let {
                 this.createRequestChargingConfigurationFrame = it
@@ -100,7 +100,7 @@ class ChargingServiceBuilder: DefaultServiceBuilder<ChargingService>() {
      *
      * @since 2.0
      */
-    fun withSetPowerSettingsFrameCreator(creator: FrameCreator<ChargingLimits>) =
+    fun withSetPowerSettingsFrameCreator(creator: FrameCreator<ChargingLimits>): ChargingServiceBuilder =
         creator
             .let {
                 this.createSetPowerSettingsFrame = it
