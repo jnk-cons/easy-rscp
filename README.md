@@ -18,7 +18,9 @@ If you have a pull request, it is of course welcome.
 You want to become a maintainer? Create a ticket in the issues section and I'll get back to you.
 
 ## Roadmap
-Currently, there is one target. Release of the first public version 2.0.0 on maven central. It should not take much longer ...
+- Extension of the service implementation
+- Extension of the RSCP documentation
+- Creation of a RSCP Trainigs application
 
 ## License
 The project is published under the MIT license. Just look at the LICENSE file in the repository
