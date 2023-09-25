@@ -150,10 +150,10 @@ Here is an example of how to set your own creator on the `InfoService`:
         override fun invoke(param: Nothing?) =
             FrameBuilder()
                 .addData(
-                    DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).none().build(),
-                    DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).none().build(),
-                    DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).none().build(),
-                    DataBuilder().tag(InfoTag.REQ_SW_RELEASE).none().build()
+                    DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).build(),
+                    DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).build(),
+                    DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).build(),
+                    DataBuilder().tag(InfoTag.REQ_SW_RELEASE).build()
                 )
                 .build()
     }
@@ -188,10 +188,10 @@ Here is an example of how to set your own creator on the `InfoService`:
         public Frame invoke(Void unused) {
             return new FrameBuilder()
                 .addData(
-                    new DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).none().build(),
-                    new DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).none().build(),
-                    new DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).none().build(),
-                    new DataBuilder().tag(InfoTag.REQ_SW_RELEASE).none().build()
+                    new DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).build(),
+                    new DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).build(),
+                    new DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).build(),
+                    new DataBuilder().tag(InfoTag.REQ_SW_RELEASE).build()
                 )
                 .build();
         }

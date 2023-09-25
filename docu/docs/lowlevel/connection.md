@@ -36,11 +36,11 @@ To be able to read the answer we use the `StringFrameConverter` to output the an
         val answer = connectionPool.executeAndRelease {
             it.send(FrameBuilder()
                         .addData(
-                            DataBuilder().tag(EMSTag.REQ_POWER_PV).none().build(),
-                            DataBuilder().tag(EMSTag.REQ_POWER_BAT).none().build(),
-                            DataBuilder().tag(EMSTag.REQ_POWER_GRID).none().build(),
-                            DataBuilder().tag(EMSTag.REQ_POWER_HOME).none().build(),
-                            DataBuilder().tag(EMSTag.REQ_BAT_SOC).none().build(),
+                            DataBuilder().tag(EMSTag.REQ_POWER_PV).build(),
+                            DataBuilder().tag(EMSTag.REQ_POWER_BAT).build(),
+                            DataBuilder().tag(EMSTag.REQ_POWER_GRID).build(),
+                            DataBuilder().tag(EMSTag.REQ_POWER_HOME).build(),
+                            DataBuilder().tag(EMSTag.REQ_BAT_SOC).build(),
                         ).build()
             )
         }
@@ -75,11 +75,11 @@ To be able to read the answer we use the `StringFrameConverter` to output the an
             Frame answer = connectionPool.executeAndRelease(connection -> {
                 Frame requestFrame = new FrameBuilder()
                     .addData(
-                        new DataBuilder().tag(EMSTag.REQ_POWER_PV).none().build(),
-                        new DataBuilder().tag(EMSTag.REQ_POWER_BAT).none().build(),
-                        new DataBuilder().tag(EMSTag.REQ_POWER_GRID).none().build(),
-                        new DataBuilder().tag(EMSTag.REQ_POWER_HOME).none().build(),
-                        new DataBuilder().tag(EMSTag.REQ_BAT_SOC).none().build()
+                        new DataBuilder().tag(EMSTag.REQ_POWER_PV).build(),
+                        new DataBuilder().tag(EMSTag.REQ_POWER_BAT).build(),
+                        new DataBuilder().tag(EMSTag.REQ_POWER_GRID).build(),
+                        new DataBuilder().tag(EMSTag.REQ_POWER_HOME).build(),
+                        new DataBuilder().tag(EMSTag.REQ_BAT_SOC).build()
                         ).build();
                 return connection.send(requestFrame);
             });
