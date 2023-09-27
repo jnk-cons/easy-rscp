@@ -147,7 +147,7 @@ enum class DataType(val code: Byte) {
          * @since 2.0
          */
         fun byCode(code: Byte) =
-            DataType.values()
+            entries
                 .find { it.code == code }
                 ?: UNKNOWN
 

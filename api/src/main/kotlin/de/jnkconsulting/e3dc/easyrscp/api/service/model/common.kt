@@ -58,7 +58,7 @@ enum class ResultCode(val rscpCode: Int) {
 
     companion object {
         fun byRscpCode(code: Int): ResultCode =
-            values().find { it.rscpCode == code }?: UNKNOWN
+            entries.find { it.rscpCode == code }?: UNKNOWN
 
     }
 }

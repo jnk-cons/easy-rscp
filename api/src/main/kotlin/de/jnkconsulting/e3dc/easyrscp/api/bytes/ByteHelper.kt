@@ -51,21 +51,21 @@ val FIXED_VALUES = FixedValues(
  * Map containing all known tags. The key is the respective hex code as string in lowercase with leading prefix 0x
  */
 val tagsByHexString = mutableMapOf<String, Tag>()
-    .apply { putAll(BatTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(DBTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(DCDCTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(EMSTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(EPTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(FMSTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(HATag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(InfoTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(PMTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(PVITag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(RSCPTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(SRVTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(SYSTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(UMTag.values().associateBy { it.hex.lowercase() }) }
-    .apply { putAll(WBTag.values().associateBy { it.hex.lowercase() }) }
+    .apply { putAll(BatTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(DBTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(DCDCTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(EMSTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(EPTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(FMSTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(HATag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(InfoTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(PMTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(PVITag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(RSCPTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(SRVTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(SYSTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(UMTag.entries.associateBy { it.hex.lowercase() }) }
+    .apply { putAll(WBTag.entries.associateBy { it.hex.lowercase() }) }
     .toMap()
 
 /**

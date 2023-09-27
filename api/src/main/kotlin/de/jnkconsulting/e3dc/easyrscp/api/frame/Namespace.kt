@@ -91,7 +91,7 @@ enum class Namespace(val code: Byte) {
 
     companion object {
         fun byCode(code: Byte) =
-            values()
+            entries
                 .find { it.code == code }
                 ?: UNKNOWN
 
