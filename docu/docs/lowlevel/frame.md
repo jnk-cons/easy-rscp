@@ -64,6 +64,20 @@ Here is an example of how to put together a query frame that asks for some live 
         }
     }
     ```
+=== "TypeScript"
+    ```java
+    import {FrameBuilder, DataBuilder, StringFrameConverter, EMSTag} from 'easy-rscp';
+    
+    const request = new FrameBuilder()
+        .addData(
+            new DataBuilder().tag(EMSTag.REQ_POWER_PV).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_BAT).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_GRID).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_HOME).build(),
+            new DataBuilder().tag(EMSTag.REQ_BAT_SOC).build()
+        ).build();
+    console.log(new StringFrameConverter().convert(requestFrame));
+    ```
 
 The output should look something like this:
 
@@ -116,6 +130,15 @@ This value can be accessed as follows:
     float consumption = amswerFrame.floatByTag(
             DBTag.CONSUMPTION, 
             DBTag.HISTORY_DATA_DAY, DBTag.SUM_CONTAINER);
+    ```
+=== "TypeScript"
+    ```typescript
+    import {Frame, DBTag} from 'easy-rscp';
+
+    const answerFrame: Frame = ...
+    const consumption = answerFrame.floatByTag(
+        DBTag.CONSUMPTION, 
+        DBTag.HISTORY_DATA_DAY, DBTag.SUM_CONTAINER)
     ```
 
 The various `xxxByTag` usually always return a value. If the corresponding tag is not found, a default value is returned (For numeric values 0, for string "" etc.).

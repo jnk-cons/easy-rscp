@@ -8,6 +8,8 @@
 
 easy-rscp is an INOFFICIAL library written in Kotlin (fully Java compatible) for accessing E3DC home power plants.
 
+If you are looking for a TypeScript or JavaScript library, take a look at [easy-rscp-js](https://github.com/jnk-cons/easy-rscp-js).
+
 E3DC is a brand of HagerEnergy Gmbh ([website](https://www.e3dc.com/)). I have nothing to do with the company, except that I own a home power plant from E3DC and wanted to include it in my SmartHome. This "desire" gave birth to easy-rscp.
 
 ## Getting started

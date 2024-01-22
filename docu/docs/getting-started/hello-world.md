@@ -2,7 +2,7 @@ In this example we will establish a connection to the home power plant and read 
 
 ## Provide connection data
 
-For connection building it is easiest to use the `ConnectionBuilder()` class. Here is an example with the minimum necessary configuration:
+For connection building it is easiest to use the `ConnectionBuilder()` class. For TypeScript you can use the factory classes. Here is an example with the minimum necessary configuration:
 
 === "Kotlin"
     ```kotlin
@@ -20,6 +20,18 @@ For connection building it is easiest to use the `ConnectionBuilder()` class. He
         .withPortalPassword(portalPassword)
         .withRSCPPassword(rscpPassword);
     ```
+=== "TypeScript"
+    ```typescript
+    const connectionData: E3dcConnectionData = {
+        address: host,
+        port: 5033,
+        portalUser: portalUser,
+        portalPassword: portalPassword,
+        rscpPassword: rscpPassword
+    }
+    const factory = new DefaultHomePowerPlantConnectionFactory(connectionData)
+    const connection = await factory.openConnection()
+    ```
 
 | Parameter      | Description                                                                                                                             | 
 |----------------|-----------------------------------------------------------------------------------------------------------------------------------------| 
@@ -30,7 +42,7 @@ For connection building it is easiest to use the `ConnectionBuilder()` class. He
 | rscpPassword   | Encryption password. This value is configured directly at the home power plant and must be identical here |
 
 ## Create Service Builder
-The access itself is done via one of the services. Here in the example we use the `InfoService`. The easiest way to create it is to use the `InfoServiceBuilder()` class:
+The access itself is done via one of the services. Here in the example we use the `InfoService`. The easiest way to create it is to use the `InfoServiceBuilder()` class. In TypeScript you can easily create a service if you have created an RSCP connection:
 
 === "Kotlin"
     ```kotlin
@@ -41,6 +53,10 @@ The access itself is done via one of the services. Here in the example we use th
     ```java
     InfoServiceBuilder infoServiceBuilder = new InfoServiceBuilder()
         .withConnectionBuilder(connectionBuilder);
+    ```
+=== "TypeScript"
+    ```typescript
+    const service = new DefaultInfoService(connection)
     ```
 
 ## Create and use service
@@ -57,6 +73,12 @@ And now ... have fun:
     InfoService service = infoServiceBuilder.buildService();
     SystemInfo infos = service.readSystemInfo();
     System.out.println(infos);
+    ```
+=== "TypeScript"
+    ```typescript
+    const service = new DefaultInfoService(connection)
+    service.readSystemInfo()
+        .then(systemInfos => console.log(systemInfos)
     ```
 
 ## All together
@@ -115,6 +137,23 @@ And now ... have fun:
             System.out.println(infos);
         }
     }
+    ```
+=== "TypeScript"
+    ```typescript
+    import {E3dcConnectionData, DefaultHomePowerPlantConnectionFactory, DefaultInfoService} from 'easy-rscp';
+    
+    const connectionData: E3dcConnectionData = {
+        address: host,
+        port: 5033,
+        portalUser: portalUser,
+        portalPassword: portalPassword,
+        rscpPassword: rscpPassword
+    }
+    const factory = new DefaultHomePowerPlantConnectionFactory(connectionData)
+    const connection = await factory.openConnection()
+    const service = new DefaultInfoService(connection)
+    service.readSystemInfo()
+        .then(systemInfos => console.log(systemInfos)
     ```
 
 If everything worked, you should see something like the following result (The serialNumber is hidden here):

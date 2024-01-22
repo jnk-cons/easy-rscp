@@ -9,6 +9,10 @@ FrameCreator --> Generates request frames to the home power plant
 ### Listener
 For instances of type `ConnectionBuilder` any number of `RSCPRequestResponseListener` can be registered. These listeners are called at different points in the request-response cycle.
 
+???+ info "TypeScript"
+
+    In TypeScript you can pass the listeners to the ConnectionFactory
+
 === "Kotlin"
     ```kotlin
     val connectionBuilder = ConnectionBuilder()
@@ -26,6 +30,16 @@ For instances of type `ConnectionBuilder` any number of `RSCPRequestResponseList
             .withPortalPassword(portalPassword)
             .withRSCPPassword(rscpPassword)
             .addRequestResponseListener(listener1, listener2);
+    ```
+=== "TypeScript"
+    ```typescript
+    const factory = new DefaultHomePowerPlantConnectionFactory(
+        connectionData,
+        aesFactory,
+        socketFactory,
+        frameParser,
+        listenerArray
+    )
     ```
 
 ???+ warning "Please note"
@@ -127,6 +141,29 @@ Here is an example how to set your own converter at the `InfoService`:
         }
     }    
     ```
+=== "TypeScript"
+    ```typescript
+    import {FrameConverter, Frame} from 'easy-rscp';
+
+    class CustomConverter implements FrameConverter<SystemInfo> {
+    
+        convert(frame: Frame): SystemInfo {
+            const serialNumber = frame.stringByTag(InfoTag.SERIAL_NUMBER);
+            const softwareVersion = frame.stringByTag(InfoTag.SW_RELEASE);
+            const productionDate = ... // parse production date
+            return {
+                serialNumber: serialNumber,
+                softwareVersion: softwareVersion,
+                productionDate: productionDate,
+            }
+        }
+    }    
+    const service = new DefaultInfoService(
+        connection,
+        new RequestSystemInfosCreator(),
+        new CustomConverter()
+    )
+    ```
 
 ### FrameCreator
 
@@ -213,4 +250,26 @@ Here is an example of how to set your own creator on the `InfoService`:
                 .withRequestReadSystemInfoCreator(new CustomCreator());
         }
     }    
+    ```
+=== "TypeScript"
+    ```typescript
+    import {FrameCreator, Frame, FrameBuilder, DataBuilder} from 'easy-rscp';
+
+    class CustomCreator implements FrameCreator<undefined> {
+    
+        create(input: undefined): Frame {
+            return new FrameBuilder()
+                .addData(
+                    new DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).build(),
+                    new DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).build(),
+                    new DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).build(),
+                    new DataBuilder().tag(InfoTag.REQ_SW_RELEASE).build()
+                )
+                .build();
+        }
+    }    
+    const service = new DefaultInfoService(
+        connection,
+        new CustomCreator()
+    )
     ```
