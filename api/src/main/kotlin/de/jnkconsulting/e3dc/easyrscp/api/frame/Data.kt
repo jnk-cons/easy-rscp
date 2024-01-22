@@ -21,6 +21,8 @@ import java.time.format.DateTimeFormatter
  * @param value The actual value
  *
  * @since 2.0
+ * @since 2.1 new function:
+ * - [valueAsErrorCode]
  */
 data class Data(
     val tag: ByteArray,
@@ -272,14 +274,24 @@ data class Data(
                 value
 
     /**
-     * Liest den Int wert des Datenblocks und wandelt ihn in einen [ResultCode]
+     * Reads the Int value of the data block and converts it into a [ResultCode].
      *
-     * @return [ResultCode] Wert
+     * @return [ResultCode] value
      *
      * @since 2.0
      */
     fun valueAsResultCode() =
         if (typeObject() == DataType.ERROR) ResultCode.UNKNOWN else ResultCode.byRscpCode(valueAsInt()?:ResultCode.UNKNOWN.rscpCode)
+
+    /**
+     * Reads the Int value of the data block and converts it into a [ErrorCode].
+     *
+     * @return [ErrorCode] Value
+     *
+     * @since 2.1
+     */
+    fun valueAsErrorCode() =
+        if (typeObject() == DataType.ERROR) ResultCode.UNKNOWN else ErrorCode.byRscpCode(valueAsInt() ?: ErrorCode.UNKNOWN.rscpCode.toInt())
 
     /**
      * Checks if the response type is of type error.
