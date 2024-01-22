@@ -1,6 +1,6 @@
 # Release Notes
 
-## Version 2.1.0 (2023-XX-YY)
+## Version 2.1.0 (2024-01-22)
 
 - [#2](https://github.com/jnk-cons/easy-rscp/issues/2)) DataBuilder().none() is optional, now
   - It To create a data block of data type `NONE`, the function `none()` must no longer be called explicitly. This behavior is now default.
