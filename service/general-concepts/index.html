@@ -423,8 +423,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#logging" class="md-nav__link">
-    Logging
+  <a href="#logging-kotlinjava-only" class="md-nav__link">
+    Logging (Kotlin/Java only)
   </a>
   
 </li>
@@ -846,8 +846,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#logging" class="md-nav__link">
-    Logging
+  <a href="#logging-kotlinjava-only" class="md-nav__link">
+    Logging (Kotlin/Java only)
   </a>
   
 </li>
@@ -884,7 +884,11 @@ If you want to contribute here, have developed your own useful services, etc.: j
 Especially for the Java developers among you, the default parameters will not work because they are a Kotlin construct. Therefore, the use of the Builder API is recommended.</p>
 <p>For each service there is an own builder, which can create the service and if necessary allows to set the optional extension points. Each builder has a mandatory parameter. Namely an instance of the type <code>ConnectionBuilder</code> is needed. This creates the instances for encryption, connection setup etc.
 Don't worry, with the ConnectionBuilder it is sufficient to specify only the connection data. Everything else is optional. Here is an example:</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Kotlin</label><label for="__tabbed_1_2">Java</label></div>
+<details class="info" open="open">
+<summary>TypeScript</summary>
+<p>The TypeScript versiond does not have the ServiceBuilder concept. You can create connections directly using the ConnectionFactory</p>
+</details>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Kotlin</label><label for="__tabbed_1_2">Java</label><label for="__tabbed_1_3">TypeScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="language-kotlin highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">connectionBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">ConnectionBuilder</span><span class="p">()</span>
@@ -900,6 +904,18 @@ Don't worry, with the ConnectionBuilder it is sufficient to specify only the con
 </span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="p">.</span><span class="na">withPortalUser</span><span class="p">(</span><span class="n">portalUser</span><span class="p">)</span>
 </span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">    </span><span class="p">.</span><span class="na">withPortalPassword</span><span class="p">(</span><span class="n">portalPassword</span><span class="p">)</span>
 </span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">    </span><span class="p">.</span><span class="na">withRSCPPassword</span><span class="p">(</span><span class="n">rscpPassword</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">connectionData</span><span class="o">:</span><span class="w"> </span><span class="kt">E3dcConnectionData</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nx">address</span><span class="o">:</span><span class="w"> </span><span class="kt">host</span><span class="p">,</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nx">port</span><span class="o">:</span><span class="w"> </span><span class="kt">5033</span><span class="p">,</span>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nx">portalUser</span><span class="o">:</span><span class="w"> </span><span class="kt">portalUser</span><span class="p">,</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">    </span><span class="nx">portalPassword</span><span class="o">:</span><span class="w"> </span><span class="kt">portalPassword</span><span class="p">,</span>
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">    </span><span class="nx">rscpPassword</span><span class="o">:</span><span class="w"> </span><span class="kt">rscpPassword</span>
+</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="p">}</span>
+</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="kd">const</span><span class="w"> </span><span class="nx">factory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">DefaultHomePowerPlantConnectionFactory</span><span class="p">(</span><span class="nx">connectionData</span><span class="p">)</span>
+</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="kd">const</span><span class="w"> </span><span class="nx">connection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">await</span><span class="w"> </span><span class="nx">factory</span><span class="p">.</span><span class="nx">openConnection</span><span class="p">()</span>
 </span></code></pre></div>
 </div>
 </div>
@@ -935,33 +951,39 @@ Don't worry, with the ConnectionBuilder it is sufficient to specify only the con
 </tbody>
 </table>
 <p>With this instance you can configure all other ServiceBuilders. This is the only mandatory information that is required.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Kotlin</label><label for="__tabbed_2_2">Java</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Kotlin</label><label for="__tabbed_2_2">Java</label><label for="__tabbed_2_3">TypeScript</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">serviceBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">InfoServiceBuilder</span><span class="p">()</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span><span class="p">.</span><span class="na">withConnectionBuilder</span><span class="p">(</span><span class="n">connectionBuilder</span><span class="p">)</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="kd">val</span><span class="w"> </span><span class="nv">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">serviceBuilder</span><span class="p">.</span><span class="na">buildService</span><span class="p">()</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="kd">val</span><span class="w"> </span><span class="nv">systemInfos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">service</span><span class="p">.</span><span class="na">readSystemInfo</span><span class="p">()</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="n">println</span><span class="p">(</span><span class="n">systemInfos</span><span class="p">)</span>
+<div class="language-kotlin highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kd">val</span><span class="w"> </span><span class="nv">serviceBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">InfoServiceBuilder</span><span class="p">()</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">        </span><span class="p">.</span><span class="na">withConnectionBuilder</span><span class="p">(</span><span class="n">connectionBuilder</span><span class="p">)</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="kd">val</span><span class="w"> </span><span class="nv">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">serviceBuilder</span><span class="p">.</span><span class="na">buildService</span><span class="p">()</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="kd">val</span><span class="w"> </span><span class="nv">systemInfos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">service</span><span class="p">.</span><span class="na">readSystemInfo</span><span class="p">()</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">println</span><span class="p">(</span><span class="n">systemInfos</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-java highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">InfoServiceBuilder</span><span class="w"> </span><span class="n">infoServiceBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InfoServiceBuilder</span><span class="p">()</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">        </span><span class="p">.</span><span class="na">withConnectionBuilder</span><span class="p">(</span><span class="n">connectionBuilder</span><span class="p">);</span>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a><span class="n">InfoService</span><span class="w"> </span><span class="n">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">infoServiceBuilder</span><span class="p">.</span><span class="na">buildService</span><span class="p">();</span>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="n">SystemInfo</span><span class="w"> </span><span class="n">infos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">service</span><span class="p">.</span><span class="na">readSystemInfo</span><span class="p">();</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">infos</span><span class="p">);</span>
+<div class="language-java highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="n">InfoServiceBuilder</span><span class="w"> </span><span class="n">infoServiceBuilder</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">InfoServiceBuilder</span><span class="p">()</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">        </span><span class="p">.</span><span class="na">withConnectionBuilder</span><span class="p">(</span><span class="n">connectionBuilder</span><span class="p">);</span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="n">InfoService</span><span class="w"> </span><span class="n">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">infoServiceBuilder</span><span class="p">.</span><span class="na">buildService</span><span class="p">();</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">SystemInfo</span><span class="w"> </span><span class="n">infos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">service</span><span class="p">.</span><span class="na">readSystemInfo</span><span class="p">();</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">infos</span><span class="p">);</span>
+</span></code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="language-typescript highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="kd">const</span><span class="w"> </span><span class="nx">service</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ow">new</span><span class="w"> </span><span class="nx">DefaultInfoService</span><span class="p">(</span><span class="nx">connection</span><span class="p">)</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nx">service</span><span class="p">.</span><span class="nx">readSystemInfo</span><span class="p">()</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a><span class="w">    </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">systemInfos</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">systemInfos</span><span class="p">)</span>
 </span></code></pre></div>
 </div>
 </div>
 </div>
 <h2 id="extension-points">Extension points<a class="headerlink" href="#extension-points" title="Permanent link">&para;</a></h2>
 <p>The service API provides several points where you can intervene in the way it works. The details are described in the section <a href="../extension-points/">Extension points</a>.</p>
-<h2 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">&para;</a></h2>
+<h2 id="logging-kotlinjava-only">Logging (Kotlin/Java only)<a class="headerlink" href="#logging-kotlinjava-only" title="Permanent link">&para;</a></h2>
 <p>easy-rscp uses internally <a href="https://www.slf4j.org/">SLF4J</a> as logging framework. You may have already noticed that you get the following warning when running the examples:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>SLF4J: No SLF4J providers were found.
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>SLF4J: Defaulting to no-operation (NOP) logger implementation
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>SLF4J: No SLF4J providers were found.
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>SLF4J: Defaulting to no-operation (NOP) logger implementation
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
 </span></code></pre></div>
 <p>This is because easy-rscp does not provide a logging provider. Depending on which logging framework you use (Log4j, java logging, or whatever), you have to declare the corresponding provider implementation as a dependency.
 SLF4J provides instructions on what to do at the link <a href="https://www.slf4j.org/codes.html#noProviders">https://www.slf4j.org/codes.html#noProviders</a>.</p>
