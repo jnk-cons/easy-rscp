@@ -38,11 +38,11 @@
 
     <properties>
         <kotlin.version>1.9.10</kotlin.version>
-        <slf4j.version>2.0.9</slf4j.version>
+        <slf4j.version>2.0.11</slf4j.version>
         <kotlin-logging.version>3.0.5</kotlin-logging.version>
-        <bouncycastle.version>1.76</bouncycastle.version>
-        <junit.version>5.10.0</junit.version>
-        <mockk.version>1.13.7</mockk.version>
+        <bouncycastle.version>1.77</bouncycastle.version>
+        <junit.version>5.10.1</junit.version>
+        <mockk.version>1.13.9</mockk.version>
         <compiler-plugin.version>3.11.0</compiler-plugin.version>
         <resources-plugin.version>3.3.1</resources-plugin.version>
         <sources-plugin.version>3.3.0</sources-plugin.version>
