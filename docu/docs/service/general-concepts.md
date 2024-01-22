@@ -15,6 +15,10 @@ Especially for the Java developers among you, the default parameters will not wo
 For each service there is an own builder, which can create the service and if necessary allows to set the optional extension points. Each builder has a mandatory parameter. Namely an instance of the type `ConnectionBuilder` is needed. This creates the instances for encryption, connection setup etc.
 Don't worry, with the ConnectionBuilder it is sufficient to specify only the connection data. Everything else is optional. Here is an example:
 
+???+ info "TypeScript"
+
+    The TypeScript versiond does not have the ServiceBuilder concept. You can create connections directly using the ConnectionFactory
+
 === "Kotlin"
     ```kotlin
     val connectionBuilder = ConnectionBuilder()
@@ -30,6 +34,18 @@ Don't worry, with the ConnectionBuilder it is sufficient to specify only the con
         .withPortalUser(portalUser)
         .withPortalPassword(portalPassword)
         .withRSCPPassword(rscpPassword);
+    ```
+=== "TypeScript"
+    ```typescript
+    const connectionData: E3dcConnectionData = {
+        address: host,
+        port: 5033,
+        portalUser: portalUser,
+        portalPassword: portalPassword,
+        rscpPassword: rscpPassword
+    }
+    const factory = new DefaultHomePowerPlantConnectionFactory(connectionData)
+    const connection = await factory.openConnection()
     ```
 
 | Parameter      | Description                                                                                                                             | 
@@ -58,13 +74,19 @@ With this instance you can configure all other ServiceBuilders. This is the only
     SystemInfo infos = service.readSystemInfo();
     System.out.println(infos);
     ```
+=== "TypeScript"
+    ```typescript
+    const service = new DefaultInfoService(connection)
+    service.readSystemInfo()
+        .then(systemInfos => console.log(systemInfos)
+    ```
 
 ## Extension points
 
 The service API provides several points where you can intervene in the way it works. The details are described in the section [Extension points](extension-points.md).
 
 
-## Logging
+## Logging (Kotlin/Java only)
 
 easy-rscp uses internally [SLF4J](https://www.slf4j.org/) as logging framework. You may have already noticed that you get the following warning when running the examples:
 

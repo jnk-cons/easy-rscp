@@ -173,6 +173,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000011", type = DataType.NONE
 	 *
+     * Request tag. A data block with the tag [MODE] is supplied as a response
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_MODE:).
      *
      * Original E3DC Documentation:
@@ -186,6 +188,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000012", type = DataType.NONE
 	 *
+     * Request tag. A data block with the tag [BALANCED_PHASES] is supplied as a response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BALANCED_PHASES:).
      *
      * Original E3DC Documentation:
@@ -620,6 +624,13 @@ enum class EMSTag(
     /**
      * hex = "0x01800011", type = DataType.UCHAR8
 	 *
+     * Response tag to a [REQ_MODE] request.
+     *
+     * The answer can contain 3 values:
+     * - 1 -> IDLE -> Currently the battery is neither charged nor discharged
+     * - 2 -> DISCHARGE -> Currently the battery is discharged
+     * - 3 -> CHARGE -> Currently charging the battery
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.MODE:).
      *
      * Original E3DC Documentation:
@@ -633,6 +644,18 @@ enum class EMSTag(
     /**
      * hex = "0x01800012", type = DataType.UCHAR8
 	 *
+     * Response Tag to a [REQ_BALANCED_PHASES] request.
+     *
+     * May contain one of the following values by which you can tell which phase is balanced:
+     * - 0 -> PHASE_000
+     * - 1 -> PHASE_001
+     * - 2 -> PHASE_010
+     * - 3 -> PHASE_011
+     * - 4 -> PHASE_100
+     * - 5 -> PHASE_101
+     * - 6 -> PHASE_110
+     * - 7 -> PHASE_111
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.BALANCED_PHASES&labels=documentation&body=Documentation+update+for+enum+EMSTag.BALANCED_PHASES:).
      *
      * Original E3DC Documentation:

@@ -11,6 +11,10 @@ The `crypt` package contains the AES implementations. Each request and response 
 
 ## Usage
 
+???+ info "TypeScript"
+
+    If you want to intervene in the encryption, you can implement your own AesCipherFactory and make this known to the DefaultHomePowerPlantConnectionFactory in the structure.
+
 The classes are not used directly, but created automatically by the `ConnectionBuilder`. Only if you want to exchange the supplied implementation, you can set your factory at the builder:
 
 === "Kotlin"
@@ -30,4 +34,10 @@ The classes are not used directly, but created automatically by the `ConnectionB
             .withPortalPassword(portalPassword)
             .withRSCPPassword(rscpPassword)
             .withCipherFactory(myCustomCipherFactory);
+    ```
+=== "TypeScript"
+    ```typescript
+    const factory = new DefaultHomePowerPlantConnectionFactory(
+            connectionData,
+            myCustomAESImplementation);
     ```

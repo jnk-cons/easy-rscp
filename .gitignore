@@ -35,3 +35,5 @@ build/
 
 ### VS Code ###
 .vscode/
+
+/api/src/test/kotlin/de/jnkconsulting/e3dc/easyrscp/api/generators/*

@@ -16,11 +16,11 @@ class RequestLiveDataCreator: FrameCreator<Nothing?> {
     override fun invoke(param: Nothing?): Frame =
         FrameBuilder()
             .addData(
-                DataBuilder().tag(EMSTag.REQ_POWER_PV).none().build(),
-                DataBuilder().tag(EMSTag.REQ_POWER_BAT).none().build(),
-                DataBuilder().tag(EMSTag.REQ_POWER_GRID).none().build(),
-                DataBuilder().tag(EMSTag.REQ_POWER_HOME).none().build(),
-                DataBuilder().tag(EMSTag.REQ_BAT_SOC).none().build(),
+                DataBuilder().tag(EMSTag.REQ_POWER_PV).build(),
+                DataBuilder().tag(EMSTag.REQ_POWER_BAT).build(),
+                DataBuilder().tag(EMSTag.REQ_POWER_GRID).build(),
+                DataBuilder().tag(EMSTag.REQ_POWER_HOME).build(),
+                DataBuilder().tag(EMSTag.REQ_BAT_SOC).build(),
             )
             .build()
 }

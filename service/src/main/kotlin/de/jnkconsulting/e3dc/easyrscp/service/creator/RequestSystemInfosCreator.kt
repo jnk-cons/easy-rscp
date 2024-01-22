@@ -16,10 +16,10 @@ class RequestSystemInfosCreator: FrameCreator<Nothing?> {
     override fun invoke(param: Nothing?): Frame =
         FrameBuilder()
             .addData(
-                DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).none().build(),
-                DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).none().build(),
-                DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).none().build(),
-                DataBuilder().tag(InfoTag.REQ_SW_RELEASE).none().build()
+                DataBuilder().tag(InfoTag.REQ_MAC_ADDRESS).build(),
+                DataBuilder().tag(InfoTag.REQ_PRODUCTION_DATE).build(),
+                DataBuilder().tag(InfoTag.REQ_SERIAL_NUMBER).build(),
+                DataBuilder().tag(InfoTag.REQ_SW_RELEASE).build()
             )
             .build()
 }

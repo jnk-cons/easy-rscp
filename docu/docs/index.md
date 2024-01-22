@@ -17,6 +17,10 @@ Basically the same as a Kotlin developer. The bytecode is Java compatible and in
 
 Small disadvantage for you (besides the Java syntax, but you should be used to that), as a dependency smaller Kotlin libraries will be necessary.
 
+### As ja TypeScript or JavaScript developer
+
+You will find what you are looking for in the sister project [easy-rscp-js](https://github.com/jnk-cons/easy-rscp-js). The core functionality is identical. The documentation of both projects is summarized here.
+
 ### As XYZ Developer
 Ok, you can't use the library directly. But in the course of the project this documentation was created. Especially the chapter [RSCP](rscp/basic-rscp.md) should be interesting for you. Here you find a description of the RSCP protocol and all tags and meanings known to me. Maybe this will help you.
 

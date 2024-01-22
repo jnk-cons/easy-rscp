@@ -15,8 +15,8 @@ class RequestChargingConfigurationCreator: FrameCreator<Nothing?> {
     override fun invoke(param: Nothing?): Frame =
         FrameBuilder()
             .addData(
-                DataBuilder().tag(EMSTag.REQ_GET_POWER_SETTINGS).none().build(),
-                DataBuilder().tag(EMSTag.REQ_GET_SYS_SPECS).none().build()
+                DataBuilder().tag(EMSTag.REQ_GET_POWER_SETTINGS).build(),
+                DataBuilder().tag(EMSTag.REQ_GET_SYS_SPECS).build()
             )
             .build()
 }

@@ -17,11 +17,14 @@ import java.time.Instant
  * Data, the RSCP data itself.
  *
  * @param timestamp Creation time of the frame
- * @param controlBytes Control functions. Currently the protocol version as well as a control bit whether checksum are used or not. See [FIXED_VALUES].
+ * @param controlBytes Control functions. Currently, the protocol version as well as a control bit whether checksum are used or not. See [FIXED_VALUES].
  * @param data The data itself. See [Data]
  * @param parser The parser to use for parsing container data
  *
  * @since 2.0
+ * @since 2.1 new functions:
+ * - [isDataBlockInError]
+ * - [errorCodeByTag]
  */
 data class Frame(
     val timestamp: Instant,
@@ -279,6 +282,36 @@ data class Frame(
     fun resultCodeByTag(tag: Tag, vararg containerPath: Tag) =
         find(tag, data, *containerPath)
             ?.valueAsResultCode() ?: ResultCode.UNKNOWN
+
+    /**
+     * Checks whether the data block in the frame is of data type [DataType.ERROR].
+     *
+     * @param tag The [Tag] to search for
+     * @param containerPath Optional path through datablocks of type [DataType.CONTAINER].
+     *
+     * @return true if the data block is of type [DataType.ERROR], otherwise false
+     *
+     * @since 2.1
+     */
+    fun isDataBlockInError(tag: Tag, vararg containerPath: Tag) =
+        find(tag, data, *containerPath)
+            ?.isErrorResponse() ?: false
+
+    /**
+     * Searches for a data block of type [tag] and returns the value as [ErrorCode].
+     *
+     * If the block is not found [ErrorCode.UNKNOWN] is returned.
+     *
+     * @param tag The [Tag] to search for
+     * @param containerPath Optional path through datablocks of type [DataType.CONTAINER].
+     *
+     * @return Value of the data block as [ErrorCode] or [ErrorCode.UNKNOWN] if the data block does not exist.
+     *
+     * @since 2.1
+     */
+    fun errorCodeByTag(tag: Tag, vararg containerPath: Tag) =
+        find(tag, data, *containerPath)
+            ?.valueAsErrorCode() ?: ErrorCode.UNKNOWN
 
     /**
      * Query whether the frame calculates the checksum or not.
