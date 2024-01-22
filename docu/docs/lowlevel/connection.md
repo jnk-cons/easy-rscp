@@ -7,6 +7,10 @@ As `ConnectionPool` the implementation `SingleInstanceConnectionPool` is availab
 
 To simplify the creation and dependencies, there is the `ConnectionBuilder` which can create the instances with little configuration effort.
 
+???+ info "Differences in TypeScript"
+
+    In the TypeScript version there is no ConnectionPool and no ConnectionBuilder. The connection ensures that all requests are sent serialized
+
 ## ConnectionBuilder usage
 
 In the following example we create a ConnectionBuilder instance, get a ConnectionPool and request the current live production data.
@@ -86,6 +90,37 @@ To be able to read the answer we use the `StringFrameConverter` to output the an
             System.out.println(new StringFrameConverter().invoke(answer));
         }
     }
+    ```
+=== "TypeScript"
+    ```typescript
+    import {
+        E3dcConnectionData, 
+        DefaultHomePowerPlantConnectionFactory, 
+        FrameBuilder,
+        DataBuilder,
+        StringFrameConverter} from 'easy-rscp';
+
+    const connectionData: E3dcConnectionData = {
+        address: host,
+        port: 5033,
+        portalUser: portalUser,
+        portalPassword: portalPassword,
+        rscpPassword: rscpPassword
+    }
+    const factory = new DefaultHomePowerPlantConnectionFactory(connectionData)
+    const connection = await factory.openConnection()
+    const request = new FrameBuilder()
+        .addData(
+            new DataBuilder().tag(EMSTag.REQ_POWER_PV).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_BAT).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_GRID).build(),
+            new DataBuilder().tag(EMSTag.REQ_POWER_HOME).build(),
+            new DataBuilder().tag(EMSTag.REQ_BAT_SOC).build()
+        ).build()
+    connection.send(request)
+        .then(response => {
+            console.log(new StringFrameConverter().convert(response))
+        })
     ```
 
 The output should look something like this:

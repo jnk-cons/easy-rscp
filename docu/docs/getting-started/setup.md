@@ -52,7 +52,7 @@ The library is divided into three sections
 | jnk-easy-rscp-service  | Higher level that hides RSCP subtleties behind services. Most users should use this module. The scope will be extended in future version. | 
 
 ???+ info "Maven central"
-    The artifacts are available in the maven central repository
+    The artifacts are available in the maven central repository and for easy-rscp-js on npm
 
 === "Maven"
     ```xml
@@ -69,6 +69,10 @@ The library is divided into three sections
 === "Gradle (kotlin)"
     ```kotlin
     implementation("de.jnk-consulting.e3dc.easyrscp:jnk-easy-rscp-service:2.0.0")
+    ```
+=== "npm"
+    ```
+    npm i easy-rscp
     ```
 
 
