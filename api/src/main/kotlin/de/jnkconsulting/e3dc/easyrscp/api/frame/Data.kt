@@ -291,7 +291,7 @@ data class Data(
      * @since 2.1
      */
     fun valueAsErrorCode() =
-        if (typeObject() == DataType.ERROR) ResultCode.UNKNOWN else ErrorCode.byRscpCode(valueAsInt() ?: ErrorCode.UNKNOWN.rscpCode.toInt())
+        if (typeObject() == DataType.ERROR) ErrorCode.UNKNOWN else ErrorCode.byRscpCode(valueAsInt() ?: ErrorCode.UNKNOWN.rscpCode.toInt())
 
     /**
      * Checks if the response type is of type error.
