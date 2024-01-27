@@ -112,17 +112,25 @@ class DefaultBatteryService(
                                 }
                         ))
                 }
+                val trainingModeRAW = batInfoResponse.byteByTag(BatTag.TRAINING_MODE, BatTag.DATA)
+                val trainingMode = when(trainingModeRAW) {
+                    0.toByte() -> TrainingMode.NOT_IN_TRAINING
+                    1.toByte() -> TrainingMode.TRAINING_DISCHARGE
+                    2.toByte() -> TrainingMode.TRAINING_CHARGE
+                    else -> TrainingMode.UNKNOWN
+                }
                 result.add(
                     BatteryStatus(
                         index = batIndex.toShort(),
-                        trainingModeActive = batInfoResponse.byteByTag(BatTag.TRAINING_MODE, BatTag.DATA) != 0.toByte(),
+                        trainingModeActive = trainingMode != TrainingMode.NOT_IN_TRAINING,
                         connected = batInfoResponse.booleanByTag(BatTag.DEVICE_CONNECTED, BatTag.DATA, BatTag.DEVICE_STATE),
                         working = batInfoResponse.booleanByTag(BatTag.DEVICE_WORKING, BatTag.DATA, BatTag.DEVICE_STATE),
                         inService = batInfoResponse.booleanByTag(BatTag.DEVICE_IN_SERVICE, BatTag.DATA, BatTag.DEVICE_STATE),
                         asoc = batInfoResponse.floatByTag(BatTag.ASOC, BatTag.DATA) / 100.0f,
                         realRsoc = batInfoResponse.floatByTag(BatTag.RSOC_REAL, BatTag.DATA) / 100.0f,
                         voltage = batInfoResponse.floatByTag(BatTag.MODULE_VOLTAGE, BatTag.DATA),
-                        dcbStatus = dcbStatus
+                        dcbStatus = dcbStatus,
+                        trainingMode = trainingMode
                     ))
             }
             result

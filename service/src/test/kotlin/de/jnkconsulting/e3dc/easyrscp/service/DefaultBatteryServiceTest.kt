@@ -5,7 +5,7 @@ import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable
 
 class DefaultBatteryServiceTest: IntegrationTestBase() {
 
-    @Test
+//    @Test
     @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
@@ -16,7 +16,7 @@ class DefaultBatteryServiceTest: IntegrationTestBase() {
         println(result)
     }
 
-    //@Test
+    @Test
     @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
