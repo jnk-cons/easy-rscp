@@ -62,7 +62,7 @@ data class DCBSpec(
  * Contains information on the current status of the battery
  *
  * @param index ID of the battery in the E3DC system
- * @param trainingModeActive Information on whether the battery is in training mode
+ * @param trainingModeActive Information on whether the battery is in training mode. Deprecated in 2.2. Use [trainingMode] instead
  * @param connected Information on whether the battery is connected to the system (battery disconnect switch on the home power station)
  * @param working Information on whether the battery is working correctly
  * @param inService Information on whether the battery is in maintenance mode
@@ -70,11 +70,16 @@ data class DCBSpec(
  * @param realRsoc Current charge level as a percentage of the battery without taking into account the reserve for absolute deep discharge and theoretically possible full charge. The value should therefore never reach completely 0 and never completely 1
  * @param voltage Current battery voltage
  * @param dcbStatus Status of the individual battery modules
+ * @param trainingMode Current status of the training mode
  *
  * @since 2.1
+ * @since 2.2
+ * - new property [trainingMode]
+ * - deprecated property [trainingModeActive] -> Will be removed in 2.4
  */
 data class BatteryStatus(
     val index: Short,
+    @Deprecated("Use trainingMode Parameter instead. Will be removed in version 2.4")
     val trainingModeActive: Boolean,
     val connected: Boolean,
     val working: Boolean,
@@ -82,7 +87,8 @@ data class BatteryStatus(
     val asoc: Float,
     val realRsoc: Float,
     val voltage: Float,
-    val dcbStatus: List<DCBStatus>
+    val dcbStatus: List<DCBStatus>,
+    val trainingMode: TrainingMode
 )
 
 /**
@@ -105,3 +111,15 @@ data class DCBStatus(
     val currentAVG30s: Float,
     val temperaturesCelsius: List<Float>
 )
+
+/**
+ * Contains the status value of the battery training
+ *
+ * @since 2.2
+ */
+enum class TrainingMode {
+    NOT_IN_TRAINING,
+    TRAINING_DISCHARGE,
+    TRAINING_CHARGE,
+    UNKNOWN
+}
