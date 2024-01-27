@@ -22,7 +22,9 @@ enum class BatTag(
     /**
      * hex = "0x03040000", type = DataType.CONTAINER
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_DATA&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DATA:).
+     * Request container, which must contain all request blocks that are queried. It does not matter whether information is requested from the battery or a module (DCB).
+     * When querying battery information, a block of type [INDEX] must be included. If module information is queried, the [REQ_DCB_INFO] block must also be specified.
+     * A container of type [DATA] is delivered in response.
      *
      * Original E3DC Documentation:
      *
@@ -36,7 +38,8 @@ enum class BatTag(
     /**
      * hex = "0x03040001", type = DataType.UINT16
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.INDEX&labels=documentation&body=Documentation+update+for+enum+BatTag.INDEX:).
+     * Data block that is specified or delivered within a [REQ_DATA] (for a request) or within a [DATA] (for a response).
+     * The block contains the index of the battery that is to be queried. According to the documentation, this should always be 0. It is unclear whether the information is up to date.
      *
      * Original E3DC Documentation:
      *
@@ -50,7 +53,7 @@ enum class BatTag(
     /**
      * hex = "0x03840000", type = DataType.CONTAINER
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DATA&labels=documentation&body=Documentation+update+for+enum+BatTag.DATA:).
+     * Response container to a [REQ_DATA] request. Contains the corresponding response blocks.
      *
      * Original E3DC Documentation:
      *
@@ -78,7 +81,8 @@ enum class BatTag(
     /**
      * hex = "0x03800002", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.MODULE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.MODULE_VOLTAGE:).
+     * Response block to a [REQ_RSOC_REAL] request. Is delivered within a [DATA].
+     * Contains the current voltage in volts.
      *
      * Original E3DC Documentation:
      *
@@ -273,7 +277,7 @@ enum class BatTag(
     /**
      * hex = "0x03800019", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_CELL_TEMPERATURE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CELL_TEMPERATURE:).
+     * Response block to a [REQ_DCB_ALL_CELL_TEMPERATURES] request. The block is located within a [DCB_ALL_CELL_TEMPERATURES] container and contains the temperature of the cell in Celsius.
      *
      * Original E3DC Documentation:
      *
@@ -330,7 +334,8 @@ enum class BatTag(
     /**
      * hex = "0x03800021", type = DataType.UCHAR8
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.TRAINING_MODE&labels=documentation&body=Documentation+update+for+enum+BatTag.TRAINING_MODE:).
+     * Response block to a [REQ_TRAINING_MODE] request. Is delivered within a [DATA] container.
+     * Contains the status of the battery training. 0=Not in training, 1=Training mode Discharging, 2=Training mode Charging
      *
      * Original E3DC Documentation:
      *
@@ -365,7 +370,7 @@ enum class BatTag(
     /**
      * hex = "0x03000002", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_MODULE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MODULE_VOLTAGE:).
+     * Is used within a [REQ_DATA] request to query the current voltage in volts. A [MODULE_VOLTAGE] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -407,7 +412,7 @@ enum class BatTag(
     /**
      * hex = "0x03000005", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_MAX_CHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_CHARGE_CURRENT:).
+     * Is used within a [REQ_DATA] request to query the maximum current during charging. A [MAX_CHARGE_CURRENT] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -435,7 +440,7 @@ enum class BatTag(
     /**
      * hex = "0x03000007", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_MAX_DISCHARGE_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_MAX_DISCHARGE_CURRENT:).
+     * Is used within a [REQ_DATA] request to query the maximum current during discharging. A [MAX_DISCHARGE_CURRENT] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -505,7 +510,7 @@ enum class BatTag(
     /**
      * hex = "0x0300000C", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DEVICE_NAME:).
+     * Is used within a [REQ_DATA] request to request the name of the battery. A [DEVICE_NAME] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -519,7 +524,7 @@ enum class BatTag(
     /**
      * hex = "0x0300000D", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_DCB_COUNT&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DCB_COUNT:).
+     * Is used within a [REQ_DATA] request to request the number of battery modules. A [DCB_COUNT] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -589,7 +594,7 @@ enum class BatTag(
     /**
      * hex = "0x03000021", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_TRAINING_MODE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_TRAINING_MODE:).
+     * Is used within a [REQ_DATA] request to query whether the battery is in training mode. A [TRAINING_MODE] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -746,7 +751,7 @@ enum class BatTag(
     /**
      * hex = "0x03800111", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_CURRENT&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CURRENT:).
+     * Response block to a [REQ_DCB_INFO] request. The block is located within a [DCB_INFO] container and contains the current in Amper.
      *
      * Original E3DC Documentation:
      *
@@ -759,7 +764,7 @@ enum class BatTag(
     /**
      * hex = "0x03800112", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_VOLTAGE:).
+     * Response block to a [REQ_DCB_INFO] request. The block is located within a [DCB_INFO] container and contains the current voltage in volts.
      *
      * Original E3DC Documentation:
      *
@@ -772,7 +777,7 @@ enum class BatTag(
     /**
      * hex = "0x03800113", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_CURRENT_AVG_30S&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_CURRENT_AVG_30S:).
+     * Response block to a [REQ_DCB_INFO] request. The block is located within a [DCB_INFO] container and contains the average current of the last 30 seconds in Amper.
      *
      * Original E3DC Documentation:
      *
@@ -785,7 +790,7 @@ enum class BatTag(
     /**
      * hex = "0x03800114", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_VOLTAGE_AVG_30S&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_VOLTAGE_AVG_30S:).
+     * Response block to a [REQ_DCB_INFO] request. The block is located within a [DCB_INFO] container and contains the average voltage of the last 30 seconds in volts.
      *
      * Original E3DC Documentation:
      *
@@ -928,7 +933,7 @@ enum class BatTag(
     /**
      * hex = "0x03060000", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_DEVICE_STATE:).
+     * Is used within a [REQ_DATA] request to query state information (connected, working, service, etc.) of the battery. A [DEVICE_STATE] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -941,7 +946,7 @@ enum class BatTag(
     /**
      * hex = "0x03860000", type = DataType.CONTAINER
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_STATE:).
+     * Response block to a [REQ_DEVICE_STATE] request. Is delivered within a [DATA] container. Contains the blocks [DEVICE_CONNECTED], [DEVICE_WORKING] and [DEVICE_IN_SERVICE]
      *
      * Original E3DC Documentation:
      *
@@ -955,7 +960,7 @@ enum class BatTag(
     /**
      * hex = "0x03860001", type = DataType.BOOL
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_CONNECTED:).
+     * Response block to a [REQ_DEVICE_STATE] request. Is delivered within a [DEVICE_STATE] container. Contains information on whether the battery is connected to the home power station.
      *
      * Original E3DC Documentation:
      *
@@ -969,7 +974,7 @@ enum class BatTag(
     /**
      * hex = "0x03860002", type = DataType.BOOL
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_WORKING:).
+     * Response block to a [REQ_DEVICE_STATE] request. Is delivered within a [DEVICE_STATE] container. Contains information on whether the battery is working or not.
      *
      * Original E3DC Documentation:
      *
@@ -983,7 +988,7 @@ enum class BatTag(
     /**
      * hex = "0x03860003", type = DataType.BOOL
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+BatTag.DEVICE_IN_SERVICE:).
+     * Response block to a [REQ_DEVICE_STATE] request. Is delivered within a [DEVICE_STATE] container. Contains information on whether the battery is in service mode or not.
      *
      * Original E3DC Documentation:
      *
@@ -1010,7 +1015,7 @@ enum class BatTag(
     /**
      * hex = "0x03000042", type = DataType.UINT16
      *
-     * Requests information from the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT
+     * Is used within a [REQ_DATA] conainer. Requests information from the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT
      *
      * Original E3DC Documentation:
      *
@@ -1023,7 +1028,10 @@ enum class BatTag(
     /**
      * hex = "0x0300000E", type = DataType.NONE
      *
-     * Ask for the actual RSOC. Whatever the actual RSOC is...
+     * Is used within a [REQ_DATA] request to query the actual RSOC. Whatever the actual RSOC is...
+     * I believe it is the absolute charge level of the battery, without the deep discharge reserve and without the theoretically maximum possible amount of energy.
+     * A [RSOC_REAL] block is returned in response.
+     *
      *
      * Original E3DC Documentation:
      *
@@ -1036,7 +1044,8 @@ enum class BatTag(
     /**
      * hex = "0x0300000F", type = DataType.NONE
      *
-     * Requests the absolute state-of-charge. In other words, how high the possible SOC is when the battery is fully charged, minus signs of ageing of the battery.
+     * Is used within a [REQ_DATA] request to query the absolute state-of-charge. A [ASOC] block is returned in response.
+     * In other words, how high the possible SOC is when the battery is fully charged, minus signs of ageing of the battery.
      *
      * Original E3DC Documentation:
      *
@@ -1127,7 +1136,8 @@ enum class BatTag(
     /**
      * hex = "0x03000018", type = DataType.UINT16
      *
-     * Queries the temperatures of all cells in the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT
+     * Is used within a [REQ_DATA] conainer. Queries the temperatures of all cells in the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT.
+     * A block of type [DCB_ALL_CELL_TEMPERATURES] is delivered in response.
      *
      * Original E3DC Documentation:
      *
@@ -1139,7 +1149,8 @@ enum class BatTag(
     /**
      * hex = "0x0300001A", type = DataType.UINT16
      *
-     * Queries the voltages of all cells in the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT
+     * Is used within a [REQ_DATA] conainer. Queries the voltages of all cells in the battery module. The value must be the number of the module. It is counted from 0 to the value of DCB_COUNT
+     * A block of type [DCB_ALL_CELL_VOLTAGES] is delivered in response.
      *
      * Original E3DC Documentation:
      *
@@ -1319,7 +1330,7 @@ enum class BatTag(
     /**
      * hex = "0x03000043", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_SPECIFICATION&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_SPECIFICATION:).
+     * Is used within a [REQ_DATA] request to request the specification data of the battery. A [SPECIFICATION] block is returned in response.
      *
      * Original E3DC Documentation:
      *
@@ -1601,7 +1612,7 @@ enum class BatTag(
     /**
      * hex = "0x03800018", type = DataType.NONE
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_ALL_CELL_TEMPERATURES&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_ALL_CELL_TEMPERATURES:).
+     * Response block to a [REQ_DCB_ALL_CELL_TEMPERATURES] request. The container contains a list of [DCB_CELL_TEMPERATURE] blocks.
      *
      * Original E3DC Documentation:
      *
@@ -1745,9 +1756,10 @@ enum class BatTag(
      */
     CONTROL_CODE(hex = "0x03800032", type = DataType.NONE),
     /**
-     * hex = "0x03800042", type = DataType.NONE
+     * hex = "0x03800042", type = DataType.CONTAINER
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.DCB_INFO&labels=documentation&body=Documentation+update+for+enum+BatTag.DCB_INFO:).
+     * Response block to a [REQ_DCB_INFO] request. Contains various data blocks about the respective battery module. Which blocks are included seems to depend on the home power station.
+     * As a rule, these are the blocks that begin with DCB_. The [DCB_INFO] block is located within a [DATA] block.
      *
      * Original E3DC Documentation:
      *
@@ -1755,7 +1767,7 @@ enum class BatTag(
      *
      * de:
      */
-    DCB_INFO(hex = "0x03800042", type = DataType.NONE),
+    DCB_INFO(hex = "0x03800042", type = DataType.CONTAINER),
     /**
      * hex = "0x03800043", type = DataType.NONE
      *
@@ -2263,6 +2275,7 @@ enum class BatTag(
     /**
      * hex = "0x0380000F", type = DataType.FLOAT32
      *
+     * Response block to a [REQ_ASOC] request. Is delivered within a [DATA].
      * Contains the condition of the battery as a percentage, taking into account the effects of ageing
      *
      * Original E3DC Documentation:
@@ -2285,9 +2298,11 @@ enum class BatTag(
      */
     MAX_DCB_CELL_CURRENT(hex = "0x03800012", type = DataType.INT32),
     /**
-     * hex = "0x0380000E", type = DataType.NONE
+     * hex = "0x0380000E", type = DataType.FLOAT32
      *
-     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.RSOC_REAL&labels=documentation&body=Documentation+update+for+enum+BatTag.RSOC_REAL:).
+     * Response block to a [REQ_RSOC_REAL] request. Is delivered within a [DATA]. Whatever the actual RSOC is...
+     * I believe it is the absolute charge level of the battery, without the deep discharge reserve and without the theoretically maximum possible amount of energy.
+     * Percentage value
      *
      * Original E3DC Documentation:
      *

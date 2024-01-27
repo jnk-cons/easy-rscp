@@ -2,7 +2,6 @@ package de.jnkconsulting.e3dc.easyrscp.api.service
 
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.BatterySpec
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.BatteryStatus
-import de.jnkconsulting.e3dc.easyrscp.api.service.model.PowerState
 
 /**
  * Service to query the battery specification and status data
@@ -12,7 +11,7 @@ import de.jnkconsulting.e3dc.easyrscp.api.service.model.PowerState
 interface BatteryService {
 
     /**
-     * Liest die Batteriespezifikation aus dem E3DC Hauskraftwerk
+     * Reads the battery specification from the E3DC home power station
      *
      * @return Specification of the battery. As a rule, the list contains only one element. Theoretically, however, a home power station can have several batteries
      *
