@@ -1964,7 +1964,7 @@ enum class EMSTag(
     /**
      * hex = "0x0100008E", type = DataType.NONE
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_GET_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_GET_MANUAL_CHARGE:).
+	 * Request block to obtain the current status of the manual loading function. A container block of type [GET_MANUAL_CHARGE] is delivered in response.
      *
      * Original E3DC Documentation:
      *
@@ -1977,7 +1977,9 @@ enum class EMSTag(
     /**
      * hex = "0x0180008E", type = DataType.CONTAINER
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.GET_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.GET_MANUAL_CHARGE:).
+	 * Container block that is sent in response to a [REQ_GET_MANUAL_CHARGE] request.
+     * As a rule, the container contains the blocks [MANUAL_CHARGE_ACTIVE], [MANUAL_CHARGE_START_COUNTER],
+     * [MANUAL_CHARGE_ENERGY_COUNTER] and [MANUAL_CHARGE_LASTSTART].
      *
      * Original E3DC Documentation:
      *
@@ -1998,12 +2000,12 @@ enum class EMSTag(
      *
      * de:
      */
-    MANUAL_CHARGE_START_COUNTER(hex = "0x01000150", type = DataType.UINT32),
+    MANUAL_CHARGE_START_COUNTER(hex = "0x01000150", type = DataType.INT64),
 
     /**
      * hex = "0x01000151", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.MANUAL_CHARGE_ACTIVE&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_ACTIVE:).
+	 * Data block that is delivered within the [GET_MANUAL_CHARGE] container. Contains the information whether a manual loading process is currently running or not.
      *
      * Original E3DC Documentation:
      *
@@ -2014,9 +2016,10 @@ enum class EMSTag(
     MANUAL_CHARGE_ACTIVE(hex = "0x01000151", type = DataType.BOOL),
 
     /**
-     * hex = "0x01000152", type = DataType.UINT32
+     * hex = "0x01000152", type = DataType.DOUBLE64
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.MANUAL_CHARGE_ENERGY_COUNTER&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_ENERGY_COUNTER:).
+	 * Data block that is delivered within the [GET_MANUAL_CHARGE] container. Contains information on how many watt-hours of energy were charged during the last manual charging process.
+     * Attention: The meter is reset on the following day for most home power stations.
      *
      * Original E3DC Documentation:
      *
@@ -2024,12 +2027,13 @@ enum class EMSTag(
      *
      * de:
      */
-    MANUAL_CHARGE_ENERGY_COUNTER(hex = "0x01000152", type = DataType.UINT32),
+    MANUAL_CHARGE_ENERGY_COUNTER(hex = "0x01000152", type = DataType.DOUBLE64),
 
     /**
      * hex = "0x01000153", type = DataType.TIMESTAMP
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.MANUAL_CHARGE_LASTSTART&labels=documentation&body=Documentation+update+for+enum+EMSTag.MANUAL_CHARGE_LASTSTART:).
+	 * Data block that is delivered within the [GET_MANUAL_CHARGE] container. Contains information on when the last manual storage loading took place.
+     * Attention: The timestamp seems to be reset from time to time (The algorithm is unknown to me). In this case, the block simply contains garbage data.
      *
      * Original E3DC Documentation:
      *
@@ -2042,7 +2046,8 @@ enum class EMSTag(
     /**
      * hex = "0x0100008F", type = DataType.UINT32
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_START_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_START_MANUAL_CHARGE:).
+	 * Request block to start a manual charging process. The amount of energy to be charged in watt hours must be entered as the value.
+     * A data block of the type [START_MANUAL_CHARGE] is delivered in response.
      *
      * Original E3DC Documentation:
      *
@@ -2055,7 +2060,7 @@ enum class EMSTag(
     /**
      * hex = "0x0180008F", type = DataType.BOOL
 	 *
-	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.START_MANUAL_CHARGE&labels=documentation&body=Documentation+update+for+enum+EMSTag.START_MANUAL_CHARGE:).
+	 * Response block to a [REQ_START_MANUAL_CHARGE] request. Contains the information as to whether the loading process could be started or not.
      *
      * Original E3DC Documentation:
      *
