@@ -1,35 +1,20 @@
 package de.jnkconsulting.e3dc.easyrscp.service
 
-import de.jnkconsulting.e3dc.easyrscp.api.service.model.ChargingLimits
+import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EPTag
+import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
+import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
 import org.junit.jupiter.api.condition.EnabledIfEnvironmentVariable
 
-class DefaultChargingServiceTest: IntegrationTestBase() {
+class DefaultEmergencyPowerServiceTest: IntegrationTestBase() {
 
 //    @Test
     @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
-    fun `read charging config`() {
-        val toTest = DefaultChargingService(connectionPool)
-        val result = toTest.readConfiguration()
-        println(result)
-    }
-
-//     @Test
-    @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
-    fun `write charging config`() {
-        val toTest = DefaultChargingService(connectionPool)
-        val limits = ChargingLimits(
-            maxCurrentChargingPower = 2000,
-            maxCurrentDischargingPower = 3000,
-            dischargeStartPower = 70,
-            chargingLimitationsEnabled = true,
-        )
-        val result = toTest.writeLimits(limits)
+    fun `request read state`() {
+        val service = DefaultEmergencyPowerService(connectionPool)
+        val result = service.readState()
         println(result)
     }
 
@@ -38,20 +23,9 @@ class DefaultChargingServiceTest: IntegrationTestBase() {
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
-    fun `read manual charging state`() {
-        val toTest = DefaultChargingService(connectionPool)
-        val result = toTest.readManualChargeState()
-        println(result)
-    }
-
-//    @Test
-    @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
-    @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
-    fun `start manual charging`() {
-        val toTest = DefaultChargingService(connectionPool)
-        val result = toTest.startManualCharge(0)
+    fun `set power reserve percentage`() {
+        val service = DefaultEmergencyPowerService(connectionPool)
+        val result = service.setReservePercentage(0.1f)
         println(result)
     }
 
@@ -60,9 +34,38 @@ class DefaultChargingServiceTest: IntegrationTestBase() {
     @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
     @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
-    fun `stop manual charging`() {
-        val toTest = DefaultChargingService(connectionPool)
-        val result = toTest.stopManualCharge()
+    fun `remove power reserve`() {
+        val service = DefaultEmergencyPowerService(connectionPool)
+        val result = service.removeReserve()
         println(result)
+    }
+
+//    @Test
+    @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
+    fun `set power reserve wh`() {
+        val service = DefaultEmergencyPowerService(connectionPool)
+        val result = service.setReserveWH(900f)
+        println(result)
+    }
+
+//    @Test
+    @EnabledIfEnvironmentVariable(named = "E3DC_HOST", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "E3DC_USER", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "RSCP_PASSWORD", matches = ".*\\S+.*")
+    @EnabledIfEnvironmentVariable(named = "E3DC_PORTAL_PASSWORD", matches = ".*\\S+.*")
+    fun `request tester`() {
+        connectionPool.executeAndRelease {
+            val request = FrameBuilder()
+                .addData(
+                    DataBuilder().tag(EPTag.REQ_SET_EP_RESERVE).container(
+                        DataBuilder().tag(EPTag.PARAM_INDEX).uint32(0).build(),
+                        DataBuilder().tag(EPTag.PARAM_EP_RESERVE).float32(10f).build()
+                    ).build()
+                ).build()
+            it.send(request)
+        }
     }
 }

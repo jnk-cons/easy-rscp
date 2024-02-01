@@ -2416,5 +2416,109 @@ enum class EMSTag(
      */
     GENERAL_ERROR(hex = "0x01FFFFFF", type = DataType.ERROR),
 
+    /**
+     * hex = "0x01000213", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_EMERGENCYPOWER_OVERLOAD_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_EMERGENCYPOWER_OVERLOAD_STATUS:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_EMERGENCYPOWER_OVERLOAD_STATUS(hex = "0x01000213", type = DataType.NONE),
+
+    /**
+     * hex = "0x01000214", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_EMERGENCYPOWER_RETRY&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_EMERGENCYPOWER_RETRY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_EMERGENCYPOWER_RETRY(hex = "0x01000214", type = DataType.NONE),
+
+    /**
+     * hex = "0x01040014", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.PARAM_TIME_TO_RETRY&labels=documentation&body=Documentation+update+for+enum+EMSTag.PARAM_TIME_TO_RETRY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_TIME_TO_RETRY(hex = "0x01040014", type = DataType.NONE),
+
+    /**
+     * hex = "0x01040015", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.PARAM_NO_REMAINING_RETRY&labels=documentation&body=Documentation+update+for+enum+EMSTag.PARAM_NO_REMAINING_RETRY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_NO_REMAINING_RETRY(hex = "0x01040015", type = DataType.NONE),
+
+    /**
+     * hex = "0x01040016", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.PARAM_INDEX&labels=documentation&body=Documentation+update+for+enum+EMSTag.PARAM_INDEX:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_INDEX(hex = "0x01040016", type = DataType.NONE),
+
+    /**
+     * hex = "0x01040115", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.PARAM_DEACTIVATE_SURPLUS_ACTOR&labels=documentation&body=Documentation+update+for+enum+EMSTag.PARAM_DEACTIVATE_SURPLUS_ACTOR:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_DEACTIVATE_SURPLUS_ACTOR(hex = "0x01040115", type = DataType.NONE),
+
+    /**
+     * hex = "0x01800213", type = DataType.CONTAINER
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.EMERGENCY_POWER_OVERLOAD_STATUS&labels=documentation&body=Documentation+update+for+enum+EMSTag.EMERGENCY_POWER_OVERLOAD_STATUS:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    EMERGENCY_POWER_OVERLOAD_STATUS(hex = "0x01800213", type = DataType.CONTAINER),
+
+    /**
+     * hex = "0x01800214", type = DataType.CONTAINER
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.EMERGENCY_POWER_RETRY&labels=documentation&body=Documentation+update+for+enum+EMSTag.EMERGENCY_POWER_RETRY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    EMERGENCY_POWER_RETRY(hex = "0x01800214", type = DataType.NONE),
+
 }
 
