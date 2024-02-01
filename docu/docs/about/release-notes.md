@@ -1,5 +1,24 @@
 # Release Notes
 
+## Version 2.2.0 (2024-02-01)
+- Fixed wrong return code if a data block is in error
+- [#21](https://github.com/jnk-cons/easy-rscp/issues/21)) Service to control the manual charging system
+  - The ChargingService has been expanded to include the following functions
+    - readManualChargeState() -> Reading out the current status of a manual storage tank charge
+    - setManualCharge(amountWh) -> Starting a manual storage tank charge
+    - stopManualCharge() -> Stopping a manual storage tank charge
+  - BatTag and EMSTag enums have been expanded to include a number of tags relating to the battery system 
+- [#23](https://github.com/jnk-cons/easy-rscp/issues/23)) Fixed Training Mode
+  - The status of the battery training mode was interpreted as a Boolean in version 2.1.0. However, it is actually an enum. This has been fixed
+  - The boolean value trainingModeActive is now deprecated and scheduled for removal in 2.4.0
+- [#22](https://github.com/jnk-cons/easy-rscp/issues/22)) Add emergency power related Tags and a new service for controlling the emergency power system
+  - BatTag and EMSTag enums have been expanded to include a number of tags relating to emergency power system
+  - A new service EmergencyPowerService has been created
+    - readState() -> Reads out the status of the emergency power function
+    - setReserveWH(reserve) -> Configuring the emergency power reserve in watt hours
+    - setReservePercentage(reserve) -> Configuring the emergency power reserve as a percentage relative to the battery capacity
+    - removeReserve() -> Removes a configured emergency power reserve
+
 ## Version 2.1.0 (2024-01-22)
 
 - [#2](https://github.com/jnk-cons/easy-rscp/issues/2)) DataBuilder().none() is optional, now
