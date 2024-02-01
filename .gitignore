@@ -37,3 +37,4 @@ build/
 .vscode/
 
 /api/src/test/kotlin/de/jnkconsulting/e3dc/easyrscp/api/generators/*
+/internal_docu

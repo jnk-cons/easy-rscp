@@ -3,16 +3,10 @@ package de.jnkconsulting.e3dc.easyrscp.service
 import de.jnkconsulting.e3dc.easyrscp.api.connection.ConnectionPool
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.BatTag
 import de.jnkconsulting.e3dc.easyrscp.api.service.BatteryService
-import de.jnkconsulting.e3dc.easyrscp.api.service.LiveDataService
 import de.jnkconsulting.e3dc.easyrscp.api.service.model.*
-import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
-import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
-import de.jnkconsulting.e3dc.easyrscp.service.converter.FrameConverter
-import de.jnkconsulting.e3dc.easyrscp.service.converter.PowerStateConverter
 import de.jnkconsulting.e3dc.easyrscp.service.creator.BatteryInfoRequestCreator
 import de.jnkconsulting.e3dc.easyrscp.service.creator.DCBInfoRequestCreator
 import de.jnkconsulting.e3dc.easyrscp.service.creator.FrameCreator
-import de.jnkconsulting.e3dc.easyrscp.service.creator.RequestLiveDataCreator
 import mu.KotlinLogging
 
 /**

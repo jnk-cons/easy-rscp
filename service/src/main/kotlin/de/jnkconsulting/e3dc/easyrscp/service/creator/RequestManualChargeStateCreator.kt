@@ -3,7 +3,6 @@ package de.jnkconsulting.e3dc.easyrscp.service.creator
 
 import de.jnkconsulting.e3dc.easyrscp.api.frame.Frame
 import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.EMSTag
-import de.jnkconsulting.e3dc.easyrscp.api.frame.tags.InfoTag
 import de.jnkconsulting.e3dc.easyrscp.frame.DataBuilder
 import de.jnkconsulting.e3dc.easyrscp.frame.FrameBuilder
 
