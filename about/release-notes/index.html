@@ -773,6 +773,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-220-2024-02-01" class="md-nav__link">
+    Version 2.2.0 (2024-02-01)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-210-2024-01-22" class="md-nav__link">
     Version 2.1.0 (2024-01-22)
   </a>
@@ -829,6 +836,13 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#version-220-2024-02-01" class="md-nav__link">
+    Version 2.2.0 (2024-02-01)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#version-210-2024-01-22" class="md-nav__link">
     Version 2.1.0 (2024-01-22)
   </a>
@@ -861,6 +875,30 @@
 
 
 <h1 id="release-notes">Release Notes<a class="headerlink" href="#release-notes" title="Permanent link">&para;</a></h1>
+<h2 id="version-220-2024-02-01">Version 2.2.0 (2024-02-01)<a class="headerlink" href="#version-220-2024-02-01" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Fixed wrong return code if a data block is in error</li>
+<li><a href="https://github.com/jnk-cons/easy-rscp/issues/21">#21</a>) Service to control the manual charging system</li>
+<li>The ChargingService has been expanded to include the following functions<ul>
+<li>readManualChargeState() -&gt; Reading out the current status of a manual storage tank charge</li>
+<li>setManualCharge(amountWh) -&gt; Starting a manual storage tank charge</li>
+<li>stopManualCharge() -&gt; Stopping a manual storage tank charge</li>
+</ul>
+</li>
+<li>BatTag and EMSTag enums have been expanded to include a number of tags relating to the battery system </li>
+<li><a href="https://github.com/jnk-cons/easy-rscp/issues/23">#23</a>) Fixed Training Mode</li>
+<li>The status of the battery training mode was interpreted as a Boolean in version 2.1.0. However, it is actually an enum. This has been fixed</li>
+<li>The boolean value trainingModeActive is now deprecated and scheduled for removal in 2.4.0</li>
+<li><a href="https://github.com/jnk-cons/easy-rscp/issues/22">#22</a>) Add emergency power related Tags and a new service for controlling the emergency power system</li>
+<li>BatTag and EMSTag enums have been expanded to include a number of tags relating to emergency power system</li>
+<li>A new service EmergencyPowerService has been created<ul>
+<li>readState() -&gt; Reads out the status of the emergency power function</li>
+<li>setReserveWH(reserve) -&gt; Configuring the emergency power reserve in watt hours</li>
+<li>setReservePercentage(reserve) -&gt; Configuring the emergency power reserve as a percentage relative to the battery capacity</li>
+<li>removeReserve() -&gt; Removes a configured emergency power reserve</li>
+</ul>
+</li>
+</ul>
 <h2 id="version-210-2024-01-22">Version 2.1.0 (2024-01-22)<a class="headerlink" href="#version-210-2024-01-22" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://github.com/jnk-cons/easy-rscp/issues/2">#2</a>) DataBuilder().none() is optional, now</li>
