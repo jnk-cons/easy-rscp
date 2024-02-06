@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 2.2.1 (2024-02-06)
+- [#23](https://github.com/jnk-cons/easy-rscp/issues/23)) ASOC/SOH interchange
+
 ## Version 2.2.0 (2024-02-01)
 - Fixed wrong return code if a data block is in error
 - [#21](https://github.com/jnk-cons/easy-rscp/issues/21)) Service to control the manual charging system
