@@ -66,7 +66,7 @@ data class DCBSpec(
  * @param connected Information on whether the battery is connected to the system (battery disconnect switch on the home power station)
  * @param working Information on whether the battery is working correctly
  * @param inService Information on whether the battery is in maintenance mode
- * @param asoc Percentage value that includes the condition of the battery taking ageing into account. A new battery theoretically has a value of 1.0 (100%)
+ * @param asoc Actual soc of the battery between 0 and 1.0
  * @param realRsoc Current charge level as a percentage of the battery without taking into account the reserve for absolute deep discharge and theoretically possible full charge. The value should therefore never reach completely 0 and never completely 1
  * @param voltage Current battery voltage
  * @param dcbStatus Status of the individual battery modules

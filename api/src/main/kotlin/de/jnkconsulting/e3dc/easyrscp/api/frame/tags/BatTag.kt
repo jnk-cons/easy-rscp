@@ -1044,8 +1044,7 @@ enum class BatTag(
     /**
      * hex = "0x0300000F", type = DataType.NONE
      *
-     * Is used within a [REQ_DATA] request to query the absolute state-of-charge. A [ASOC] block is returned in response.
-     * In other words, how high the possible SOC is when the battery is fully charged, minus signs of ageing of the battery.
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.REQ_ASOC&labels=documentation&body=Documentation+update+for+enum+BatTag.REQ_ASOC:).
      *
      * Original E3DC Documentation:
      *
@@ -2275,8 +2274,7 @@ enum class BatTag(
     /**
      * hex = "0x0380000F", type = DataType.FLOAT32
      *
-     * Response block to a [REQ_ASOC] request. Is delivered within a [DATA].
-     * Contains the condition of the battery as a percentage, taking into account the effects of ageing
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+BatTag.ASOC&labels=documentation&body=Documentation+update+for+enum+BatTag.ASOC:).
      *
      * Original E3DC Documentation:
      *
