@@ -1,5 +1,8 @@
 # Release Notes
 
+## Version 2.2.2 (2024-02-07)
+- [#30](https://github.com/jnk-cons/easy-rscp/issues/30)) Battery status contains the incorrect volt and temperature values per cell
+
 ## Version 2.2.1 (2024-02-06)
 - [#23](https://github.com/jnk-cons/easy-rscp/issues/23)) ASOC/SOH interchange
 
