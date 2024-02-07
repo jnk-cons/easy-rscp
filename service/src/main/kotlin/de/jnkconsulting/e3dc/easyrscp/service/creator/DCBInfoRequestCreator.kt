@@ -12,8 +12,8 @@ class DCBInfoRequestCreator : FrameCreator<Pair<Int, Int>>{
                 DataBuilder().tag(BatTag.REQ_DATA).container(
                     DataBuilder().tag(BatTag.INDEX).uint16(indexes.first.toShort()).build(),
                     DataBuilder().tag(BatTag.REQ_DCB_INFO).uint16(indexes.second.toShort()).build(),
-                    DataBuilder().tag(BatTag.REQ_DCB_ALL_CELL_TEMPERATURES).build(),
-                    DataBuilder().tag(BatTag.REQ_DCB_ALL_CELL_VOLTAGES).build(),
+                    DataBuilder().tag(BatTag.REQ_DCB_ALL_CELL_TEMPERATURES).uint16(indexes.second.toShort()).build(),
+                    DataBuilder().tag(BatTag.REQ_DCB_ALL_CELL_VOLTAGES).uint16(indexes.second.toShort()).build(),
                 ).build()
             ).build()
 }
