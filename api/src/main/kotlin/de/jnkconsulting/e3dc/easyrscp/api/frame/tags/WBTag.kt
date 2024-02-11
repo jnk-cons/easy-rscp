@@ -22,6 +22,9 @@ enum class WBTag(
     /**
      * hex = "0x0E040000", type = DataType.CONTAINER
 	 *
+     * Query block to request data on a specific wallbox. This container MUST contain a block of type [INDEX] that specifies the ID of the wallbox to be queried.
+     * The data to be queried must be specified individually with query blocks (for example [REQ_STATUS], [REQ_DEVICE_NAME] etc.)
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DATA&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DATA:).
      *
      * Original E3DC Documentation:
@@ -36,6 +39,8 @@ enum class WBTag(
     /**
      * hex = "0x0E040001", type = DataType.UCHAR8
 	 *
+     * Contains the ID of the wallbox. Occurs as a request block in a [REQ_DATA] container or is delivered as a response in a [DATA] container.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.INDEX&labels=documentation&body=Documentation+update+for+enum+WBTag.INDEX:).
      *
      * Original E3DC Documentation:
@@ -50,6 +55,8 @@ enum class WBTag(
     /**
      * hex = "0x0E840000", type = DataType.CONTAINER
 	 *
+     * Response container that contains the various response blocks to a [REQ_DATA] request.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DATA&labels=documentation&body=Documentation+update+for+enum+WBTag.DATA:).
      *
      * Original E3DC Documentation:
@@ -218,6 +225,8 @@ enum class WBTag(
     /**
      * hex = "0x0E060000", type = DataType.NONE
 	 *
+     * Request container to obtain the status of the wallbox. A container from the [DEVICE_STATE] type is delivered in response. Attention: Can only be used within a [REQ_DATA] container.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DEVICE_STATE:).
      *
      * Original E3DC Documentation:
@@ -646,6 +655,8 @@ enum class WBTag(
     /**
      * hex = "0x0E860000", type = DataType.CONTAINER
 	 *
+     * Response container that is delivered in response to a [REQ_DEVICE_STATE] request. Contains the data blocks [DEVICE_CONNECTED], [DEVICE_WORKING] and [DEVICE_IN_SERVICE]
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DEVICE_STATE&labels=documentation&body=Documentation+update+for+enum+WBTag.DEVICE_STATE:).
      *
      * Original E3DC Documentation:
@@ -661,6 +672,8 @@ enum class WBTag(
     /**
      * hex = "0x0E860001", type = DataType.BOOL
 	 *
+     * Response container that occurs within a [DEVICE_STATE] container. If true, the wallbox is connected, otherwise false
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DEVICE_CONNECTED&labels=documentation&body=Documentation+update+for+enum+WBTag.DEVICE_CONNECTED:).
      *
      * Original E3DC Documentation:
@@ -674,6 +687,8 @@ enum class WBTag(
     /**
      * hex = "0x0E860002", type = DataType.BOOL
 	 *
+     * Response container that occurs within a [DEVICE_STATE] container. If true, the wallbox is correctly working, otherwise false
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DEVICE_WORKING&labels=documentation&body=Documentation+update+for+enum+WBTag.DEVICE_WORKING:).
      *
      * Original E3DC Documentation:
@@ -687,6 +702,8 @@ enum class WBTag(
     /**
      * hex = "0x0E860003", type = DataType.BOOL
 	 *
+     * Response container that occurs within a [DEVICE_STATE] container. If true, the wallbox is in maintenance mode, false in normal operation.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DEVICE_IN_SERVICE&labels=documentation&body=Documentation+update+for+enum+WBTag.DEVICE_IN_SERVICE:).
      *
      * Original E3DC Documentation:
@@ -906,7 +923,7 @@ enum class WBTag(
     PM_FIRMWARE_VERSION(hex = "0x0E800017", type = DataType.UCHAR8),
 
     /**
-     * hex = "0x0E80001F", type = DataType.NONE
+     * hex = "0x0E80001F", type = DataType.UINT16
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_INFOS&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_INFOS:).
      *
@@ -916,10 +933,10 @@ enum class WBTag(
      *
      * de:
      */
-    DIAG_INFOS(hex = "0x0E80001F", type = DataType.NONE),
+    DIAG_INFOS(hex = "0x0E80001F", type = DataType.UINT16),
 
     /**
-     * hex = "0x0E800020", type = DataType.NONE
+     * hex = "0x0E800020", type = DataType.UINT16
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_WARNINGS&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_WARNINGS:).
      *
@@ -929,10 +946,10 @@ enum class WBTag(
      *
      * de:
      */
-    DIAG_WARNINGS(hex = "0x0E800020", type = DataType.NONE),
+    DIAG_WARNINGS(hex = "0x0E800020", type = DataType.UINT16),
 
     /**
-     * hex = "0x0E800021", type = DataType.NONE
+     * hex = "0x0E800021", type = DataType.UINT16
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_ERRORS&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_ERRORS:).
      *
@@ -942,10 +959,10 @@ enum class WBTag(
      *
      * de:
      */
-    DIAG_ERRORS(hex = "0x0E800021", type = DataType.NONE),
+    DIAG_ERRORS(hex = "0x0E800021", type = DataType.UINT16),
 
     /**
-     * hex = "0x0E800022", type = DataType.NONE
+     * hex = "0x0E800022", type = DataType.UINT16
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_TEMP_1&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_TEMP_1:).
      *
@@ -955,10 +972,10 @@ enum class WBTag(
      *
      * de:
      */
-    DIAG_TEMP_1(hex = "0x0E800022", type = DataType.NONE),
+    DIAG_TEMP_1(hex = "0x0E800022", type = DataType.UINT16),
 
     /**
-     * hex = "0x0E800023", type = DataType.NONE
+     * hex = "0x0E800023", type = DataType.UINT16
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_TEMP_2&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_TEMP_2:).
      *
@@ -968,7 +985,7 @@ enum class WBTag(
      *
      * de:
      */
-    DIAG_TEMP_2(hex = "0x0E800023", type = DataType.NONE),
+    DIAG_TEMP_2(hex = "0x0E800023", type = DataType.UINT16),
 
     /**
      * hex = "0x0E041000", type = DataType.CONTAINER
@@ -1130,7 +1147,7 @@ enum class WBTag(
     EXTERN_DATA(hex = "0x0E042010", type = DataType.BYTEARRAY),
 
     /**
-     * hex = "0x0E042011", type = DataType.UCHAR8
+     * hex = "0x0E042011", type = DataType.INT32
 	 *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.EXTERN_DATA_LEN&labels=documentation&body=Documentation+update+for+enum+WBTag.EXTERN_DATA_LEN:).
      *
@@ -1140,7 +1157,7 @@ enum class WBTag(
      *
      * de:
      */
-    EXTERN_DATA_LEN(hex = "0x0E042011", type = DataType.UCHAR8),
+    EXTERN_DATA_LEN(hex = "0x0E042011", type = DataType.INT32),
 
     /**
      * hex = "0x0E041011", type = DataType.NONE
@@ -1477,4 +1494,519 @@ enum class WBTag(
      */
     RSP_PARAM_1(hex = "0x0E84101B", type = DataType.CONTAINER),
 
+    /**
+     * hex = "0x0E000018", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_DEVICE_ID&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_DEVICE_ID:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_DEVICE_ID(hex = "0x0E000018", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000019", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_BAT_CAPACITY&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_BAT_CAPACITY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_BAT_CAPACITY(hex = "0x0E000019", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E00001A", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_USER_PARAM&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_USER_PARAM:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_USER_PARAM(hex = "0x0E000019", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E00001B", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_MAX_CURRENT&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_MAX_CURRENT:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_MAX_CURRENT(hex = "0x0E00001B", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E00001C", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_PHASE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_PHASE_VOLTAGE:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_PHASE_VOLTAGE(hex = "0x0E00001C", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E00001D", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_DISPLAY_SPEECH&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_DISPLAY_SPEECH:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_DISPLAY_SPEECH(hex = "0x0E00001D", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E00001E", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_DESIGN&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_DESIGN:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_DESIGN(hex = "0x0E00001E", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000024", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_CP_PEGEL&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_CP_PEGEL:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_CP_PEGEL(hex = "0x0E000024", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000025", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_PP_IN_A&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_PP_IN_A:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_PP_IN_A(hex = "0x0E000025", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000026", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_STATUS_DIODE&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_STATUS_DIODE:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_STATUS_DIODE(hex = "0x0E000026", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000027", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_DIG_IN_1&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_DIG_IN_1:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_DIG_IN_1(hex = "0x0E000027", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000028", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DIAG_DIG_IN_2&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DIAG_DIG_IN_2:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DIAG_DIG_IN_2(hex = "0x0E000028", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000040", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_PM_MAX_PHASE_POWER&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_PM_MAX_PHASE_POWER:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_PM_MAX_PHASE_POWER(hex = "0x0E000040", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000041", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_SET_DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_SET_DEVICE_NAME:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SET_DEVICE_NAME(hex = "0x0E000041", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E000042", type = DataType.NONE
+     *
+     * Query block to determine the wallbox name. A data block of type [DEVICE_NAME] is returned in response. Attention, can only be used within a [REQ_DATA] container.
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_DEVICE_NAME:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_DEVICE_NAME(hex = "0x0E000042", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E041016", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_SET_ENERGY_ALL&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_SET_ENERGY_ALL:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SET_ENERGY_ALL(hex = "0x0E041016", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E041017", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_SET_ENERGY_SOLAR&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_SET_ENERGY_SOLAR:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SET_ENERGY_SOLAR(hex = "0x0E041017", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E04101C", type = DataType.NONE
+     *
+     * Assumption: Requests the IDs of the connected wallboxes. A container block of type [CONNECTED_DEVICES] is returned in response
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_CONNECTED_DEVICES&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_CONNECTED_DEVICES:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_CONNECTED_DEVICES(hex = "0x0E04101C", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E041020", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_SET_PW&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_SET_PW:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SET_PW(hex = "0x0E041020", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E042012", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.PARAM_USR&labels=documentation&body=Documentation+update+for+enum+WBTag.PARAM_USR:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_USR(hex = "0x0E042012", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E042013", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.PARAM_PW&labels=documentation&body=Documentation+update+for+enum+WBTag.PARAM_PW:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PARAM_PW(hex = "0x0E042013", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800018", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_DEVICE_ID&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_DEVICE_ID:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_DEVICE_ID(hex = "0x0E800018", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800019", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_BAT_CAPACITY&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_BAT_CAPACITY:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_BAT_CAPACITY(hex = "0x0E800019", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E80001A", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_USER_PARAM&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_USER_PARAM:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_USER_PARAM(hex = "0x0E80001A", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E80001B", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_MAX_CURRENT&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_MAX_CURRENT:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_MAX_CURRENT(hex = "0x0E80001B", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E80001C", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_PHASE_VOLTAGE&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_PHASE_VOLTAGE:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_PHASE_VOLTAGE(hex = "0x0E80001C", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E80001D", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_DISPLAY_SPEECH&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_DISPLAY_SPEECH:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_DISPLAY_SPEECH(hex = "0x0E80001D", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E80001E", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_DESIGN&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_DESIGN:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_DESIGN(hex = "0x0E80001E", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800024", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_CP_PEGEL&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_CP_PEGEL:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_CP_PEGEL(hex = "0x0E800024", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800025", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_PP_IN_A&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_PP_IN_A:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_PP_IN_A(hex = "0x0E800025", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800026", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_STATUS_DIODE&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_STATUS_DIODE:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_STATUS_DIODE(hex = "0x0E800026", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800027", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_DIG_IN_1&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_DIG_IN_1:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_DIG_IN_1(hex = "0x0E800027", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800028", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DIAG_DIG_IN_2&labels=documentation&body=Documentation+update+for+enum+WBTag.DIAG_DIG_IN_2:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DIAG_DIG_IN_2(hex = "0x0E800028", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E800040", type = DataType.DOUBLE64
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.PM_MAX_PHASE_POWER&labels=documentation&body=Documentation+update+for+enum+WBTag.PM_MAX_PHASE_POWER:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    PM_MAX_PHASE_POWER(hex = "0x0E800040", type = DataType.DOUBLE64),
+
+    /**
+     * hex = "0x0E800042", type = DataType.STRING
+     *
+     * Response block to a [REQ_DEVICE_NAME] request. Contains the name of the wallbox as defined in the home power station.
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.DEVICE_NAME&labels=documentation&body=Documentation+update+for+enum+WBTag.DEVICE_NAME:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    DEVICE_NAME(hex = "0x0E800042", type = DataType.STRING),
+
+    /**
+     * hex = "0x0E841016", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.SET_ENERGY_ALL&labels=documentation&body=Documentation+update+for+enum+WBTag.SET_ENERGY_ALL:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SET_ENERGY_ALL(hex = "0x0E841016", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E841017", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.SET_ENERGY_SOLAR&labels=documentation&body=Documentation+update+for+enum+WBTag.SET_ENERGY_SOLAR:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SET_ENERGY_SOLAR(hex = "0x0E841017", type = DataType.NONE),
+
+    /**
+     * hex = "0x0E84101C", type = DataType.CONTAINER
+     *
+     * Assumption: Contains a list of IDs of the connected wallboxes. Delivered in response to a [REQ_CONNECTED_DEVICES] request.
+     * The container contains 0-n blocks of type [INDEX]
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.CONNECTED_DEVICES&labels=documentation&body=Documentation+update+for+enum+WBTag.CONNECTED_DEVICES:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    CONNECTED_DEVICES(hex = "0x0E84101C", type = DataType.CONTAINER),
+
+    /**
+     * hex = "0x0E841020", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.SET_PW&labels=documentation&body=Documentation+update+for+enum+WBTag.SET_PW:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SET_PW(hex = "0x0E841020", type = DataType.NONE),
 }

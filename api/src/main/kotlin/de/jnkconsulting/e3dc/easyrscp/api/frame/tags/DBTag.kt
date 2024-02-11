@@ -640,4 +640,426 @@ enum class DBTag(
      */
     PARAM_HEADER(hex = "0x06B00009", type = DataType.CONTAINER),
 
+    /**
+     * hex = "0x06000500", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_HIST&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_HIST:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_HIST(hex = "0x06000500", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000501", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_HIST&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_HIST:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_HIST(hex = "0x06000501", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000502", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_BPU&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_BPU:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_BPU(hex = "0x06000502", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000503", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_BPU&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_BPU:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_BPU(hex = "0x06000503", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000504", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_DCB&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_DCB:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_DCB(hex = "0x06000504", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000505", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_DBC&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_DBC:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_DBC(hex = "0x06000505", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000506", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_BPU_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_BPU_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_BPU_CONF(hex = "0x06000506", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000507", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_BPU_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_BPU_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_BPU_CONF(hex = "0x06000507", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000508", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_DCB_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_DCB_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_DCB_CONF(hex = "0x06000508", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000509", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_DBC_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_DBC_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_DBC_CONF(hex = "0x06000509", type = DataType.NONE),
+
+    /**
+     * hex = "0x0600050A", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_WALLBOX&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_WALLBOX:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_WALLBOX(hex = "0x0600050A", type = DataType.NONE),
+
+    /**
+     * hex = "0x0600050B", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_WALLBOX&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_WALLBOX:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_WALLBOX(hex = "0x0600050B", type = DataType.NONE),
+
+    /**
+     * hex = "0x0600050C", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SYNC_PV_DEBUG&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SYNC_PV_DEBUG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SYNC_PV_DEBUG(hex = "0x0600050C", type = DataType.NONE),
+
+    /**
+     * hex = "0x0600050D", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_PV_DEBUG&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_PV_DEBUG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_PV_DEBUG(hex = "0x0600050D", type = DataType.NONE),
+
+    /**
+     * hex = "0x0600050F", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_VACUUM_CONFIG&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_VACUUM_CONFIG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_VACUUM_CONFIG(hex = "0x0600050F", type = DataType.NONE),
+
+    /**
+     * hex = "0x06000510", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.REQ_SET_SYNC_TIME&labels=documentation&body=Documentation+update+for+enum+DBTag.REQ_SET_SYNC_TIME:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    REQ_SET_SYNC_TIME(hex = "0x06000510", type = DataType.NONE),
+
+    /**
+     * hex = "0x06800500", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_HIST&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_HIST:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_HIST(hex = "0x06800500", type = DataType.NONE),
+
+    /**
+     * hex = "0x06800501", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_HIST&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_HIST:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_HIST(hex = "0x06800501", type = DataType.NONE),
+    /**
+     * hex = "0x06800502", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_BPU&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_BPU:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_BPU(hex = "0x06800502", type = DataType.NONE),
+    /**
+     * hex = "0x06800503", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_BPU&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_BPU:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_BPU(hex = "0x06800503", type = DataType.NONE),
+    /**
+     * hex = "0x06800504", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_DCB&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_DCB:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_DCB(hex = "0x06800504", type = DataType.NONE),
+    /**
+     * hex = "0x06800505", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_DCB&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_DCB:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_DCB(hex = "0x06800505", type = DataType.NONE),
+    /**
+     * hex = "0x06800506", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_BPU_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_BPU_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_BPU_CONF(hex = "0x06800506", type = DataType.NONE),
+    /**
+     * hex = "0x06800507", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_BPU_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_BPU_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_BPU_CONF(hex = "0x06800507", type = DataType.NONE),
+    /**
+     * hex = "0x06800508", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_DCB_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_DCB_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_DCB_CONF(hex = "0x06800508", type = DataType.NONE),
+    /**
+     * hex = "0x06800509", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_DCB_CONF&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_DCB_CONF:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_DCB_CONF(hex = "0x06800509", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050A", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_WALLBOX&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_WALLBOX:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_WALLBOX(hex = "0x0680050A", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050B", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_WALLBOX&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_WALLBOX:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_WALLBOX(hex = "0x0680050B", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050C", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_PV_DEBUG&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_PV_DEBUG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_PV_DEBUG(hex = "0x0680050C", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050D", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_PV_DEBUG&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_PV_DEBUG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_PV_DEBUG(hex = "0x0680050D", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050E", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SYNC_CONFIG&labels=documentation&body=Documentation+update+for+enum+DBTag.SYNC_CONFIG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SYNC_CONFIG(hex = "0x0680050E", type = DataType.NONE),
+
+    /**
+     * hex = "0x0680050F", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.VACUUM_CONFIG&labels=documentation&body=Documentation+update+for+enum+DBTag.VACUUM_CONFIG:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    VACUUM_CONFIG(hex = "0x0680050F", type = DataType.NONE),
+
+    /**
+     * hex = "0x06800510", type = DataType.NONE
+     *
+     * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+DBTag.SET_SYNC_TIME&labels=documentation&body=Documentation+update+for+enum+DBTag.SET_SYNC_TIME:).
+     *
+     * Original E3DC Documentation:
+     *
+     * en:
+     *
+     * de:
+     */
+    SET_SYNC_TIME(hex = "0x06800510", type = DataType.NONE),
+
+
 }
