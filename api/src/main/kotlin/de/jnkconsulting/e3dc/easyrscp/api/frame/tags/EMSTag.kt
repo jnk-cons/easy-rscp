@@ -361,6 +361,8 @@ enum class EMSTag(
     /**
      * hex = "0x0100001F", type = DataType.NONE
 	 *
+     * Queries the total amount of energy currently flowing to the wallboxes. A data block of the type [POWER_WB_ALL] is delivered in response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_POWER_WB_ALL&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_WB_ALL:).
      *
      * Original E3DC Documentation:
@@ -374,6 +376,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000020", type = DataType.NONE
 	 *
+     * Queries the amount of energy in Wh that is currently flowing from the solar source to all wallboxes. A data block of type [POWER_WB_SOLAR] is returned in response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_POWER_WB_SOLAR&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_POWER_WB_SOLAR:).
      *
      * Original E3DC Documentation:
@@ -841,8 +845,10 @@ enum class EMSTag(
     CONFIRM_ERRORS(hex = "0x0180001E", type = DataType.BOOL),
 
     /**
-     * hex = "0x0180001F", type = DataType.NONE
+     * hex = "0x0180001F", type = DataType.INT32
 	 *
+     * Data block that contains the whole amount of energy in Wh that is currently flowing to the wallboxes (Including solar). Delivered in response to a [REQ_POWER_WB_ALL] request.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.POWER_WB_ALL&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_WB_ALL:).
      *
      * Original E3DC Documentation:
@@ -851,11 +857,13 @@ enum class EMSTag(
      *
      * de:
      */
-    POWER_WB_ALL(hex = "0x0180001F", type = DataType.NONE),
+    POWER_WB_ALL(hex = "0x0180001F", type = DataType.INT32),
 
     /**
-     * hex = "0x01800020", type = DataType.NONE
+     * hex = "0x01800020", type = DataType.INT32
 	 *
+     * Data block that contains the amount of energy in Wh that is currently flowing from the solar source to the wallboxes. Delivered in response to a [REQ_POWER_WB_SOLAR] request.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.POWER_WB_SOLAR&labels=documentation&body=Documentation+update+for+enum+EMSTag.POWER_WB_SOLAR:).
      *
      * Original E3DC Documentation:
@@ -864,7 +872,7 @@ enum class EMSTag(
      *
      * de:
      */
-    POWER_WB_SOLAR(hex = "0x01800020", type = DataType.NONE),
+    POWER_WB_SOLAR(hex = "0x01800020", type = DataType.INT32),
 
     /**
      * hex = "0x01800021", type = DataType.CHAR8
@@ -1359,7 +1367,7 @@ enum class EMSTag(
 
     /**
      * hex = "0x01800076", type = DataType.UCHAR8
-	 *
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.SET_BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.SET_BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
@@ -1394,6 +1402,10 @@ enum class EMSTag(
     /**
      * hex = "0x01800077", type = DataType.UCHAR8
 	 *
+     * Response block to a [REQ_BATTERY_TO_CAR_MODE] request. Contains the information as to whether the battery may be discharged via wallbox.
+     * 0 = No
+     * 1 = Yes
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
@@ -1406,8 +1418,10 @@ enum class EMSTag(
     BATTERY_TO_CAR_MODE(hex = "0x01800077", type = DataType.UCHAR8),
 
     /**
-     * hex = "0x01000077", type = DataType.UCHAR8
+     * hex = "0x01000077", type = DataType.NONE
 	 *
+     * Asks the home power station whether battery discharging by the wallboxes is permitted. A data block of type [BATTERY_TO_CAR_MODE] is delivered in response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_BATTERY_TO_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BATTERY_TO_CAR_MODE:).
      *
      * Original E3DC Documentation:
@@ -1416,7 +1430,7 @@ enum class EMSTag(
      *
      * de: Statusabfrage des BatteryToCar Modus
      */
-    REQ_BATTERY_TO_CAR_MODE(hex = "0x01000077", type = DataType.UCHAR8),
+    REQ_BATTERY_TO_CAR_MODE(hex = "0x01000077", type = DataType.NONE),
 
     /**
      * hex = "0x01800078", type = DataType.UCHAR8
@@ -1456,6 +1470,10 @@ enum class EMSTag(
     /**
      * hex = "0x01800079", type = DataType.UCHAR8
 	 *
+     * Response block to a [REQ_BATTERY_BEFORE_CAR_MODE] request. Contains the information as to whether the battery or the wallboxes should be operated with solar surplus first.
+     * 0 = Battery of the home power station has priority
+     * 1 = Wallboxes have priority
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
@@ -1470,6 +1488,8 @@ enum class EMSTag(
     /**
      * hex = "0x01000079", type = DataType.UCHAR8
 	 *
+     * Query block to determine whether the battery or the wallboxes should be operated with solar surplus first. A block of type [BATTERY_BEFORE_CAR_MODE] is returned in response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+EMSTag.REQ_BATTERY_BEFORE_CAR_MODE&labels=documentation&body=Documentation+update+for+enum+EMSTag.REQ_BATTERY_BEFORE_CAR_MODE:).
      *
      * Original E3DC Documentation:
