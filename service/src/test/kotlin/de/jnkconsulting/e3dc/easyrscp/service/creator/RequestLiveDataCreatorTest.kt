@@ -14,7 +14,7 @@ class RequestLiveDataCreatorTest {
     fun `test frame creation`() {
         val result = toTest(null)
 
-        assertEquals(5, result.data.size)
+        assertEquals(7, result.data.size)
 
         result.assertHasDataWithType(
             tag = EMSTag.REQ_POWER_PV,
@@ -38,6 +38,16 @@ class RequestLiveDataCreatorTest {
 
         result.assertHasDataWithType(
             tag = EMSTag.REQ_BAT_SOC,
+            expectedType = DataType.NONE
+        )
+
+        result.assertHasDataWithType(
+            tag = EMSTag.REQ_POWER_WB_SOLAR,
+            expectedType = DataType.NONE
+        )
+
+        result.assertHasDataWithType(
+            tag = EMSTag.REQ_POWER_WB_SOLAR,
             expectedType = DataType.NONE
         )
     }

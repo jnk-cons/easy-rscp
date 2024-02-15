@@ -1162,6 +1162,8 @@ enum class WBTag(
     /**
      * hex = "0x0E041011", type = DataType.NONE
 	 *
+     * Queries the solar share of a wallbox. Must be used within a [REQ_DATA] tag. A container of type [EXTERN_DATA_SUN] is delivered as the response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_EXTERN_DATA_SUN&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_EXTERN_DATA_SUN:).
      *
      * Original E3DC Documentation:
@@ -1175,6 +1177,8 @@ enum class WBTag(
     /**
      * hex = "0x0E041012", type = DataType.NONE
 	 *
+     * Queries the grid share of a wallbox. Must be used within a [REQ_DATA] tag. A container of type [EXTERN_DATA_NET] is delivered as the response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_EXTERN_DATA_NET&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_EXTERN_DATA_NET:).
      *
      * Original E3DC Documentation:
@@ -1188,6 +1192,8 @@ enum class WBTag(
     /**
      * hex = "0x0E041013", type = DataType.NONE
 	 *
+     * Queries the complete power a wallbox. Must be used within a [REQ_DATA] tag. A container of type [EXTERN_DATA_ALL] is delivered as the response.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_EXTERN_DATA_ALL&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_EXTERN_DATA_ALL:).
      *
      * Original E3DC Documentation:
@@ -1214,6 +1220,13 @@ enum class WBTag(
     /**
      * hex = "0x0E841011", type = DataType.CONTAINER
 	 *
+     * Response container to a [REQ_EXTERN_DATA_SUN] request. Contains a block of type [EXTERN_DATA_LEN] and one of type [EXTERN_DATA].
+     *
+     * The [EXTERN_DATA] block contains the solar component of the power output of the requested wallbox. This value is binary coded.
+     * Byte 1-2 the current live power in watts (grid component only)
+     * Byte 3-6 Assumption: Summed energy in watt hours (grid component only)
+     * Byte 7 Supposedly the percentage value of the solar fraction. Was always 0 for me, doesn't seem to work.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.EXTERN_DATA_SUN&labels=documentation&body=Documentation+update+for+enum+WBTag.EXTERN_DATA_SUN:).
      *
      * Original E3DC Documentation:
@@ -1234,6 +1247,13 @@ enum class WBTag(
     /**
      * hex = "0x0E841012", type = DataType.CONTAINER
 	 *
+     * Response container to a [REQ_EXTERN_DATA_NET] request. Contains a block of type [EXTERN_DATA_LEN] and one of type [EXTERN_DATA].
+     *
+     * The [EXTERN_DATA] block contains the grid component of the power output of the requested wallbox. This value is binary coded.
+     * Byte 1-2 the current live power in watts (grid component only)
+     * Byte 3-6 Assumption: Summed energy in watt hours (grid component only)
+     * Byte 7 Supposedly the percentage value of the grid fraction. Was always 0 for me, doesn't seem to work.
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.EXTERN_DATA_NET&labels=documentation&body=Documentation+update+for+enum+WBTag.EXTERN_DATA_NET:).
      *
      * Original E3DC Documentation:
@@ -1254,6 +1274,13 @@ enum class WBTag(
     /**
      * hex = "0x0E841013", type = DataType.CONTAINER
 	 *
+     * Response container to a [REQ_EXTERN_DATA_ALL] request. Contains a block of type [EXTERN_DATA_LEN] and one of type [EXTERN_DATA].
+     *
+     * The [EXTERN_DATA] block contains the total amount of the power output of the requested wallbox. This value is binary coded.
+     * Byte 1-2 the current live power in watts (total)
+     * Byte 3-6 Assumption: Summed energy in watt hours
+     * Byte 7 No idea ... E3DC says: Total amount in % ... total amount of all ... is always 100?! ... I have no idea
+     *
 	 * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.EXTERN_DATA_ALL&labels=documentation&body=Documentation+update+for+enum+WBTag.EXTERN_DATA_ALL:).
      *
      * Original E3DC Documentation:
@@ -1720,7 +1747,7 @@ enum class WBTag(
     /**
      * hex = "0x0E04101C", type = DataType.NONE
      *
-     * Assumption: Requests the IDs of the connected wallboxes. A container block of type [CONNECTED_DEVICES] is returned in response
+     * Requests the IDs of the connected wallboxes. A container block of type [CONNECTED_DEVICES] is returned in response
      *
      * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.REQ_CONNECTED_DEVICES&labels=documentation&body=Documentation+update+for+enum+WBTag.REQ_CONNECTED_DEVICES:).
      *
@@ -1984,7 +2011,7 @@ enum class WBTag(
     /**
      * hex = "0x0E84101C", type = DataType.CONTAINER
      *
-     * Assumption: Contains a list of IDs of the connected wallboxes. Delivered in response to a [REQ_CONNECTED_DEVICES] request.
+     * Contains a list of IDs of the connected wallboxes. Delivered in response to a [REQ_CONNECTED_DEVICES] request.
      * The container contains 0-n blocks of type [INDEX]
      *
      * You know what the tag means or want to improve the tag description? Create a [Ticket](https://github.com/jnk-cons/easy-rscp/issues/new?title=Documentation+improvement+for+WBTag.CONNECTED_DEVICES&labels=documentation&body=Documentation+update+for+enum+WBTag.CONNECTED_DEVICES:).

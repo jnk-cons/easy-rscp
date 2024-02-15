@@ -25,10 +25,16 @@ If you have a pull request, it is of course welcome.
 
 You want to become a maintainer? Create a ticket in the issues section and I'll get back to you.
 
-## Roadmap
-- Extension of the service implementation
-- Extension of the RSCP documentation
-- Creation of a RSCP Trainigs application
+## Special thanks
+
+The RSCP protocol is virtually undocumented and there is no help available from E3DC.
+This library would not have been possible without numerous other projects. I would like to highlight two projects and two people in particular.
+
+First of all, a big "thank you" to Stefan. The developer of the incredible iOS [my4E](https://www.my4e.de/).
+Although he himself had no benefit from answering my questions about the RSCP protocol, he did it anyway and was a great help!
+Not a matter of course.
+
+A lot of inspiration and also help in understanding the RSCP protocol came from Uli. The developer of the [E3DC plugin](https://github.com/git-kick/ioBroker.e3dc-rscp) for ioBroker. Many thanks for the support.
 
 ## License
 The project is published under the MIT license. Just look at the LICENSE file in the repository

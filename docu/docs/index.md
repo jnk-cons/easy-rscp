@@ -49,6 +49,16 @@ Every drop helps to decode this protocol completely. You can create a PR for the
 
 If you want to describe a specific RSCP tag, it is best to go to the [API description](kdoc/easy-rscp/de.jnkconsulting.e3dc.easyrscp.api.frame.tags/index.html) and the corresponding tag class. At each entry you will find a link to create a ticket for exactly this tag.
 
+## Special thanks
+The RSCP protocol is virtually undocumented and there is no help available from E3DC.
+This library would not have been possible without numerous other projects. I would like to highlight two projects and two people in particular.
+
+First of all, a big "thank you" to Stefan. The developer of the incredible iOS [my4E](https://www.my4e.de/).
+Although he himself had no benefit from answering my questions about the RSCP protocol, he did it anyway and was a great help!
+Not a matter of course.
+
+A lot of inspiration and also help in understanding the RSCP protocol came from Uli. The developer of the [E3DC plugin](https://github.com/git-kick/ioBroker.e3dc-rscp) for ioBroker. Many thanks for the support.
+
 ## License
 
 The library is licensed under the MIT License. [License](about/license.md)
