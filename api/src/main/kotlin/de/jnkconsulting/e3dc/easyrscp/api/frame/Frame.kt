@@ -25,6 +25,8 @@ import java.time.Instant
  * @since 2.1 new functions:
  * - [isDataBlockInError]
  * - [errorCodeByTag]
+ * @since 2.3 new functions:
+ * - [bytearrayByTag]
  */
 data class Frame(
     val timestamp: Instant,
@@ -90,6 +92,22 @@ data class Frame(
             return find(tag, container.valueAsContainer(parser), *containerPath.sliceArray(IntRange(1, containerPath.size -1)))
         }
     }
+
+    /**
+     * Searches for a data block of type [tag] and returns the value as [ByteArray].
+     *
+     * If the block is not found, null is returned
+     *
+     * @param tag The [Tag] to search for
+     * @param containerPath Optional path through datablocks of type [DataType.CONTAINER].
+     *
+     * @return Value of the data block as [ByteArray] or null if the data block does not exist.
+     *
+     * @since 2.3
+     */
+    fun bytearrayByTag(tag: Tag, vararg containerPath: Tag) =
+        find(tag, data, *containerPath)
+            ?.value
 
     /**
      * Searches for a data block of type [tag] and returns the value as [Int].

@@ -21,7 +21,9 @@ class PowerStateConverterTest {
                 DataBuilder().tag(EMSTag.POWER_GRID).int32(300).build(),
                 DataBuilder().tag(EMSTag.POWER_BAT).int32(450).build(),
                 DataBuilder().tag(EMSTag.POWER_HOME).int32(370).build(),
-                DataBuilder().tag(EMSTag.BAT_SOC).uchar8(82).build()
+                DataBuilder().tag(EMSTag.BAT_SOC).uchar8(82).build(),
+                DataBuilder().tag(EMSTag.POWER_WB_SOLAR).int32(2000).build(),
+                DataBuilder().tag(EMSTag.POWER_WB_ALL).int32(3000).build()
             )
             .build()
 
@@ -33,7 +35,7 @@ class PowerStateConverterTest {
         assertEquals(-450, result.batteryDelivery)
         assertEquals(370, result.houseConsumption)
         assertEquals(0.82f, result.batteryChargingLevel)
-
-
+        assertEquals(2000, result.wallboxProportionateSolarShare)
+        assertEquals(3000, result.wallboxConsumption)
     }
 }
