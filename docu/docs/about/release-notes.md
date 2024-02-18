@@ -1,5 +1,12 @@
 # Release Notes
 
+## Version 2.3.0 (2024-02-18)
+- [#32](https://github.com/jnk-cons/easy-rscp/issues/32)) Add missing WallBox Tags
+  - Added a bunch of Tags to WB and EMS Namespace
+- [#34](https://github.com/jnk-cons/easy-rscp/issues/34)) Extend services with wallbox live data
+  - DefaultLiveDataService returns the complete wallbox consumption and the solar share
+  - New DefaultWallboxService to query the connected wallboxes and read the live data for each
+
 ## Version 2.2.2 (2024-02-07)
 - [#30](https://github.com/jnk-cons/easy-rscp/issues/30)) Battery status contains the incorrect volt and temperature values per cell
 
