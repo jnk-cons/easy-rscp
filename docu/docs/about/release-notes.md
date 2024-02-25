@@ -1,5 +1,9 @@
 # Release Notes
 
+## Version 2.3.1 (2024-02-25)
+- [#38](https://github.com/jnk-cons/easy-rscp/issues/38)) Omit credentials during string convertion
+  - Added option to the StringFrameConverter to omit credentials
+
 ## Version 2.3.0 (2024-02-18)
 - [#32](https://github.com/jnk-cons/easy-rscp/issues/32)) Add missing WallBox Tags
   - Added a bunch of Tags to WB and EMS Namespace
